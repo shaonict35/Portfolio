@@ -1,0 +1,787 @@
+﻿{
+  "siteConfigGlobal": {
+    "siteTitle": "Meta Ads & Performance Marketing Specialist | Al-Amin Khan",
+    "siteLogo": "/assets/logo.png",
+    "favicon": "/assets/favicon.png",
+    "heroImage": "/assets/hero-showcase-card.jpg",
+    "heroStatus": "Active Now",
+    "heroAvailability": "Available for projects",
+    "cvUrl": "/assets/Al-Amin_Khan_CV.pdf",
+    "resumeImage": "/assets/journey.png",
+    "headerLinks": [
+      {
+        "label": "Home",
+        "url": "/#home"
+      },
+      {
+        "label": "About",
+        "url": "/#about"
+      },
+      {
+        "label": "Resume",
+        "url": "/#resume"
+      },
+      {
+        "url": "/#services",
+        "label": "Services"
+      },
+      {
+        "url": "/#projects",
+        "label": "Projects"
+      },
+      {
+        "label": "Pricing",
+        "url": "/#pricing"
+      },
+      {
+        "label": "FAQ",
+        "url": "/#faq"
+      },
+      {
+        "url": "/#contact",
+        "label": "Contact"
+      },
+      {
+        "url": "/#blog",
+        "label": "Blog"
+      }
+    ],
+    "footerColumns": [
+      {
+        "title": "Navigation",
+        "links": [
+          {
+            "url": "/#home",
+            "label": "Home"
+          },
+          {
+            "url": "/#about",
+            "label": "About"
+          },
+          {
+            "url": "/#resume",
+            "label": "Resume"
+          },
+          {
+            "url": "/#services",
+            "label": "Services"
+          },
+          {
+            "label": "Projects",
+            "url": "/#projects"
+          },
+          {
+            "label": "Pricing",
+            "url": "/#pricing"
+          },
+          {
+            "url": "/#contact",
+            "label": "Contact"
+          },
+          {
+            "label": "Blog",
+            "url": "/#blog"
+          },
+          {
+            "label": "FAQ",
+            "url": "/#faq"
+          }
+        ]
+      },
+      {
+        "links": [
+          {
+            "label": "1162, East Monipur Road, Mirpur-2, Dhaka-1216",
+            "url": "#"
+          },
+          {
+            "label": "skhan.ict@gmail.com",
+            "url": "mailto:skhan.ict@gmail.com"
+          },
+          {
+            "url": "tel:+8801744588644",
+            "label": "+880 1744 588 644"
+          }
+        ],
+        "title": "Contact Info"
+      }
+    ],
+    "socialLinks": [
+      {
+        "url": "https://www.facebook.com/mohammad.shaon.al.amin.2025/",
+        "platform": "facebook"
+      },
+      {
+        "url": "https://www.linkedin.com/in/al-aminkhan/?locale=en",
+        "platform": "linkedin"
+      },
+      {
+        "url": "https://twitter.com/alaminkhan",
+        "platform": "twitter"
+      }
+    ],
+    "copyrightText": "? 2026 Al-Amin Khan. All rights reserved.",
+    "footerPortrait": "/assets/footer-portrait.png",
+    "officeAddress": "1162, East Monipur Road, Mirpur-2, Dhaka-1216",
+    "contactEmail": "skhan.ict@gmail.com",
+    "officePhone": "01971708689",
+    "primaryColor": "#3db4bd",
+    "secondaryColor": "#00c6ff",
+    "brandTagline": "GROWTH STRATEGIST & PERFORMANCE MARKETER",
+    "globalCtaText": "Let's Discuss",
+    "globalCtaUrl": "/#contact",
+    "termsOfService": "Terms of Service\n\nEffective Date: November 2026\n\nWelcome to my portfolio! By accessing or using my website (https://alaminkhan.com) and my freelance services, you agree to be bound by these Terms of Service.\n\n1. General Conditions\nMy website serves as a digital portfolio and a platform to offer my freelance digital marketing, tracking, and web development services. I reserve the right to refuse service to any project that does not align with my expertise or availability.\n\n2. Intellectual Property\nAll content on this website, including but not limited to case studies, text, graphics, logos, and design layouts, is my intellectual property. You may not reproduce, distribute, or use my portfolio content for your own commercial purposes without my explicit written consent.\n\n3. Client Engagements & Contracts\nWhen you hire me for a project (e.g., Meta Ads management, WordPress development), the specific deliverables, timelines, and pricing will be outlined in a separate written agreement, proposal, or freelance contract (e.g., via Upwork or direct invoice). These Terms of Service apply globally to all my client interactions.\n\n4. Accuracy of Information\nWhile I strive to keep my case studies and performance metrics (ROAS, conversion rates) accurate and up-to-date, past performance is not always indicative of future results due to the dynamic nature of digital marketing.\n\n5. Governing Law\nThese terms shall be governed by and construed in accordance with the laws of Bangladesh. However, as an international contractor, I also respect the standard digital service laws applicable to my global clients.\n\n6. Contact Information\nIf you have any questions about these Terms of Service, please contact me at: skhan.ict@gmail.com.",
+    "privacyPolicy": "Privacy Policy\n\nEffective Date: November 2026\n\nI am Al-Amin Khan, and I respect your privacy. This Privacy Policy explains how I collect, use, and protect your information when you visit my portfolio website (https://alaminkhan.com) or engage with my digital marketing services.\n\n1. Information I Collect\n\nPersonal Information: When you fill out a contact form or request a consultation, I collect your name, email address, company name, and project details.\n\nNon-Personal Information: As a tracking expert, I use standard analytics tools. I may collect data such as your IP address, browser type, device information, and website interactions using cookies, Google Analytics 4 (GA4), or tracking pixels.\n\n2. How I Use Your Information\nI use the information collected strictly to:\n- Respond to your project inquiries and communicate with you.\n- Send you custom proposals, invoices, and service updates.\n- Analyze website traffic to improve my portfolio's user experience.\n\n3. Data Sharing and Security\nI operate as an independent freelancer and do not sell, rent, or share your personal information with third parties. Your data is only shared with essential third-party tools (like email providers or invoicing software) necessary to run my freelance business. I take standard security measures to keep your data safe.\n\n4. Cookies and Tracking\nSince I specialize in Web Analytics and Server-Side Tracking, my portfolio may utilize cookies to demonstrate these capabilities and track performance. You can disable cookies at any time through your browser settings.\n\n5. Your Rights\nYou have the right to request access to the data I hold about you or ask me to delete your contact information from my records at any time.\n\nFor any privacy-related inquiries, please reach out to: skhan.ict@gmail.com.",
+    "refundPolicy": "Refund Policy\n\nAs an independent digital marketing and web development professional, I dedicate my time, expertise, and resources to every project. Please review my refund policy carefully before initiating a project with me.\n\n1. Digital Marketing & Ads Management (Retainer Services)\n\nService Fees: My monthly retainer fees for Meta Ads, Google Ads, and Tracking setups are non-refundable. This fee compensates for the time, strategy, and labor invested in managing your accounts.\n\nAd Spend: Any budget spent on advertising platforms (Meta, Google, LinkedIn) is billed directly to your payment method by the respective platform. I have no control over this budget and cannot issue refunds for Ad Spend under any circumstances.\n\n2. WordPress Website Development\n\nBefore Work Begins: If you decide to cancel a website project before any design, development, or server setup has started, I will issue a full refund of your upfront deposit.\n\nDuring Development: Once the project is underway, the initial deposit is non-refundable as it covers the initial hours and resources spent on your project.\n\nUpon Completion: No refunds will be provided once the final website is approved and transferred to your domain/hosting.\n\n3. Consultation Calls\nFees paid for 1-on-1 strategy or consultation calls are non-refundable. However, if you need to reschedule, you may do so with at least 24 hours' notice without any penalty.\n\n4. Contact for Issues\nIf you are unsatisfied with the progress of a project, please communicate with me directly so we can resolve the issue. You can contact me at: skhan.ict@gmail.com.",
+    "updatedAt": "2026-08-27T11:30:43.682Z",
+    "aboutKicker": "ABOUT ME",
+    "aboutHeading": "Crafting Digital Excellence",
+    "aboutParagraph": "As a Performance Marketing Specialist & Growth Strategist specializing in Meta Ads, Google Ads, GA4 server-side tracking, and web development, I drive scalable revenue and customer acquisition through a multidisciplinary blend of data analytics, creative strategy, and technical execution.",
+    "aboutVideoUrl": "/assets/uploads/kling_20261104_VIDEO_Scene_1____4278_0.mp4",
+    "aboutSkills": [
+      "Project Management",
+      "Web Development",
+      "Digital Marketing",
+      "Meta Ads",
+      "Server-Side Tracking",
+      "Brand Development"
+    ],
+    "heroHeading1": "AL-AMIN",
+    "heroHeading2": "KHAN.",
+    "heroSubtitle": "A Performance Marketing Specialist & Growth Strategist scaling e-commerce brands with high-ROAS Meta Ads, server-side CAPI tracking architectures, and high-conversion web experiences."
+  },
+  "siteConfigSeo": {
+    "metaTitle": "Meta Ads & Performance Marketing Specialist | Al-Amin Khan",
+    "metaDescription": "I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands.",
+    "focusKeywords": "Meta Ads Specialist, Performance Marketing, Server-Side Tracking, CAPI, WordPress Developer, Facebook Ads Expert, GA4 Tracking, Al-Amin Khan",
+    "canonicalUrl": "",
+    "robotsIndex": true
+  },
+  "projects": [
+    {
+      "id": "glowgoodly",
+      "title": "Glowgoodly - E-Commerce Megastore",
+      "category": "E-Commerce Platform",
+      "image": "/assets/project_glowgoodly.jpg",
+      "link": "#",
+      "content": "Full-scale modern e-commerce cosmetics and skincare megastore featuring top beauty brands, mega banner campaigns, clearance deals, dynamic shopping cart, and conversion tracking.",
+      "tags": [
+        "E-Commerce",
+        "Cosmetics",
+        "UI/UX",
+        "Tracking"
+      ]
+    },
+    {
+      "id": "udayer-path",
+      "title": "Udayer Path - News & Media Portal",
+      "category": "News & Media Portal",
+      "image": "/assets/project_udayer_path.jpg",
+      "link": "#",
+      "content": "Comprehensive digital news publication featuring e-paper integration, video stories, photo journalism, ad network placements, and responsive reader engagement.",
+      "tags": [
+        "News Portal",
+        "Media",
+        "CMS",
+        "Ad Placement"
+      ]
+    },
+    {
+      "id": "rajpother-dabi",
+      "title": "Dainik Rajpother Dabi",
+      "category": "Daily Newspaper",
+      "image": "/assets/project_rajpother_dabi.jpg",
+      "link": "#",
+      "content": "Dynamic daily national and regional newspaper website with live breaking news tickers, editorial archives, banner ad spaces, and real-time multimedia feeds.",
+      "tags": [
+        "Journalism",
+        "Newspaper",
+        "Editorial",
+        "Web Portal"
+      ]
+    },
+    {
+      "id": "morning-voice",
+      "title": "The Daily Morning Voice",
+      "category": "Bilingual News Media",
+      "image": "/assets/project_morning_voice.jpg",
+      "link": "#",
+      "content": "Bilingual English and Bengali digital news portal with live headline tickers, categorized news voice tabs, video news desk, and real-time article publishing.",
+      "tags": [
+        "Digital News",
+        "Bilingual",
+        "Media",
+        "Publishing"
+      ]
+    },
+    {
+      "id": "her-power",
+      "title": "Her Power Project",
+      "category": "Government ICT",
+      "image": "/assets/her_power.png",
+      "link": "#",
+      "content": "A large-scale national project under the ICT Division of the Government of Bangladesh. Coordinated and managed B2B coordination, onboarding, and training operations to empower women.",
+      "tags": [
+        "Government",
+        "ICT",
+        "Operations"
+      ]
+    },
+    {
+      "id": "janata-bank-kubernetes",
+      "title": "Janata Bank Kubernetes Training",
+      "category": "Corporate Sales",
+      "image": "/assets/janata_bank.png",
+      "link": "#",
+      "content": "Spearheaded corporate B2B sales and coordinated specialized Kubernetes technical training for Janata Bank's engineering team.",
+      "tags": [
+        "B2B Sales",
+        "Kubernetes",
+        "Corporate"
+      ]
+    },
+    {
+      "id": "edge-mobile-app",
+      "title": "EDGE Mobile App Training",
+      "category": "Technical Training",
+      "image": "/assets/edge_mobile_app.png",
+      "link": "#",
+      "content": "Coordinated B2B training sales and managed large-scale operations for mobile application development training under national ICT projects.",
+      "tags": [
+        "Mobile App",
+        "Training",
+        "Management"
+      ]
+    },
+    {
+      "id": "srdl-python",
+      "title": "SRDL Python Project",
+      "category": "Software Training",
+      "image": "/assets/srdl_python.png",
+      "link": "#",
+      "content": "Managed training operations, sales, and logistics for a Python programming technical certification, successfully onboarding key participants.",
+      "tags": [
+        "Python",
+        "Software",
+        "Coordination"
+      ]
+    }
+  ],
+  "blogPosts": [
+    {
+      "id": "meta-conversion-api",
+      "title": "Mastering Meta Conversion API (CAPI) for Maximum Ad Attribution",
+      "date": "May 20, 2026",
+      "excerpt": "Learn how to bypass browser-side tracking blockers like iOS 14.5+ and recover missing Facebook Pixel events.",
+      "image": "/assets/uploads/Gemini_Generated_Image_mg951kmg951kmg95.jpg",
+      "content": "# Mastering Meta Conversion API (CAPI) for Maximum Ad Attribution: The Complete 2026 Guide\n\nIn performance marketing, accurate data is the lifeblood of high-return ad campaigns. Over the past few years, the digital advertising landscape has undergone unprecedented disruptions. The combination of Apple's iOS 14.5+ App Tracking Transparency (ATT), Safari's Intelligent Tracking Prevention (ITP), Firefox Enhanced Tracking Protection, and ubiquitous browser-level ad blockers has devastated conventional client-side pixel tracking.\n\nToday, standard browser-based Facebook Pixels routinely lose **25% to 40% of conversion signals**. When your pixel misses purchase and lead events, the consequences are disastrous:\n- Underreported Return on Ad Spend (ROAS)\n- Artificially inflated Customer Acquisition Cost (CAC)\n- Meta's algorithmic AI receiving blinded, incomplete optimization signals\n- Stagnant campaigns stuck in the \"Learning Phase\"\n\nTo combat this attribution blindspot, high-growth e-commerce brands in Bangladesh and globally must adopt **Meta Conversions API (CAPI)** via server-side tagging. In this definitive guide, I will break down the exact technical architecture, deduplication logic, and step-by-step setup required to achieve 100% data durability and maximize your campaign profits.\n\n---\n\n## 1. Browser Pixel vs. Meta CAPI: Understanding the Architecture\n\nTo understand why Server-Side Tracking is superior, we must look at how telemetry travels from a visitor's device to Meta's data center:\n\n### The Traditional Client-Side Pixel (Vulnerable):\n1. A customer visits your store on their iPhone or laptop.\n2. The browser attempts to load JavaScript from `connect.facebook.net`.\n3. An ad blocker or browser privacy extension detects third-party tracking scripts and immediately halts network execution.\n4. If the customer completes a $150 purchase, the browser pixel fails to fire.\n5. Meta Ads Manager records $0 in revenue for that ad set, leading you to prematurely pause a winning creative!\n\n### The Server-Side Conversions API (Bulletproof):\n1. The customer places an order on your Shopify or WooCommerce store.\n2. Your web server (or a cloud container running Google Tag Manager Server Container on Stape.io or GCP) records the purchase directly from your backend transaction database.\n3. The cloud server transmits a secure, server-to-server HTTPS POST payload straight to `graph.facebook.com`.\n4. Neither browser ad blockers, VPNs, nor iOS limitations can intercept or block this server-to-server connection.\n5. Meta receives 100% of purchase records in real time with zero signal loss.\n\n---\n\n## 2. The 5 Essential Pillars of Meta CAPI Implementation\n\nTo build a flawless CAPI setup that delivers enterprise-grade tracking, you must incorporate five crucial technical pillars:\n\n### A. Redundant Dual-Tracking with Event Deduplication\nNever disable your browser pixel when implementing CAPI. The industry gold standard is a **hybrid dual-tracking system** where both the browser pixel and the server container fire concurrently. \n\nTo prevent Meta from double-counting orders, every single event must transmit an identical pair of identifiers:\n- **`event_name`**: (e.g., `Purchase`, `Lead`, `AddToCart`)\n- **`event_id`**: A unique, cryptographically random or transaction-based token (e.g., `order_108492_1715892000`).\n\nWhen Meta's ingest servers receive both payloads within a 48-hour window, the deduplication engine merges them into a single verified conversion, retaining the richer dataset.\n\n### B. Event Match Quality (EMQ) Optimization\nEvent Match Quality is Meta's 1-to-10 scoring system evaluating how confidently Meta can tie a server event back to a specific Facebook or Instagram profile. A low EMQ score (below 6.0) severely restricts ad optimization. \n\nTo score **8.5/10 to 9.5/10**, your server payload must send normalized, SHA-256 hashed customer parameters:\n- `em` (Email address - trimmed, lowercase, SHA-256 hashed)\n- `ph` (Phone number - international E.164 format with country code, digits only)\n- `fn` / `ln` (First & Last Name - lowercase)\n- `ct`, `st`, `zp`, `country` (City, State, Postal Code, Country)\n- `fbp` (Browser cookie `_fbp` capturing client device identity)\n- `fbc` (Click ID `_fbc` captured from the `fbclid` URL query parameter)\n\n### C. Custom First-Party Tracking Subdomain\nDefault server tracking endpoints using third-party URLs can still be flagged by aggressive DNS-level blockers. By routing your Google Tag Manager server container through a custom first-party subdomain (such as `ss.yourdomain.com` or `tracking.yourdomain.com`), your tagging requests become genuine first-party requests, extending cookie lifetimes from 24 hours to up to 1-2 years.\n\n---\n\n## 3. Step-by-Step Implementation Guide via sGTM\n\nHere is the exact battle-tested workflow I execute for my high-ticket clients:\n\n### Step 1: Web GTM Setup\n- Deploy standard GA4 and Meta Pixel client-side tags.\n- In each tag, construct a custom JavaScript variable generating a unique `event_id` (combining timestamp, random number, and transaction ID).\n- Pass this `event_id` into both the client-side Meta tag and the GA4 event parameters.\n\n### Step 2: Server GTM Container Provisioning\n- Provision a server container in Google Tag Manager.\n- Deploy the container on Stape.io or Google Cloud Platform (GCP).\n- Map your custom subdomain DNS CNAME record (e.g., `ss.brand.com` pointing to your container hosting endpoint).\n\n### Step 3: Meta Conversions API Tag Configuration\n- Install the official **Meta Conversions API Tag** template created by Facebook Incubator in your Server GTM container.\n- Enter your Meta Pixel ID and API Access Token (generated inside Meta Events Manager).\n- Configure trigger matching incoming client-side GA4 events (`client_name equals GA4`).\n- Map user data parameters (`user_data.email_address` to `em`, `user_data.phone_number` to `ph`, etc.).\n\n### Step 4: Verification and Live Testing\n- Open Meta Events Manager -> Test Events.\n- Input your Test Event Code into the server tag.\n- Complete a test checkout on your live site.\n- Verify that both `Browser` and `Server` events appear with a green checkmark indicating **\"Deduplicated\"** and an **Event Match Quality score >= 8.5**.\n\n---\n\n## 4. Real-World Benchmark Case Study\n\nIn a recent engagement with a leading Bangladeshi and GCC e-commerce fashion retailer doing over $120,000 monthly ad spend:\n- **Baseline (Browser-only)**: 1,840 monthly recorded purchases with an estimated 32% attribution leak.\n- **Post-CAPI Migration**: 2,362 recorded purchases within the first 30 days (**+28.4% data recovery**).\n- **Campaign Impact**: Because the Meta algorithm received 522 previously lost conversion signals, automated Cost-Cap and Advantage+ bidding models stabilized. Average Cost Per Acquisition dropped by **19.2%**, producing an additional **$34,800 in tracked top-line revenue**.\n\n---\n\n## Frequently Asked Questions (FAQ)\n\n### Does CAPI replace the traditional Facebook Pixel?\nNo. Meta strongly recommends running both simultaneously with event deduplication. The browser pixel captures rich on-page behavioral signals (such as mouse movements and immediate page interactions), while CAPI guarantees server-level conversion reliability.\n\n### How does CAPI protect customer privacy?\nCustomer identifying data (like email and phone number) is never transmitted in plain text. It is pre-processed and encrypted using one-way SHA-256 cryptographic hashing algorithms before leaving your server container, maintaining full compliance with GDPR and global privacy standards.\n\n### How quickly can this be set up for my business?\nA professional, end-to-end Server-Side CAPI tracking implementation typically takes **2 to 3 business days**, including subdomain DNS propagation, GTM container architecture, deduplication testing, and verification in Events Manager.",
+      "author": "AL-AMIN KHAN",
+      "tags": [
+        "CAPI",
+        "Meta Ads",
+        "Marketing"
+      ],
+      "category": "Tracking & CAPI",
+      "readTime": "8 min read"
+    },
+    {
+      "id": "ga4-custom-funnels",
+      "title": "Google Analytics 4: Crucial Custom Event Architectures for E-Commerce",
+      "date": "Apr 15, 2026",
+      "excerpt": "Go beyond standard pageviews and learn how to configure e-commerce funnels to unlock actionable user insights.",
+      "image": "https://raw.githubusercontent.com/gilbarbara/logos/master/logos/google-analytics.svg",
+      "content": "# Google Analytics 4: Crucial Custom Event Architectures for E-Commerce Scaling\n\nThe transition from Universal Analytics (UA) to Google Analytics 4 (GA4) was far more than an interface redesign??,????it fundamentally altered how digital marketing data is measured, structured, and leveraged. While Universal Analytics revolved around hit-based sessions, GA4 is entirely built on an **event-driven data model**.\n\nFor e-commerce stores operating locally in Bangladesh or scaling internationally across the US, UK, and European markets, an out-of-the-box GA4 installation is simply insufficient. Default tracking captures surface-level pageviews and generic clicks, leaving massive blindspots in your checkout funnels, payment gateway attribution, and customer lifetime value (LTV) telemetry.\n\nIn this deep-dive architectural guide, I will share the exact custom e-commerce tracking framework I implement to transform GA4 into an infallible revenue intelligence engine.\n\n---\n\n## 1. The Full-Funnel E-Commerce dataLayer Specification\n\nTo unlock GA4's powerful Monetization reports and Funnel Explorations, your website must push standardized Google E-Commerce `dataLayer` objects at every critical milestone of the shopping journey:\n\n1. **`view_item_list`**: Triggered when a shopper browses a category or collection page.\n2. **`select_item`**: Triggered when a user clicks a product card from a list.\n3. **`view_item`**: Triggered when the single product display page loads.\n4. **`add_to_cart`**: Pushed whenever a visitor adds an item, including quantity, variant ID, and price.\n5. **`view_cart`**: Fired when the cart drawer or dedicated shopping cart page is inspected.\n6. **`begin_checkout`**: Executed the instant the customer clicks \"Proceed to Checkout\".\n7. **`add_shipping_info`**: Fired when delivery options are selected.\n8. **`add_payment_info`**: Fired when the payment method (e.g., bKash, Cash on Delivery, Stripe, PayPal) is chosen.\n9. **`purchase`**: The cornerstone event containing `transaction_id`, `value`, `currency`, `tax`, `shipping`, and the full `items` array.\n\n---\n\n## 2. Solving Payment Gateway Referral Hijacking\n\nOne of the most persistent issues plaguing e-commerce stores in Bangladesh and global markets is **payment gateway referral hijacking**.\n\nWhen a customer initiates payment, they are frequently redirected away from your website to a third-party gateway (such as bKash, Nagad, SSLCommerz, Stripe 3D Secure, or PayPal). When the transaction succeeds, the gateway redirects the user back to your order confirmation \"Thank You\" page.\n\nIf your GA4 stream is not properly configured, GA4 records the original advertising source as **`(direct)`** or attributes the sale entirely to `bkash.com` or `paypal.com`! Your Meta Ads, Google Search Ads, and email marketing campaigns receive zero attribution.\n\n### The Permanent Fix:\n1. Navigate to **GA4 Admin -> Data Streams -> Web Stream Details -> Configure Tag Settings**.\n2. Click **List Unwanted Referrals**.\n3. Add domain rules matching all external gateway hostnames:\n   - `bkash.com`\n   - `shurjopay.com.bd`\n   - `sslcommerz.com`\n   - `checkout.stripe.com`\n   - `paypal.com`\n4. Enable **Cross-Domain Measurement** across domains if your checkout operates on a separate subdomain or hosted platform.\n\n---\n\n## 3. Building High-Converting Funnel Explorations in GA4\n\nOnce your dataLayer events are streaming reliably, you can construct closed funnel explorations to diagnose revenue leaks:\n\n- **Cart Abandonment Velocity**: Measure the exact percentage drop between `view_item` and `add_to_cart`. A benchmark below 8% indicates pricing friction or unclear shipping expectations.\n- **Checkout Step Drop-off**: Compare `begin_checkout` -> `add_payment_info` -> `purchase`. In a recent client audit, we discovered that 42% of visitors dropped off at `add_payment_info` because local mobile wallet options were buried beneath credit card fields. Repositioning the payment selector increased completed orders by 24% in two weeks.\n\n---\n\n## 4. Advanced Integration: GA4, Google Ads, and BigQuery\n\nThe true power of GA4 emerges when it feeds your broader advertising ecosystem:\n\n- **Enhanced Conversions for Web**: Feeding first-party user data directly from your purchase dataLayer into Google Ads improves Smart Bidding conversion accuracy by 14%.\n- **Predictive Audiences**: GA4 machine learning analyzes 28-day behavioral signals to construct audiences like \"Likely 7-day Purchasers\" and \"Likely Churning Customers\", which can be imported directly into Google Ads for automated remarketing.\n- **Raw BigQuery Export**: Connect GA4 to Google BigQuery (free tier available) to perform SQL queries on user cohorts, calculate true Customer Lifetime Value (LTV), and export custom segment lists for Meta custom audiences.\n\n---\n\n## Frequently Asked Questions (FAQ)\n\n### Why doesn't my GA4 revenue match my WooCommerce / Shopify dashboard?\nA small discrepancy (typically 3% to 7%) is normal due to browser ad blockers and visitors closing the order confirmation page before the script loads. However, discrepancies greater than 10% indicate missing server-side deduplication, broken webhook listeners, or unhandled payment gateway redirects.\n\n### Can GA4 track offline or telephone orders?\nYes! Through the **GA4 Measurement Protocol API**, we can send backend server-to-server POST requests whenever an offline sales rep or telephone agent enters an order into your CRM, tying offline revenue back to the original Google or Meta ad click.",
+      "author": "AL-AMIN KHAN",
+      "tags": [
+        "GA4",
+        "Analytics",
+        "E-Commerce"
+      ],
+      "category": "Web Analytics & GA4",
+      "readTime": "9 min read"
+    },
+    {
+      "id": "gdpr-data-privacy",
+      "title": "Privacy-First Marketing: Implementing Google Consent Mode v2 Correctly",
+      "date": "Mar 10, 2026",
+      "excerpt": "Comply with strict global data regulations while recovering critical tracking conversions using Advanced Consent Mode.",
+      "image": "https://images.unsplash.com/photo-1508385082359-f38ae991e8f2?w=800&q=80",
+      "content": "# Privacy-First Marketing: Implementing Google Consent Mode v2 Correctly\n\nData privacy regulations are no longer theoretical guidelines??,????they are strictly enforced legal and technical frameworks reshaping the entire digital advertising ecosystem. With the enforcement of the European Union's **Digital Markets Act (DMA)** and evolving privacy laws worldwide, Google has made **Google Consent Mode v2 mandatory** for any advertiser utilizing Google Ads, GA4, and Google Marketing Platform audiences.\n\nIf your website targets European, North American, or global consumers and fails to transmit verified consent signals, Google will automatically disable:\n- Conversion tracking and Smart Bidding optimization\n- Dynamic Remarketing and custom audience targeting\n- Algorithmic performance modeling in Google Ads\n\nIn this technical guide, I provide a comprehensive breakdown of Google Consent Mode v2, explaining how it works, how to choose between Basic and Advanced implementations, and how to configure it correctly via Google Tag Manager.\n\n---\n\n## 1. What is Google Consent Mode v2?\n\nGoogle Consent Mode v2 is an open API framework that allows your website to adjust how Google tags (GA4, Google Ads Conversion Tracking, Floodlight) behave based on the consent choices expressed by individual visitors via your Consent Management Platform (CMP) cookie banner.\n\nConsent Mode v2 introduces two brand-new mandatory consent parameters alongside the existing storage flags:\n\n1. **`ad_storage`**: Controls whether advertising cookies can be read and written on the visitor's device.\n2. **`analytics_storage`**: Controls whether analytics cookies (like `_ga`) can be placed to measure behavior.\n3. **`ad_user_data` (NEW)**: Explicitly signals whether the user allows personal data (like hashed email and phone) to be sent to Google for advertising purposes.\n4. **`ad_personalization` (NEW)**: Explicitly signals whether user data can be leveraged for personalized remarketing campaigns.\n\n---\n\n## 2. Basic vs. Advanced Consent Mode v2\n\nGoogle offers two distinct implementation methodologies:\n\n### A. Basic Consent Mode v2 (Strict Blocking)\n- If the visitor declines cookies or has not yet interacted with the banner, Google tags are completely blocked from executing.\n- **Zero data** is transmitted to Google until consent is granted.\n- **Drawback**: You lose 100% of visibility on unconsented traffic, resulting in massive conversion reporting gaps.\n\n### B. Advanced Consent Mode v2 (Algorithmic Modeling - Recommended)\n- Google tags load immediately when the page loads, but their internal state is set to `denied`.\n- When consent is `denied`, the tags do **not** read or write cookies. Instead, they transmit stateless, cookieless **\"pings\"** containing non-identifying telemetry (timestamp, user agent, IP address which is discarded, and conversion event type).\n- Google's machine learning AI uses these cookieless pings to model unconsented conversions, recovering up to **70% of lost conversion data** in your Google Ads and GA4 reports while remaining fully compliant with GDPR!\n\n---\n\n## 3. Step-by-Step Implementation with Google Tag Manager\n\nTo execute an enterprise-grade Consent Mode v2 deployment:\n\n1. **Deploy a Google-Certified CMP**: Integrate a certified CMP such as Cookiebot, OneTrust, or Usercentrics. Certified CMPs natively support the Consent Mode v2 API.\n2. **Enable Consent Initialization in GTM**:\n   - The CMP tag must fire on the dedicated **\"Consent Initialization - All Pages\"** trigger, guaranteeing default consent states are established before any marketing tags run.\n3. **Configure Default Consent State**:\n   - Set all four parameters (`analytics_storage`, `ad_storage`, `ad_user_data`, `ad_personalization`) to `denied` by default for incoming traffic from regulated regions.\n4. **Update Consent State Dynamically**:\n   - When the visitor clicks \"Accept All\" or customizes preferences on your banner, the CMP pushes an `onConsentUpdate` event updating the parameters to `granted`.\n5. **Verify Network Transmission**:\n   - Open Developer Tools -> Network tab -> Filter by `collect` or `google-analytics.com`.\n   - Inspect the request query parameters for the **`gcs`** (Google Consent Status) and **`gcd`** (Google Consent Declaration) flags. A valid Consent Mode v2 ping will include a string such as `gcd=13r3r3r3r5` indicating consent state propagation.\n\n---\n\n## 4. The Business Impact of Non-Compliance\n\nFailing to implement Consent Mode v2 is not just a regulatory compliance risk; it directly harms ad performance:\n- **Disrupted Remarketing**: Your Google Ads remarketing lists will drop to near zero in consented regions.\n- **Impaired Smart Bidding**: Because Google Ads cannot verify consent, conversion values are omitted from Target ROAS (tROAS) and Target CPA (tCPA) models, causing algorithms to bid inefficiently.\n- **Account Disapproval**: Continued non-compliance can trigger Google Ads account warnings and suspension of tracking tags.\n\n---\n\n## Frequently Asked Questions (FAQ)\n\n### Does Google Consent Mode v2 apply to businesses based in Bangladesh?\nYes! If your business sells products, provides services, or runs advertising targeted at consumers residing in the EU, UK, or jurisdictions with active privacy frameworks, you must implement Consent Mode v2 regardless of where your company is registered.\n\n### Can Consent Mode v2 be integrated with Meta CAPI and TikTok Pixel?\nYes! Through advanced Google Tag Manager triggers, we link CMP consent states with custom trigger exceptions. When a user declines marketing consent, Meta CAPI and other third-party tracking tags are conditionally muted or restricted to essential diagnostic signals.",
+      "author": "AL-AMIN KHAN",
+      "tags": [
+        "GDPR",
+        "Privacy",
+        "Consent Mode"
+      ],
+      "category": "Data Privacy & Compliance",
+      "readTime": "7 min read"
+    }
+  ],
+  "services": [
+    {
+      "id": "meta-ads",
+      "displayId": "01",
+      "title": "Meta Ads & Performance Marketing",
+      "description": "Designing and executing high-ROAS paid acquisition campaigns across Meta and Google Ads. Expert in audience funneling, lookalike targeting, and budget scaling.",
+      "iconName": "Megaphone"
+    },
+    {
+      "id": "server-side-tracking",
+      "displayId": "02",
+      "title": "Server-Side Tracking & CAPI",
+      "description": "Implementing privacy-safe server-side Google Tag Manager and Meta Conversion API (CAPI) setups to bypass browser blockers and recover ad attribution.",
+      "iconName": "Braces"
+    },
+    {
+      "id": "ga4-analytics",
+      "displayId": "03",
+      "title": "GA4 & GTM Analytics",
+      "description": "Configuring complex e-commerce data layer events, custom user properties, and creating custom Looker Studio reporting dashboards.",
+      "iconName": "Laptop"
+    },
+    {
+      "id": "b2b-lead-gen",
+      "displayId": "04",
+      "title": "B2B Sales & Lead Generation",
+      "description": "Building high-converting B2B customer acquisition funnels, automating cold outreach, managing enterprise CRM pipelines, and closing deals.",
+      "iconName": "Palette"
+    },
+    {
+      "id": "it-project-management",
+      "displayId": "05",
+      "title": "IT Project Management",
+      "description": "Coordinating large-scale national ICT training initiatives and software projects, managing cross-functional teams, timelines, and stakeholder communications.",
+      "iconName": "Laptop"
+    },
+    {
+      "id": "wordpress-ecom",
+      "displayId": "06",
+      "title": "WordPress & E-Commerce Dev",
+      "description": "Developing high-performance WooCommerce landing pages and portfolios. Focused on security, search engine accessibility, and speed optimization.",
+      "iconName": "Braces"
+    },
+    {
+      "id": "seo-technical",
+      "displayId": "07",
+      "title": "Technical SEO Audits",
+      "description": "Optimizing search engine visibility through structured schema markup, page speed enhancements, indexability fixes, and content optimization strategies.",
+      "iconName": "Megaphone"
+    },
+    {
+      "id": "crm-automation",
+      "displayId": "08",
+      "title": "CRM & Customer Retention",
+      "description": "Configuring HubSpot and active CRM pipelines to automate customer service flows, reducing churn and improving overall lifetime value.",
+      "iconName": "Palette"
+    },
+    {
+      "id": "cro-ab-testing",
+      "displayId": "09",
+      "title": "Conversion Rate Optimization",
+      "description": "Analyzing visitor heatmaps, A/B testing ad creatives, and refining landing page copywriting to maximize sales conversions and marketing ROI.",
+      "iconName": "Laptop"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Performance Marketing (Meta & Google Ads)",
+      "level": 96
+    },
+    {
+      "name": "B2B & B2C Lead Generation",
+      "level": 95
+    },
+    {
+      "name": "Advanced Analytics (GA4, GTM, Server-Side Tracking)",
+      "level": 94
+    },
+    {
+      "name": "Brand Strategy & Identity Management",
+      "level": 92
+    },
+    {
+      "name": "Search Engine Optimization (SEO)",
+      "level": 90
+    },
+    {
+      "name": "E-commerce & WordPress Ecosystem Management",
+      "level": 88
+    },
+    {
+      "name": "Marketing Automation & Email Campaigns",
+      "level": 85
+    },
+    {
+      "name": "CRM & Sales Coordination",
+      "level": 83
+    },
+    {
+      "name": "AI-Driven Marketing",
+      "level": 80
+    },
+    {
+      "name": "Business Analysis & Data-Driven Decision Making",
+      "level": 78
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "tanvir-rahman",
+      "name": "Tanvir Rahman",
+      "role": "Head of Marketing, Pathao",
+      "content": "Al-Amin's server-side GTM and Conversion API setup completely recovered our missing iOS ad conversions. Highly recommended!",
+      "avatar": "https://tanvirrahman.dev/optimized/profile_photo.webp"
+    },
+    {
+      "id": "nabila-kabir",
+      "name": "Nabila Kabir",
+      "role": "Founder, StyleBangla",
+      "content": "His tracking expertise is top-notch. Our GA4 funnel reports are now extremely accurate, helping us double our Shopify sales.",
+      "avatar": "https://ui-avatars.com/api/?name=Nabila+Kabir&background=random"
+    },
+    {
+      "id": "sajid-al-hasan",
+      "name": "Sajid Al Hasan",
+      "role": "Managing Director, Zenith Tech BD",
+      "content": "Exceptional project management and training coordination skills. Under his leadership, our corporate ICT training went flawlessly.",
+      "avatar": "https://ui-avatars.com/api/?name=Sajid+Al+Hasan&background=random"
+    },
+    {
+      "id": "farhana-chowdhury",
+      "name": "Farhana Chowdhury",
+      "role": "CEO, GlowSkin Bangladesh",
+      "content": "Outstanding Meta Ads audit and optimization! He recovered our pixel issues and improved our return on ad spend (ROAS) by 2.5x.",
+      "avatar": "https://ui-avatars.com/api/?name=Farhana+Chowdhury&background=random"
+    },
+    {
+      "id": "sadman-sakib",
+      "name": "Sadman Sakib",
+      "role": "Co-Founder, TechNews Bangladesh",
+      "content": "Outstanding lead generation results! Al-Amin set up our cold email outreach campaign and GTM server tracking, bringing us 50+ qualified B2B leads in the first month.",
+      "avatar": "https://ui-avatars.com/api/?name=Sadman+Sakib&background=random"
+    },
+    {
+      "id": "tasnim-ara",
+      "name": "Tasnim Ara",
+      "role": "Marketing Manager, Shapla Cosmetics",
+      "content": "His Facebook Pixel and GA4 conversion tracking audit was excellent. He resolved all our duplicate event issues, making our ad reports 100% accurate.",
+      "avatar": "https://ui-avatars.com/api/?name=Tasnim+Ara&background=random"
+    }
+  ],
+  "resume": [
+    {
+      "year": "Aug 2026 - Present",
+      "role": "Digital Marketing Manager (Hybrid)",
+      "company": "Anan Corporation",
+      "desc": "Direct and mentor a digital marketing team to execute comprehensive strategies, overseeing cross-channel performance marketing and lead generation. Manage advanced tracking infrastructures and GA4/GTM/CAPI server-side tracking analytics."
+    },
+    {
+      "year": "Nov 2023 - Present",
+      "role": "Assistant Manager (Training, B2B & Digital Marketing)",
+      "company": "Babylon Resources Limited",
+      "desc": "Direct and mentor a cross-functional team in B2B lead generation, successfully managing national-level ICT projects (Her Power, EDGE). Design and launch campaigns utilizing Meta Ads, Google Ads, and email marketing."
+    },
+    {
+      "year": "2025 - Present",
+      "role": "Founder & Growth Specialist",
+      "company": "GlowGoodly",
+      "desc": "Founded and scaled a specialized performance marketing and analytics agency, managing advanced tracking configurations (GA4/GTM/CAPI) and high-ROI Meta/Google Ads strategies for e-commerce brands."
+    },
+    {
+      "year": "2022 - Present",
+      "role": "Digital Marketing Specialist (Remote)",
+      "company": "10X | Zenith Technology | Replymaster",
+      "desc": "Manage high-budget Performance Marketing campaigns across Google Ads and Meta ecosystems for international agency clientele. Implement advanced Server-Side Tracking and Conversion API (CAPI) protocols."
+    },
+    {
+      "year": "Oct 2017 - Feb 2023",
+      "role": "Customer Service Officer",
+      "company": "Wellmax Design",
+      "desc": "Delivered premium client support services, utilizing CRM platforms to manage inquiries and foster long-term customer loyalty."
+    }
+  ],
+  "pricingPlans": [
+    {
+      "target": "For small e-commerce businesses or local pages that need consistent sales with a lean budget.",
+      "accent": false,
+      "unavailableFeatures": [
+        "Server-Side Tracking & CAPI",
+        "Custom Looker Studio Dashboard"
+      ],
+      "buttonUrl": "https://wa.me/8801971708689?text=Hi!%20I%20am%20interested%20in%20the%20Basic%20Package.",
+      "priceBdt": "10,000 - 12,000 BDT",
+      "priceUsd": "$100 - $120 USD",
+      "buttonText": "Start Basic Plan",
+      "name": "Basic Package (Starter / Small Business)",
+      "badge": "",
+      "features": [
+        "1 Ad Platform Management (Meta or Google Ads)",
+        "Campaign Setup & Management (1-2 Campaigns)",
+        "Basic Pixel Setup & Configuration",
+        "Audience Targeting & Ad Creative Optimization",
+        "Monthly In-depth Performance Report"
+      ]
+    },
+    {
+      "target": "For scaling businesses that require high-ROAS ads and accurate server-side conversion tracking.",
+      "accent": true,
+      "unavailableFeatures": [
+        "Multi-Channel Attribution (LinkedIn Ads)",
+        "Technical SEO & WordPress Support"
+      ],
+      "buttonUrl": "https://wa.me/8801971708689?text=Hi!%20I%20am%20interested%20in%20the%20Intermediate%20Package.",
+      "priceBdt": "20,000 - 25,000 BDT",
+      "priceUsd": "$200 - $250 USD",
+      "buttonText": "Get Best Value Plan",
+      "name": "Intermediate Package (E-commerce Growth)",
+      "badge": "Best Value / Most Popular",
+      "features": [
+        "2 Ad Platforms Management (Meta and Google Ads)",
+        "Advanced Tracking (GTM & Server-Side Tracking / CAPI)",
+        "GA4 E-Commerce Event Funnel Tracking (Purchase, Add to Cart)",
+        "Full Retargeting Campaigns & Dynamic Sales Funnels",
+        "High-Converting Ad Copy & Creative Direction",
+        "Bi-weekly Strategy & Performance Reports"
+      ]
+    },
+    {
+      "target": "For large brands and scaling companies needing full-funnel ad management, advanced analytics, and SEO.",
+      "accent": false,
+      "unavailableFeatures": [],
+      "buttonUrl": "https://wa.me/8801971708689?text=Hi!%20I%20am%20interested%20in%20the%20Premium%20Package.",
+      "priceBdt": "35,000 - 40,000 BDT",
+      "priceUsd": "$350 - $400 USD",
+      "buttonText": "Scale to Premium",
+      "name": "Premium Package (Full Stack Marketing)",
+      "badge": "Enterprise Full-Stack",
+      "features": [
+        "Multi-Channel Ads Management (Meta, Google, LinkedIn)",
+        "Advanced Data Tracking & Live Looker Studio Dashboard",
+        "Email Marketing Automation & B2B Lead Generation",
+        "Website & WordPress Management Technical Support",
+        "On-Page & Technical SEO Audit and Continuous Fixes",
+        "Priority 24/7 Support & Weekly Growth Meetings"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "meta-capi-bundle",
+      "title": "The Ultimate Meta CAPI & GTM Tracking Bundle",
+      "shortTitle": "Meta CAPI Tracking Bundle",
+      "description": "A comprehensive plug-and-play GTM container template and implementation blueprint to set up server-side Meta Conversion API (CAPI) with 100% deduplication. Recovers up to 40% of standard browser-side pixel blocks.",
+      "price": "",
+      "thumbnail": "/assets/meta-ads.png",
+      "image": "/assets/meta-ads.png",
+      "paddleUrl": "#",
+      "published": true,
+      "featured": true,
+      "order": 1
+    },
+    {
+      "id": "ga4-tracking-guide",
+      "title": "Advanced GA4 E-Commerce Event Tracking Guide",
+      "shortTitle": "GA4 E-Commerce Guide",
+      "description": "Step-by-step PDF manual and custom scripts to deploy purchase funnels, checkout flows, custom user properties, and dynamic remarketing audience triggers in Google Analytics 4.",
+      "price": "",
+      "thumbnail": "/assets/meta-ads-2.png",
+      "image": "/assets/meta-ads-2.png",
+      "paddleUrl": "#",
+      "published": true,
+      "featured": true,
+      "order": 2
+    },
+    {
+      "id": "server-side-blueprint",
+      "title": "Server-Side Tracking Blueprint & Setup Manual",
+      "shortTitle": "Server-Side Tagging Blueprint",
+      "description": "A complete architecture handbook for setting up Stape.io or Google Cloud Platform server-side tagging. Learn how to configure custom subdomains, bypass iOS tracking filters, and run privacy-first consent mode.",
+      "price": "",
+      "thumbnail": "/assets/meta-ads-3.png",
+      "image": "/assets/meta-ads-3.png",
+      "paddleUrl": "#",
+      "published": true,
+      "featured": true,
+      "order": 3
+    },
+    {
+      "id": "meta-ads-scaling-playbook",
+      "title": "High-ROAS Meta Ads Scaling Playbook & Creative Audit Framework",
+      "shortTitle": "Meta Ads Scaling Playbook",
+      "description": "A comprehensive guide and creative framework detailing advanced scaling strategies, audience mapping, and conversion optimization tips to double your Return on Ad Spend (ROAS) on Facebook & Instagram campaigns.",
+      "price": "",
+      "thumbnail": "/assets/meta-ads.png",
+      "image": "/assets/meta-ads.png",
+      "paddleUrl": "#",
+      "published": true,
+      "featured": true,
+      "order": 4
+    },
+    {
+      "id": "b2b-lead-generation-blueprint",
+      "title": "The Ultimate B2B Lead Generation & Cold Email Outreach Playbook",
+      "shortTitle": "B2B Lead Gen Playbook",
+      "description": "Step-by-step setup guides, cold email copy templates, CRM workflow automations, and data enrichment checklists to build a highly predictable, high-converting B2B pipeline.",
+      "price": "",
+      "thumbnail": "/assets/meta-ads-2.png",
+      "image": "/assets/meta-ads-2.png",
+      "paddleUrl": "#",
+      "published": true,
+      "featured": true,
+      "order": 5
+    },
+    {
+      "id": "technical-seo-audit-checklist",
+      "title": "Technical SEO Audit Checklist & Custom Schema Markup Templates",
+      "shortTitle": "Technical SEO Checklist",
+      "description": "An actionable spreadsheet checklist and pre-written JSON-LD templates for local businesses, blogs, and WooCommerce sites to optimize search rankings, speed up indexing, and resolve indexing issues.",
+      "price": "",
+      "thumbnail": "/assets/meta-ads-3.png",
+      "image": "/assets/meta-ads-3.png",
+      "paddleUrl": "#",
+      "published": true,
+      "featured": true,
+      "order": 6
+    }
+  ],
+  "contactSubmissions": [
+    {
+      "name": "Al-Amin Khan",
+      "email": "ashrafulislam5936@gmail.com",
+      "subject": "meta ads",
+      "message": "manage meta ads \n",
+      "date": "2026-11-04T08:31:31.888Z"
+    }
+  ],
+  "adminAuth": {
+    "username": "admin",
+    "password": "admin123",
+    "updatedAt": "2026-11-04"
+  },
+  "webPricingPlans": [
+    {
+      "accent": false,
+      "badge": "Starter Web",
+      "buttonUrl": "https://wa.me/8801971708689?text=Hi!%20I%20am%20interested%20in%20the%20Basic%20Package%20(Landing%20Page/Portfolio).",
+      "category": "Landing Page / Portfolio",
+      "priceBdt": "5,000 - 8,000 BDT",
+      "priceUsd": "$50 - $80 USD",
+      "buttonText": "Order Basic Plan",
+      "name": "Basic Package",
+      "target": "1-2 page layout, premium theme setup, mobile-responsive design, and contact form integration.",
+      "cycleBdt": "/ project",
+      "cycleUsd": "/ project",
+      "features": [
+        "1-2 page layout",
+        "Premium theme setup",
+        "Mobile-responsive design",
+        "Contact form integration"
+      ]
+    },
+    {
+      "accent": true,
+      "badge": "Best Value / Most Popular",
+      "buttonUrl": "https://wa.me/8801971708689?text=Hi!%20I%20am%20interested%20in%20the%20Intermediate%20Package%20(Business%20Website).",
+      "category": "Business Website",
+      "priceBdt": "10,000 - 15,000 BDT",
+      "priceUsd": "$100 - $150 USD",
+      "buttonText": "Get Best Value Plan",
+      "name": "Intermediate Package",
+      "target": "3-5 page business site, custom Elementor design, basic SEO, speed optimization, and social media integration.",
+      "cycleBdt": "/ project",
+      "cycleUsd": "/ project",
+      "features": [
+        "3-5 page business site",
+        "Custom Elementor design",
+        "Basic SEO",
+        "Speed optimization",
+        "Social media integration"
+      ]
+    },
+    {
+      "accent": false,
+      "badge": "Full E-Commerce Solution",
+      "buttonUrl": "https://wa.me/8801971708689?text=Hi!%20I%20am%20interested%20in%20the%20Premium%20Package%20(E-commerce%20Store).",
+      "category": "E-commerce Store",
+      "priceBdt": "20,000 - 25,000 BDT",
+      "priceUsd": "$200 - $250 USD",
+      "buttonText": "Scale to Premium",
+      "name": "Premium Package",
+      "target": "Complete WooCommerce setup (e.g., WoodMart), payment gateway integration, 20-30 product uploads, and bonus basic Pixel setup for future ads.",
+      "cycleBdt": "/ project",
+      "cycleUsd": "/ project",
+      "features": [
+        "Complete WooCommerce setup (e.g., WoodMart)",
+        "Payment gateway integration",
+        "20-30 product uploads",
+        "Bonus basic Pixel setup for future ads"
+      ]
+    }
+  ],
+  "pageSeo": {
+    "about": {
+      "title": "About Al-Amin Khan | Digital Growth Strategist",
+      "description": "Learn more about Al-Amin Khan, a digital marketing expert with 8+ years of experience in scaling businesses through data-driven Meta Ads and CAPI tracking.",
+      "keywords": "About Al-Amin Khan, Digital Growth Strategist, 8+ years experience, Meta Ads, CAPI tracking"
+    },
+    "services": {
+      "title": "Meta Ads & WordPress Development Services | Al-Amin Khan",
+      "description": "Explore my premium digital marketing services, including Meta Ads management, CAPI tracking, sales funnels, and WordPress website development.",
+      "keywords": "Meta Ads Services, WordPress Development Services, CAPI tracking, sales funnels, Al-Amin Khan"
+    },
+    "privacy": {
+      "description": "Official Privacy Policy of Al-Amin Khan's digital marketing and tracking services.",
+      "title": "Privacy Policy | Al-Amin Khan - Digital Marketer"
+    },
+    "refund": {
+      "description": "Official Refund Policy for marketing management, retainer services, and WordPress projects.",
+      "title": "Refund Policy | Al-Amin Khan"
+    },
+    "home": {
+      "title": "Meta Ads & Performance Marketing Specialist | Al-Amin Khan",
+      "description": "I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands.",
+      "keywords": "Meta Ads Specialist, Performance Marketing, Server-Side Tracking, WordPress Solutions, Al-Amin Khan"
+    },
+    "terms": {
+      "description": "Official Terms of Service for Al-Amin Khan's marketing and WordPress development services.",
+      "title": "Terms of Service | Al-Amin Khan"
+    },
+    "contact": {
+      "title": "Contact Al-Amin Khan | Hire a Remote Marketing Expert",
+      "description": "Ready to scale your business? Contact Al-Amin Khan for expert Meta Ads management, advanced data tracking, and WordPress solutions today.",
+      "keywords": "Contact Al-Amin Khan, Hire Remote Marketing Expert, Meta Ads Management, Data Tracking"
+    }
+  },
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "Do you provide digital marketing services for businesses in Bangladesh and international clients worldwide?",
+      "answer": "Yes. While I am a top-rated Meta Ads and Performance Marketing Specialist based in Bangladesh, I work as an independent remote contractor for clients globally. I ensure flexible communication and overlap with your local business hours, whether you are located in the US, UK, Australia, APAC, or right here in Bangladesh."
+    },
+    {
+      "id": "faq-2",
+      "question": "How much does it cost to hire a Meta Ads expert in Bangladesh for local and global campaigns?",
+      "answer": "My monthly retainer for Meta Ads management starts at highly affordable rates of 10,000 BDT (or  USD) for basic setups, scaling up to 40,000 BDT ( USD) for full-stack omnichannel marketing. This fee strictly covers campaign management and advanced tracking setup. The actual advertising budget (Ad Spend) is billed directly to your payment method by Meta or Google."
+    },
+    {
+      "id": "faq-3",
+      "question": "Why do e-commerce brands in Bangladesh and globally need Server-Side Tracking (Meta CAPI)?",
+      "answer": "Due to recent iOS updates and strict browser ad blockers worldwide, standard browser pixels lose up to 30% of critical user data. I implement Server-Side Tracking via Meta Conversions API (CAPI) to bypass these blocks. This ensures 100% data accuracy for e-commerce businesses globally, feeding the Meta algorithm precise signals for lower Cost Per Acquisition (CPA) and higher ROAS."
+    },
+    {
+      "id": "faq-4",
+      "question": "Can you guarantee a specific ROAS or sales volume for my e-commerce business?",
+      "answer": "While I guarantee highly optimized campaigns, flawless CAPI tracking architectures, and data-driven scaling strategies, I cannot guarantee exact sales numbers. Sales depend on external factors like product quality, pricing, website conversion rate (CRO), and local or global market demand. My goal as a growth strategist is to build a profitable sales funnel that scales your revenue efficiently."
+    },
+    {
+      "id": "faq-5",
+      "question": "Do I need to sign a long-term contract for your Meta Ads and performance marketing services?",
+      "answer": "No, my digital marketing retainers for local and international clients operate on a flexible month-to-month basis. However, I highly recommend a minimum 3-month commitment, as advertising algorithms need time to learn, and continuous A/B testing requires sufficient data to achieve optimal global or local scaling."
+    },
+    {
+      "id": "faq-6",
+      "question": "Do you provide domain and hosting with your WordPress website development services?",
+      "answer": "No, domain and hosting are not included in my WordPress design packages. However, whether you are a local business in Bangladesh or an international brand, I will guide you in selecting the fastest, SEO-friendly global hosting providers and fully assist with the server setup before beginning the website development phase."
+    }
+  ]
+}

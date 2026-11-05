@@ -1,0 +1,4472 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script>
+    window.onerror = function (message, source, lineno, colno, error) {
+      const div = document.createElement('div');
+      div.style.position = 'fixed';
+      div.style.top = '0';
+      div.style.left = '0';
+      div.style.width = '100%';
+      div.style.background = 'red';
+      div.style.color = 'white';
+      div.style.padding = '20px';
+      div.style.zIndex = '999999';
+      div.style.fontFamily = 'monospace';
+      div.style.fontSize = '14px';
+      div.style.whiteSpace = 'pre-wrap';
+      div.innerText = 'JS Error: ' + message + '\nSource: ' + source + '\nLine: ' + lineno + ':' + colno + '\nStack: ' + (error ? error.stack : 'N/A');
+      document.body.appendChild(div);
+      return false;
+    };
+    window.onunhandledrejection = function (event) {
+      const div = document.createElement('div');
+      div.style.position = 'fixed';
+      div.style.top = '0';
+      div.style.left = '0';
+      div.style.width = '100%';
+      div.style.background = 'orange';
+      div.style.color = 'black';
+      div.style.padding = '20px';
+      div.style.zIndex = '999999';
+      div.style.fontFamily = 'monospace';
+      div.style.fontSize = '14px';
+      div.style.whiteSpace = 'pre-wrap';
+      div.innerText = 'Unhandled Promise Rejection: ' + event.reason + '\nStack: ' + (event.reason ? event.reason.stack : 'N/A');
+      document.body.appendChild(div);
+    };
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meta Ads & Performance Marketing Specialist | Al-Amin Khan</title>
+  <meta name="description"
+    content="I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands." />
+  <meta name="keywords"
+    content="Meta Ads Specialist, Performance Marketing, Server-Side Tracking, CAPI, WordPress Developer, Facebook Ads Expert, GA4 Tracking, Al-Amin Khan, Digital Growth Strategist" />
+  <meta name="author" content="Al-Amin Khan" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://alaminkhan.com/" />
+  <meta name="theme-color" content="#0b0f19" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alaminkhan.com/" />
+  <meta property="og:title" content="Meta Ads & Performance Marketing Specialist | Al-Amin Khan" />
+  <meta property="og:description"
+    content="I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands." />
+  <meta property="og:image" content="https://alaminkhan.com/assets/profile.png" />
+  <meta property="og:site_name" content="Al-Amin Khan Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://alaminkhan.com/" />
+  <meta name="twitter:title" content="Meta Ads & Performance Marketing Specialist | Al-Amin Khan" />
+  <meta name="twitter:description"
+    content="I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands." />
+  <meta name="twitter:image" content="https://alaminkhan.com/assets/profile.png" />
+  <meta name="twitter:creator" content="@alaminkhan" />
+
+  <!-- Structured Data (JSON-LD) for Search Engines & Rich Snippets -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "FAQPage",
+          "@id": "https://alaminkhan.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Do you provide digital marketing services for businesses in Bangladesh and international clients worldwide?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. While I am a top-rated Meta Ads and Performance Marketing Specialist based in Bangladesh, I work as an independent remote contractor for clients globally. I ensure flexible communication and overlap with your local business hours, whether you are located in the US, UK, Australia, APAC, or right here in Bangladesh."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How much does it cost to hire a Meta Ads expert in Bangladesh for local and global campaigns?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "My monthly retainer for Meta Ads management starts at highly affordable rates of 10,000 BDT (or $100 USD) for basic setups, scaling up to 40,000 BDT ($400 USD) for full-stack omnichannel marketing. This fee strictly covers campaign management and advanced tracking setup. The actual advertising budget (Ad Spend) is billed directly to your payment method by Meta or Google."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why do e-commerce brands in Bangladesh and globally need Server-Side Tracking (Meta CAPI)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Due to recent iOS updates and strict browser ad blockers worldwide, standard browser pixels lose up to 30% of critical user data. I implement Server-Side Tracking via Meta Conversions API (CAPI) to bypass these blocks. This ensures 100% data accuracy for e-commerce businesses globally, feeding the Meta algorithm precise signals for lower Cost Per Acquisition (CPA) and higher ROAS."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you guarantee a specific ROAS or sales volume for my e-commerce business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "While I guarantee highly optimized campaigns, flawless CAPI tracking architectures, and data-driven scaling strategies, I cannot guarantee exact sales numbers. Sales depend on external factors like product quality, pricing, website conversion rate (CRO), and local or global market demand. My goal as a growth strategist is to build a profitable sales funnel that scales your revenue efficiently."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need to sign a long-term contract for your Meta Ads and performance marketing services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, my digital marketing retainers for local and international clients operate on a flexible month-to-month basis. However, I highly recommend a minimum 3-month commitment, as advertising algorithms need time to learn, and continuous A/B testing requires sufficient data to achieve optimal global or local scaling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide domain and hosting with your WordPress website development services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No, domain and hosting are not included in my WordPress design packages. However, whether you are a local business in Bangladesh or an international brand, I will guide you in selecting the fastest, SEO-friendly global hosting providers and fully assist with the server setup before beginning the website development phase."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://alaminkhan.com/#person",
+          "name": "Al-Amin Khan",
+          "jobTitle": "Meta Ads & Performance Marketing Specialist",
+          "url": "https://alaminkhan.com",
+          "image": {
+            "@type": "ImageObject",
+            "@id": "https://alaminkhan.com/#personImage",
+            "url": "https://alaminkhan.com/assets/profile.png",
+            "caption": "Al-Amin Khan - Performance Marketing Specialist"
+          },
+          "email": "skhan.ict@gmail.com",
+          "telephone": "+8801971708689",
+          "sameAs": [
+            "https://www.linkedin.com/in/al-aminkhan/?locale=en",
+            "https://www.facebook.com/mohammad.shaon.al.amin.2025/",
+            "https://twitter.com/alaminkhan"
+          ],
+          "description": "I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1162, East Monipur Road, Mirpur-2, Dhaka-1216",
+            "addressLocality": "Dhaka",
+            "postalCode": "1216",
+            "addressCountry": "BD"
+          },
+          "knowsAbout": [
+            "Meta Ads Management",
+            "Performance Marketing",
+            "Server-Side Tracking",
+            "Meta Conversion API (CAPI)",
+            "Google Analytics 4 (GA4)",
+            "Google Tag Manager (GTM)",
+            "WordPress Development",
+            "WooCommerce Optimization",
+            "B2B Lead Generation"
+          ]
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://alaminkhan.com/#service",
+          "name": "Al-Amin Khan - Meta Ads & Performance Marketing",
+          "url": "https://alaminkhan.com",
+          "logo": "https://alaminkhan.com/assets/logo.png",
+          "image": "https://alaminkhan.com/assets/profile.png",
+          "telephone": "+8801971708689",
+          "email": "skhan.ict@gmail.com",
+          "priceRange": "$ - $$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Mirpur-2",
+            "addressLocality": "Dhaka",
+            "addressCountry": "Bangladesh"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Global"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Digital Marketing & Web Development Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Meta Ads & Performance Marketing Management",
+                  "description": "Full-funnel Facebook and Instagram ad management with high-ROAS campaign structures."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Server-Side Tracking & Meta CAPI Setup",
+                  "description": "Cloud server tagging, first-party cookie recovery, and iOS 14.5+ tracking fixes."
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "WordPress & WooCommerce Website Development",
+                  "description": "High-converting, responsive business websites and e-commerce stores."
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://alaminkhan.com/#website",
+          "url": "https://alaminkhan.com",
+          "name": "Al-Amin Khan | Performance Marketing Specialist",
+          "publisher": {
+            "@id": "https://alaminkhan.com/#person"
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- Dynamic SPA Section SEO Switcher -->
+  <script>
+    (function () {
+      const sectionSeoMap = {
+        'home': {
+          title: 'Meta Ads & Performance Marketing Specialist | Al-Amin Khan',
+          description: 'I am Al-Amin Khan, a Performance Marketing Specialist offering high-converting Meta Ads, Server-Side Tracking, and WordPress solutions for global brands.'
+        },
+        'about': {
+          title: 'About Al-Amin Khan | Digital Growth Strategist',
+          description: 'Learn more about Al-Amin Khan, a digital marketing expert with 8+ years of experience in scaling businesses through data-driven Meta Ads and CAPI tracking.'
+        },
+        'services': {
+          title: 'Meta Ads & WordPress Development Services | Al-Amin Khan',
+          description: 'Explore my premium digital marketing services, including Meta Ads management, CAPI tracking, sales funnels, and WordPress website development.'
+        },
+        'contact': {
+          title: 'Contact Al-Amin Khan | Hire a Remote Marketing Expert',
+          description: 'Ready to scale your business? Contact Al-Amin Khan for expert Meta Ads management, advanced data tracking, and WordPress solutions today.'
+        },
+        'pricing': {
+          title: 'Website & Marketing Packages | Al-Amin Khan',
+          description: 'Transparent pricing for WordPress websites, Meta Ads management, and Server-Side tracking solutions.'
+        },
+        'meta-ads': {
+          title: 'Meta Ads Case Studies & Proven Results | Al-Amin Khan',
+          description: 'Real client case studies and performance metrics from live Facebook & Instagram ad campaigns.'
+        },
+        'blog': {
+          title: 'Digital Marketing & Tracking Insights | Al-Amin Khan',
+          description: 'In-depth industry case studies on Meta CAPI, Google Analytics 4, and server-side conversion tracking.'
+        }
+      };
+
+      function updateSectionSeo(sectionId) {
+        const cleanId = (sectionId || '').replace(/^#/, '').toLowerCase();
+        const data = sectionSeoMap[cleanId] || sectionSeoMap['home'];
+        document.title = data.title;
+        const descEl = document.querySelector('meta[name="description"]');
+        if (descEl) descEl.setAttribute('content', data.description);
+        const ogTitle = document.querySelector('meta[property="og:title"]');
+        if (ogTitle) ogTitle.setAttribute('content', data.title);
+        const ogDesc = document.querySelector('meta[property="og:description"]');
+        if (ogDesc) ogDesc.setAttribute('content', data.description);
+      }
+
+      window.updateSectionSeo = updateSectionSeo;
+
+      window.addEventListener('hashchange', function () {
+        const hash = window.location.hash.replace('#', '');
+        if (hash) updateSectionSeo(hash);
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        const hash = window.location.hash.replace('#', '');
+        if (hash) updateSectionSeo(hash);
+
+        if ('IntersectionObserver' in window) {
+          const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting && entry.intersectionRatio >= 0.3) {
+                const id = entry.target.id;
+                if (id && sectionSeoMap[id]) {
+                  updateSectionSeo(id);
+                }
+              }
+            });
+          }, { threshold: [0.3] });
+
+          setTimeout(() => {
+            document.querySelectorAll('section[id]').forEach(sec => {
+              sectionObserver.observe(sec);
+            });
+          }, 600);
+        }
+      });
+    })();
+  </script>
+
+  <link rel="icon" type="image/png" href="/assets/favicon.png?v=25" />
+  <script>
+    (function () {
+      document.documentElement.style.setProperty('--color-accent', '#3db4bd');
+      document.documentElement.style.setProperty('--color-accent-secondary', '#00c6ff');
+    })();
+
+    // Dynamic Database Auto-Sync on Page Load
+    (async function () {
+      try {
+        if (localStorage.getItem("db_version") !== "23") {
+          localStorage.clear();
+          localStorage.setItem("db_version", "23");
+        }
+        const response = await fetch('/assets/db.json?v=' + Date.now());
+        if (response.ok) {
+          const db = await response.json();
+          console.log("Local Sync: Successfully fetched db.json", db);
+          if (db.siteConfigGlobal) {
+            localStorage.setItem("site_config_global", JSON.stringify(db.siteConfigGlobal));
+            if (db.siteConfigGlobal.primaryColor) document.documentElement.style.setProperty('--color-accent', db.siteConfigGlobal.primaryColor);
+            if (db.siteConfigGlobal.secondaryColor) document.documentElement.style.setProperty('--color-accent-secondary', db.siteConfigGlobal.secondaryColor);
+          }
+          if (db.siteConfigSeo) localStorage.setItem("site_config_seo", JSON.stringify(db.siteConfigSeo));
+          if (db.projects) localStorage.setItem("db_projects", JSON.stringify(db.projects));
+          if (db.blogPosts) localStorage.setItem("db_blogPosts", JSON.stringify(db.blogPosts));
+          if (db.services) localStorage.setItem("db_services", JSON.stringify(db.services));
+          if (db.skills) localStorage.setItem("db_skills", JSON.stringify(db.skills));
+          if (db.testimonials) localStorage.setItem("db_testimonials", JSON.stringify(db.testimonials));
+          if (db.resume) localStorage.setItem("db_resume", JSON.stringify(db.resume));
+          if (db.pricingPlans) localStorage.setItem("db_pricingPlans", JSON.stringify(db.pricingPlans));
+          if (db.products) localStorage.setItem("db_products", JSON.stringify(db.products));
+          if (db.contactSubmissions) localStorage.setItem("db_contactSubmissions", JSON.stringify(db.contactSubmissions));
+        }
+      } catch (err) {
+        console.error("Local Sync: Failed to load db.json on page startup", err);
+      }
+    })();
+  </script>
+  <!-- Tailwind CSS Runtime CDN with Custom Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            accent: 'var(--color-accent, #3db4bd)',
+            'accent-secondary': 'var(--color-accent-secondary, #00c6ff)',
+            'bg-dark': 'var(--color-bg-dark, #0b0f19)',
+            'bg-card': 'var(--color-bg-card, #121824)',
+            'text-main': 'var(--color-text-main, #ffffff)',
+            'text-muted': 'var(--color-text-muted, #9ca3af)',
+            'border-subtle': 'var(--color-border-subtle, rgba(255,255,255,0.05))',
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+  <script type="module" crossorigin src="/assets/index-wTLK3pDc.js?v=330"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-BLFZnpvq.css?v=270">
+</head>
+
+<body>
+
+  <div id="bootstrap-loader"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #0b0f19; display: flex; align-items: center; justify-content: center; z-index: 99999; transition: opacity 250ms ease-out, visibility 250ms ease-out;">
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 16px;">
+      <div id="loader-logo-container">
+        <img src="/assets/logo.png?v=7" alt="Al-Amin Logo" style="height: 45px; width: auto; object-fit: contain;">
+      </div>
+      <div
+        style="width: 64px; height: 2px; background-color: rgba(255, 255, 255, 0.1); position: relative; overflow: hidden; border-radius: 99px;">
+        <div id="loader-bar"
+          style="position: absolute; left: 0; top: 0; height: 100%; width: 50%; background-color: #f45901; border-radius: 99px; animation: loading-slide 1.2s infinite ease-in-out;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    @keyframes loading-slide {
+      0% {
+        left: -50%;
+      }
+
+      50% {
+        left: 100%;
+      }
+
+      100% {
+        left: 100%;
+      }
+    }
+
+    /* Fix heading text clipping (e.g. 'Crafting Digital Excellence') */
+    h2,
+    h1,
+    h3,
+    .text-text-main {
+      clip-path: none !important;
+      -webkit-clip-path: none !important;
+      overflow: visible !important;
+    }
+
+    #about h2,
+    section h2 {
+      line-height: 1.25 !important;
+      padding-bottom: 8px !important;
+      word-break: break-word !important;
+      overflow-wrap: break-word !important;
+      clip-path: none !important;
+      -webkit-clip-path: none !important;
+    }
+
+    /* Enhanced footer logo sizing */
+    footer img,
+    footer a[href="#home"] img {
+      height: 52px !important;
+      max-height: 60px !important;
+      width: auto !important;
+      object-fit: contain !important;
+    }
+
+    /* Section scroll offset for fixed header */
+    html {
+      scroll-padding-top: 80px !important;
+      scroll-behavior: smooth !important;
+    }
+
+    section[id] {
+      scroll-margin-top: 80px !important;
+    }
+
+    /* Hero Layout & Overlap Protection (Prevents text and picture collision on all screens) */
+    #home .grid {
+      align-items: center !important;
+    }
+
+    #home .grid>div {
+      min-width: 0 !important;
+      position: relative !important;
+      z-index: 2 !important;
+    }
+
+    /* Hero Heading: Strictly 1-line name with fluid sizing that never overlaps adjacent picture */
+    #home h1 {
+      font-size: clamp(1.75rem, 3.4vw, 3.25rem) !important;
+      line-height: 1.15 !important;
+      max-width: 100% !important;
+      word-break: normal !important;
+    }
+
+    #home h1 span.text-accent,
+    #home h1 .text-glow {
+      white-space: nowrap !important;
+      display: inline-block !important;
+      max-width: 100% !important;
+    }
+
+    /* Ensure hero profile picture stays contained and separated from text */
+    #home .aspect-square {
+      max-width: min(380px, 85vw) !important;
+      margin: 0 auto !important;
+    }
+
+    /* Background lights / radial glow stay strictly behind all text and media */
+    [style*="radial-gradient"] {
+      pointer-events: none !important;
+      z-index: 0 !important;
+    }
+
+    #home .max-w-7xl,
+    section .max-w-7xl {
+      position: relative !important;
+      z-index: 2 !important;
+    }
+
+    /* ====================================================
+         PRICING BOXES TITLE & BADGE HORIZONTAL CENTERING
+         Strictly Centers Badge Pill, Category, Title & Target
+         ==================================================== */
+    /* ====================================================
+         PRICING BOXES TITLE & BADGE HORIZONTAL CENTERING
+         Strictly Centers Badge Pill, Category, Title & Target
+         Zero Clipping, Perfect Vertical & Horizontal Alignment
+         ==================================================== */
+    .pricing-grid {
+      padding-top: 26px !important;
+      overflow: visible !important;
+    }
+
+    .pricing-card-box {
+      position: relative !important;
+      overflow: visible !important;
+    }
+
+    .pricing-badge-wrapper {
+      position: absolute !important;
+      top: -16px !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      margin: 0 auto !important;
+      text-align: center !important;
+      z-index: 30 !important;
+      pointer-events: none !important;
+    }
+
+    .pricing-badge-wrapper>div,
+    .pricing-badge-pill {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      margin: 0 auto !important;
+      text-align: center !important;
+    }
+
+    .pricing-card-box .pricing-card-header {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-bottom: 20px !important;
+    }
+
+    .pricing-card-box .pricing-card-category {
+      display: block !important;
+      text-align: center !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .pricing-card-box h3,
+    .pricing-card-box .pricing-card-title {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .pricing-card-box .pricing-card-target {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      text-align: center !important;
+      width: 100% !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    /* ====================================================
+         LIGHT MODE (WHITE THEME) COMPREHENSIVE OVERHAUL
+         Crystal-Clear Contrast, No Faint Text & Zero Overlap
+         ==================================================== */
+    body.light-mode {
+      background-color: #f8fafc !important;
+      color: #1e293b !important;
+    }
+
+    /* Global Headings in Light Mode */
+    body.light-mode h1,
+    body.light-mode h2,
+    body.light-mode h3,
+    body.light-mode h4,
+    body.light-mode h5 {
+      color: #0f172a !important;
+    }
+
+    /* Global Paragraphs & Text */
+    body.light-mode p {
+      color: #475569 !important;
+    }
+
+    body.light-mode .text-gray-400,
+    body.light-mode .text-gray-500 {
+      color: #64748b !important;
+    }
+
+    body.light-mode .text-gray-300,
+    body.light-mode .text-gray-200 {
+      color: #334155 !important;
+    }
+
+    body.light-mode .text-glow {
+      text-shadow: none !important;
+    }
+
+    /* Card Backgrounds & Borders in Light Mode */
+    body.light-mode .bg-\[\#121824\],
+    body.light-mode .bg-\[\#121824\]\/60,
+    body.light-mode .bg-\[\#121824\]\/80,
+    body.light-mode .bg-\[\#121824\]\/90,
+    body.light-mode .card-box {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 4px 6px -4px rgba(0, 0, 0, 0.03) !important;
+    }
+
+    body.light-mode .bg-\[\#0b0f19\] {
+      background-color: #f8fafc !important;
+    }
+
+    body.light-mode section {
+      border-color: #e2e8f0 !important;
+    }
+
+    /* Fixed Header & Mobile Drawer in Light Mode */
+    body.light-mode #main-header {
+      background-color: rgba(255, 255, 255, 0.96) !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    body.light-mode #main-header nav a,
+    body.light-mode #mobile-drawer a {
+      color: #334155 !important;
+    }
+
+    body.light-mode #main-header nav a:hover,
+    body.light-mode #mobile-drawer a:hover {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #mobile-drawer {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    /* 1. HERO SECTION (#home) in Light Mode */
+    body.light-mode #home h1 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #home h1 .text-accent {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #home p {
+      color: #475569 !important;
+    }
+
+    body.light-mode #home .text-white {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #home #counter-exp,
+    body.light-mode #home #counter-clients,
+    body.light-mode #home #counter-rate {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #home a[download] {
+      background-color: #ffffff !important;
+      border: 1.5px solid #cbd5e1 !important;
+      color: #0f172a !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    body.light-mode #home a[download]:hover {
+      background-color: #f1f5f9 !important;
+      border-color: #0891b2 !important;
+      color: #0891b2 !important;
+    }
+
+    /* Continuous Marquee Ticker in Light Mode */
+    body.light-mode .marquee-track {
+      color: #334155 !important;
+    }
+
+    body.light-mode div:has(> .marquee-track) {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    /* 2. ABOUT SECTION & CORE COMPETENCIES in Light Mode */
+    body.light-mode #about p {
+      color: #334155 !important;
+    }
+
+    body.light-mode #core-competencies-card {
+      background-color: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    body.light-mode #core-competencies-card h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #core-competencies-card .text-gray-200 {
+      color: #1e293b !important;
+      font-weight: 600 !important;
+    }
+
+    body.light-mode #core-competencies-card .skill-level-text {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #core-competencies-card .w-full.h-2\.5 {
+      background-color: #f1f5f9 !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    /* 3. RESUME SECTION (#resume) in Light Mode */
+    body.light-mode #resume h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #resume .text-gray-400 {
+      color: #475569 !important;
+    }
+
+    body.light-mode #resume div[class*="rounded-2xl"] {
+      background-color: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+
+    body.light-mode #resume div[class*="rounded-3xl"] {
+      background-color: #ffffff !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+
+    /* 4. SERVICES SECTION (#services) in Light Mode */
+    body.light-mode #services h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #services p {
+      color: #475569 !important;
+    }
+
+    body.light-mode #services .font-mono {
+      color: rgba(15, 23, 42, 0.12) !important;
+    }
+
+    body.light-mode #services .group:hover .font-mono {
+      color: rgba(8, 145, 178, 0.35) !important;
+    }
+
+    body.light-mode #services a {
+      color: #0891b2 !important;
+    }
+
+    /* 5. PROJECTS SECTION (#projects) in Light Mode */
+    body.light-mode #projects h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #projects p {
+      color: #475569 !important;
+    }
+
+    body.light-mode #projects span.bg-white\/5 {
+      background-color: #f1f5f9 !important;
+      border: 1px solid #e2e8f0 !important;
+      color: #334155 !important;
+    }
+
+    /* 6. PRICING SECTION (#pricing) in Light Mode */
+    body.light-mode #pricing {
+      background-color: #f8fafc !important;
+    }
+
+    body.light-mode #pricing h2,
+    body.light-mode #pricing h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #pricing p {
+      color: #475569 !important;
+    }
+
+    body.light-mode .pricing-card-box {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent {
+      border-color: #0891b2 !important;
+      box-shadow: 0 15px 35px rgba(8, 145, 178, 0.15) !important;
+    }
+
+    body.light-mode .pricing-card-title {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .pricing-card-category {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .pricing-card-target {
+      color: #475569 !important;
+    }
+
+    body.light-mode .pricing-badge-wrapper>div {
+      background-color: #ffffff !important;
+      color: #0891b2 !important;
+      border: 1.5px solid #0891b2 !important;
+      box-shadow: 0 4px 12px rgba(8, 145, 178, 0.12) !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent .pricing-badge-wrapper>div {
+      background: linear-gradient(135deg, #0891b2, #06b6d4) !important;
+      color: #ffffff !important;
+      border: none !important;
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.3) !important;
+    }
+
+    body.light-mode .pricing-val {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent .pricing-val {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .pricing-secondary {
+      color: #0e7490 !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode .pricing-cycle {
+      color: #64748b !important;
+    }
+
+    body.light-mode .pricing-card-box div[class*="rounded-2xl"]:has(> .pricing-val) {
+      background-color: #f1f5f9 !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent div[class*="rounded-2xl"]:has(> .pricing-val) {
+      background-color: rgba(8, 145, 178, 0.08) !important;
+      border: 1.5px solid rgba(8, 145, 178, 0.3) !important;
+    }
+
+    body.light-mode .feature-text {
+      color: #1e293b !important;
+      font-weight: 500 !important;
+    }
+
+    body.light-mode .custom-feature-item:hover {
+      background-color: #f8fafc !important;
+    }
+
+    body.light-mode .checkbox-square {
+      border-color: #cbd5e1 !important;
+    }
+
+    body.light-mode .checkbox-square.bg-accent {
+      background-color: #0891b2 !important;
+      border-color: #0891b2 !important;
+    }
+
+    body.light-mode .pricing-cta-btn {
+      background-color: #0f172a !important;
+      color: #ffffff !important;
+      border: none !important;
+    }
+
+    body.light-mode .pricing-cta-btn:hover {
+      background-color: #0891b2 !important;
+      color: #ffffff !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent .pricing-cta-btn {
+      background: linear-gradient(135deg, #0891b2, #06b6d4) !important;
+      color: #ffffff !important;
+    }
+
+    body.light-mode #currency-toggle-wrapper {
+      background-color: #f1f5f9 !important;
+      border: 2px solid #0891b2 !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06) !important;
+    }
+
+    body.light-mode #toggle-bdt-btn,
+    body.light-mode #toggle-usd-btn {
+      color: #64748b !important;
+    }
+
+    body.light-mode #toggle-bdt-btn.text-white,
+    body.light-mode #toggle-usd-btn.text-white {
+      color: #ffffff !important;
+    }
+
+    /* 7. META ADS SECTION (#meta-ads) in Light Mode */
+    body.light-mode #meta-ads h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #meta-ads p,
+    body.light-mode #meta-ads li {
+      color: #475569 !important;
+    }
+
+    body.light-mode #meta-ads .text-white {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #meta-ads .text-gray-500 {
+      color: #64748b !important;
+    }
+
+    body.light-mode #meta-ads div[class*="aspect-[4/3]"] {
+      background-color: #f8fafc !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+
+    /* 8. RESOURCES SECTION (#resources) in Light Mode */
+    body.light-mode #resources h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #resources p {
+      color: #475569 !important;
+    }
+
+    /* 9. TESTIMONIALS SECTION (#testimonials) in Light Mode */
+    body.light-mode #testimonials p {
+      color: #334155 !important;
+    }
+
+    body.light-mode #testimonials .text-white {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #testimonials .text-gray-400 {
+      color: #64748b !important;
+    }
+
+    /* 10. BLOG SECTION (#blog) in Light Mode */
+    body.light-mode #blog h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #blog p {
+      color: #475569 !important;
+    }
+
+    body.light-mode #blog span.bg-white\/5 {
+      background-color: #f1f5f9 !important;
+      border: 1px solid #e2e8f0 !important;
+      color: #334155 !important;
+    }
+
+    /* 11. CONTACT SECTION (#contact) in Light Mode */
+    body.light-mode #contact h2,
+    body.light-mode #contact h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #contact p {
+      color: #475569 !important;
+    }
+
+    body.light-mode #contact label {
+      color: #1e293b !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode #contact input,
+    body.light-mode #contact textarea {
+      background-color: #f8fafc !important;
+      border: 1.5px solid #cbd5e1 !important;
+      color: #0f172a !important;
+    }
+
+    body.light-mode #contact input:focus,
+    body.light-mode #contact textarea:focus {
+      background-color: #ffffff !important;
+      border-color: #0891b2 !important;
+    }
+
+    body.light-mode #contact input::placeholder,
+    body.light-mode #contact textarea::placeholder {
+      color: #94a3b8 !important;
+    }
+
+    body.light-mode #contact .text-white {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #contact .text-gray-400 {
+      color: #64748b !important;
+    }
+
+    /* 12. FOOTER in Light Mode */
+    body.light-mode footer {
+      background-color: #f1f5f9 !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    body.light-mode footer span,
+    body.light-mode footer a {
+      color: #475569 !important;
+    }
+
+    body.light-mode footer a:hover {
+      color: #0891b2 !important;
+    }
+
+    /* ====================================================
+         CUSTOM ANIMATION SUITE & INTERACTIVE CONTROLS
+         ==================================================== */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Ambient floating & breathing background lights */
+    @keyframes ambientGlowFloat {
+
+      0%,
+      100% {
+        transform: translate(-50%, -50%) scale(0.95);
+        opacity: 0.14;
+      }
+
+      50% {
+        transform: translate(-48%, -52%) scale(1.12);
+        opacity: 0.24;
+      }
+    }
+
+    .animate-ambient-glow {
+      animation: ambientGlowFloat 8s ease-in-out infinite;
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity 0.75s cubic-bezier(0.16, 1, 0.3, 1), transform 0.75s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-on-scroll.is-revealed {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    /* Interactive Hover Lift & Glow for Cards */
+    .card-hover-interactive {
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.35s ease !important;
+    }
+
+    .card-hover-interactive:hover {
+      transform: translateY(-8px) scale(1.01) !important;
+      box-shadow: 0 20px 40px -15px rgba(61, 180, 189, 0.28) !important;
+      border-color: rgba(61, 180, 189, 0.5) !important;
+    }
+
+    /* Currency Switch Button Container (Prominent Capsule Switch) */
+    .currency-switch-wrapper {
+      display: inline-flex;
+      align-items: center;
+      background: #121824;
+      border: 2px solid rgba(61, 180, 189, 0.6);
+      border-radius: 9999px;
+      padding: 4px;
+      position: relative;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 20px rgba(61, 180, 189, 0.25);
+      user-select: none;
+      cursor: pointer;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .currency-switch-wrapper:hover {
+      border-color: rgba(61, 180, 189, 0.9);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.7), 0 0 25px rgba(61, 180, 189, 0.35);
+    }
+
+    .currency-switch-slider {
+      position: absolute;
+      top: 4px;
+      bottom: 4px;
+      left: 4px;
+      width: calc(50% - 4px);
+      background: linear-gradient(135deg, #3db4bd 0%, #00c6ff 100%);
+      border-radius: 9999px;
+      box-shadow: 0 4px 16px rgba(61, 180, 189, 0.45);
+      transition: transform 0.32s cubic-bezier(0.34, 1.56, 0.64, 1);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .currency-switch-btn {
+      position: relative;
+      z-index: 2;
+      padding: 8px 24px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      border-radius: 9999px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: color 0.25s ease;
+    }
+
+    body.light-mode .currency-switch-wrapper {
+      background: #ffffff !important;
+      border-color: rgba(61, 180, 189, 0.6) !important;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08) !important;
+    }
+
+
+    /* Floating Hero Portrait Animation */
+    @keyframes heroFloat {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(0.6deg);
+      }
+    }
+
+    .animate-hero-float {
+      animation: heroFloat 5.5s ease-in-out infinite;
+    }
+
+    /* Infinite Horizontal Marquee Ticker */
+    @keyframes marqueeScroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marqueeScroll 28s linear infinite;
+    }
+
+    .marquee-track:hover {
+      animation-play-state: paused;
+    }
+
+    /* Hero Typewriter Blinking Cursor (Auto-hides when typing completes) */
+    @keyframes blinkCursor {
+
+      0%,
+      100% {
+        opacity: 1;
+      }
+
+      50% {
+        opacity: 0;
+      }
+    }
+
+    .typewriter-cursor {
+      display: inline-block;
+      color: var(--color-accent, #3db4bd);
+      font-weight: 300;
+      animation: blinkCursor 0.8s infinite;
+      margin-left: 2px;
+    }
+
+    .typewriter-cursor.is-hidden {
+      display: none !important;
+    }
+
+    /* Animated Skill Bars (Core Competencies) */
+    .skill-item-row {
+      margin-bottom: 16px !important;
+    }
+
+    .skill-bar-track {
+      width: 100% !important;
+      height: 8px !important;
+      background: rgba(255, 255, 255, 0.08) !important;
+      border-radius: 9999px !important;
+      overflow: hidden !important;
+      position: relative !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    .skill-bar-fill {
+      height: 100% !important;
+      width: 0%;
+      background: linear-gradient(90deg, #3db4bd 0%, #00c6ff 50%, #3db4bd 100%) !important;
+      border-radius: 9999px !important;
+      position: relative !important;
+      transition: width 1.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      box-shadow: 0 0 12px rgba(61, 180, 189, 0.6) !important;
+    }
+
+    .skill-bar-fill::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #ffffff;
+      border-radius: 9999px;
+      box-shadow: 0 0 8px #00c6ff;
+    }
+
+    body.light-mode .skill-bar-track {
+      background: #e2e8f0 !important;
+      border-color: #cbd5e1 !important;
+    }
+
+    /* Rotating Circles behind Hero Picture */
+    @keyframes spinCircleClockwise {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spinCircleCounter {
+      from {
+        transform: rotate(360deg);
+      }
+
+      to {
+        transform: rotate(0deg);
+      }
+    }
+
+    .hero-rotating-circle-outer {
+      position: absolute !important;
+      width: 450px !important;
+      height: 450px !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -225px !important;
+      margin-left: -225px !important;
+      border-radius: 50% !important;
+      pointer-events: none !important;
+      user-select: none !important;
+      z-index: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      animation: spinCircleClockwise 22s linear infinite !important;
+    }
+
+    .hero-rotating-circle-inner {
+      position: absolute !important;
+      width: 385px !important;
+      height: 385px !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -192.5px !important;
+      margin-left: -192.5px !important;
+      border-radius: 50% !important;
+      border: 1.5px dashed rgba(61, 180, 189, 0.45) !important;
+      pointer-events: none !important;
+      user-select: none !important;
+      z-index: 0 !important;
+      animation: spinCircleCounter 30s linear infinite !important;
+    }
+
+    .hero-photo-halo {
+      position: absolute !important;
+      width: 340px !important;
+      height: 340px !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -170px !important;
+      margin-left: -170px !important;
+      border-radius: 50% !important;
+      background: radial-gradient(circle, rgba(61, 180, 189, 0.28) 0%, rgba(0, 198, 255, 0.08) 50%, transparent 70%) !important;
+      filter: blur(28px) !important;
+      pointer-events: none !important;
+      z-index: 0 !important;
+    }
+
+    @media (max-width: 640px) {
+      .hero-rotating-circle-outer {
+        width: 330px !important;
+        height: 330px !important;
+        margin-top: -165px !important;
+        margin-left: -165px !important;
+      }
+
+      .hero-rotating-circle-inner {
+        width: 290px !important;
+        height: 290px !important;
+        margin-top: -145px !important;
+        margin-left: -145px !important;
+      }
+
+      .hero-photo-halo {
+        width: 250px !important;
+        height: 250px !important;
+        margin-top: -125px !important;
+        margin-left: -125px !important;
+      }
+    }
+
+    .animate-circle-spin-cw {
+      animation: spinCircleClockwise 22s linear infinite !important;
+    }
+
+    .animate-circle-spin-ccw {
+      animation: spinCircleCounter 32s linear infinite !important;
+    }
+
+    /* Shimmer sweep effect */
+    @keyframes shimmerSweep {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(200%);
+      }
+    }
+
+    .animate-shimmer {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .animate-shimmer::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+      transform: translateX(-100%);
+      animation: shimmerSweep 3s infinite;
+    }
+
+    /* ====================================================
+         PRICING CTA BUTTONS - DARK & LIGHT MODE PERFECTION
+         No Text Overlap, Distinct Contrast, Beautiful Colors
+         ==================================================== */
+    .pricing-cta-btn {
+      width: 100% !important;
+      min-height: 52px !important;
+      padding: 13px 20px !important;
+      border-radius: 16px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      text-align: center !important;
+      font-size: 14px !important;
+      line-height: 1.3 !important;
+      text-decoration: none !important;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      position: relative !important;
+      z-index: 10 !important;
+      cursor: pointer !important;
+      box-sizing: border-box !important;
+    }
+
+    .pricing-cta-btn svg {
+      flex-shrink: 0 !important;
+      width: 20px !important;
+      height: 20px !important;
+    }
+
+    .pricing-cta-btn .btn-text {
+      white-space: normal !important;
+      word-break: normal !important;
+      text-align: center !important;
+      display: inline-block !important;
+    }
+
+    /* Dark Mode: Secondary (Standard Cards) */
+    .pricing-btn-secondary {
+      background: rgba(61, 180, 189, 0.12) !important;
+      border: 1.5px solid rgba(61, 180, 189, 0.5) !important;
+      color: #3db4bd !important;
+      font-weight: 800 !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .pricing-btn-secondary:hover {
+      background: #3db4bd !important;
+      color: #ffffff !important;
+      border-color: #3db4bd !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 8px 25px rgba(61, 180, 189, 0.45) !important;
+    }
+
+    /* Dark Mode: Primary (Best Value / Most Popular Card) */
+    .pricing-btn-primary {
+      background: linear-gradient(135deg, #3db4bd 0%, #00c6ff 100%) !important;
+      border: none !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      box-shadow: 0 8px 25px rgba(61, 180, 189, 0.4) !important;
+    }
+
+    .pricing-btn-primary:hover {
+      background: linear-gradient(135deg, #00c6ff 0%, #3db4bd 100%) !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 12px 32px rgba(61, 180, 189, 0.55) !important;
+    }
+
+    /* Light Mode: Pricing CTA Buttons */
+    body.light-mode .pricing-btn-secondary {
+      background: #f8fafc !important;
+      border: 2px solid #0891b2 !important;
+      color: #0891b2 !important;
+      font-weight: 800 !important;
+      box-shadow: 0 4px 12px rgba(8, 145, 178, 0.1) !important;
+    }
+
+    body.light-mode .pricing-btn-secondary:hover {
+      background: #0891b2 !important;
+      color: #ffffff !important;
+      border-color: #0891b2 !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 8px 22px rgba(8, 145, 178, 0.3) !important;
+    }
+
+    body.light-mode .pricing-btn-primary {
+      background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%) !important;
+      border: none !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      box-shadow: 0 8px 24px rgba(8, 145, 178, 0.35) !important;
+    }
+
+    body.light-mode .pricing-btn-primary:hover {
+      background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%) !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 12px 30px rgba(8, 145, 178, 0.45) !important;
+    }
+
+    /* Light Mode: FAQ Section Overhaul */
+    body.light-mode #faq {
+      background-color: #f8f9fa !important;
+      border-color: rgba(0, 0, 0, 0.08) !important;
+    }
+
+    body.light-mode #faq h2 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #faq p {
+      color: #475569 !important;
+    }
+
+    body.light-mode .faq-item {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    body.light-mode .faq-item:hover {
+      border-color: #0891b2 !important;
+      box-shadow: 0 10px 30px rgba(8, 145, 178, 0.12) !important;
+    }
+
+    body.light-mode .faq-question {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .faq-item:hover .faq-question {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .faq-body {
+      border-color: #f1f5f9 !important;
+    }
+
+    body.light-mode .faq-answer {
+      color: #334155 !important;
+    }
+
+    body.light-mode .faq-icon-wrapper {
+      background-color: #f1f5f9 !important;
+      border-color: #e2e8f0 !important;
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #faq div[class*="rounded-3xl"] {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    body.light-mode #faq div[class*="rounded-3xl"] h4 {
+      color: #0f172a !important;
+    }
+
+    /* ===================================================
+         1. CYBER NET / GRID BACKGROUND PATTERNS
+         =================================================== */
+    .cyber-grid-pattern {
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.07) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 60%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 60%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .perspective-grid-net {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 140px;
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.09) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.09) 1px, transparent 1px);
+      background-size: 32px 32px;
+      transform: perspective(350px) rotateX(55deg);
+      transform-origin: top center;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    body.light-mode .cyber-grid-pattern {
+      background-image:
+        linear-gradient(to right, rgba(8, 145, 178, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(8, 145, 178, 0.05) 1px, transparent 1px);
+    }
+
+    body.light-mode .perspective-grid-net {
+      background-image:
+        linear-gradient(to right, rgba(8, 145, 178, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(8, 145, 178, 0.07) 1px, transparent 1px);
+    }
+
+    /* ===================================================
+         2. SCROLLSPY NAVIGATION INDICATOR (Active Underline)
+         =================================================== */
+    .nav-item-link {
+      position: relative;
+      transition: color 0.25s ease;
+    }
+
+    .nav-item-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 0%;
+      height: 2.5px;
+      background: #3db4bd;
+      border-radius: 9999px;
+      transform: translateX(-50%);
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+      box-shadow: 0 0 10px rgba(61, 180, 189, 0.8);
+    }
+
+    .nav-item-link:hover::after,
+    .nav-item-link.active::after {
+      width: 100%;
+      opacity: 1;
+    }
+
+    .nav-item-link.active {
+      color: #3db4bd !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode .nav-item-link.active {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .nav-item-link::after {
+      background: #0891b2 !important;
+      box-shadow: 0 0 8px rgba(8, 145, 178, 0.6) !important;
+    }
+
+    /* ===================================================
+         3. CONTINUOUS TESTIMONIALS SLIDER TRACK
+         =================================================== */
+    @keyframes slideTestimonials {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .testimonials-slider-track {
+      display: flex;
+      width: max-content;
+      animation: slideTestimonials 32s linear infinite;
+    }
+
+    .testimonials-slider-container:hover .testimonials-slider-track {
+      animation-play-state: paused;
+    }
+
+    /* ===================================================
+         4. CURRENCY TOGGLE BUTTON IN LIGHT MODE
+         =================================================== */
+    body.light-mode #currency-toggle-wrapper {
+      background-color: #ffffff !important;
+      border: 2px solid #0891b2 !important;
+      box-shadow: 0 4px 18px rgba(8, 145, 178, 0.18) !important;
+    }
+
+    body.light-mode #currency-slider-pill {
+      background: linear-gradient(135deg, #0891b2, #06b6d4) !important;
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.4) !important;
+    }
+
+    body.light-mode #toggle-bdt-btn,
+    body.light-mode #toggle-usd-btn {
+      color: #334155 !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode #toggle-bdt-btn.text-white,
+    body.light-mode #toggle-usd-btn.text-white {
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    body.light-mode #currency-toggle-wrapper+span {
+      color: #0891b2 !important;
+      font-weight: 700 !important;
+    }
+
+    /* ===================================================
+         5. FOOTER STYLING & LIGHT MODE SUPPORT
+         =================================================== */
+    #footer {
+      position: relative !important;
+    }
+
+    body.light-mode #footer {
+      background-color: #f8fafc !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    body.light-mode #footer h4 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #footer p,
+    body.light-mode #footer a,
+    body.light-mode #footer span {
+      color: #475569 !important;
+    }
+
+    body.light-mode #footer a:hover {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #footer .border-t {
+      border-color: #e2e8f0 !important;
+    }
+
+    /* ===================================================
+         6. HERO SECTION MATCHING WALID REFERENCE
+         =================================================== */
+    .hero-card-watermark {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 80px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 0.95;
+      transform: scaleY(1.35);
+      opacity: 0.9;
+      z-index: 5;
+      text-shadow: 0 0 25px rgba(220, 38, 38, 0.4);
+    }
+
+    .hero-orbit-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-orbit-ring-outer {
+      width: 520px;
+      height: 520px;
+      border: 1px dashed rgba(61, 180, 189, 0.35);
+      margin-top: -260px;
+      margin-left: -260px;
+      border: 1.5px dashed rgba(61, 180, 189, 0.4);
+      animation: spinCircleClockwise 45s linear infinite;
+    }
+
+    .hero-orbit-ring-inner {
+      width: 440px;
+      height: 440px;
+      border: 1px solid rgba(0, 198, 255, 0.2);
+      margin-top: -220px;
+      margin-left: -220px;
+      border: 1.5px solid rgba(0, 198, 255, 0.25);
+      animation: spinCircleCounter 35s linear infinite;
+    }
+
+    .hero-corner-grid {
+      position: absolute;
+      width: 420px;
+      height: 280px;
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+      transform: perspective(300px) rotateX(45deg);
+      pointer-events: none;
+    }
+
+    .hero-corner-grid-tl {
+      top: -30px;
+      left: -30px;
+      mask-image: radial-gradient(ellipse at 20% 20%, #000 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 20% 20%, #000 40%, transparent 85%);
+    }
+
+    .hero-corner-grid-br {
+      bottom: -30px;
+      right: -30px;
+      mask-image: radial-gradient(ellipse at 80% 80%, #000 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 80% 80%, #000 40%, transparent 85%);
+    }
+
+    /* Light mode for new Hero Card */
+    body.light-mode #home {
+      background-color: #f8fafc !important;
+    }
+
+    body.light-mode #home h1 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #home p {
+      color: #475569 !important;
+    }
+
+    body.light-mode .hero-card-watermark {
+      color: rgba(8, 145, 178, 0.2) !important;
+      text-shadow: none !important;
+    }
+
+    body.light-mode .hero-orbit-ring-outer {
+      border-color: rgba(8, 145, 178, 0.3) !important;
+    }
+
+    body.light-mode .hero-orbit-ring-inner {
+      border-color: rgba(8, 145, 178, 0.2) !important;
+    }
+
+    body.light-mode #home .bg-\[\#0c111e\] {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    body.light-mode #home .bg-black\/60 {
+      background-color: rgba(255, 255, 255, 0.88) !important;
+      border-color: #cbd5e1 !important;
+    }
+
+    body.light-mode #home .bg-black\/60 .text-white\/95 {
+      color: #0f172a !important;
+    }
+  </style>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      // SPA Hash Scroll Support
+      let lastScrolledHash = "";
+      function checkHashScroll() {
+        if (window.location.pathname === "/") {
+          const hash = window.location.hash;
+          if (hash && hash.length > 1) {
+            if (hash !== lastScrolledHash) {
+              try {
+                const target = document.querySelector(hash);
+                if (target) {
+                  lastScrolledHash = hash;
+                  setTimeout(function () {
+                    const header = document.getElementById('main-header');
+                    const hOffset = header ? header.offsetHeight : 80;
+                    const targetY = target.getBoundingClientRect().top + window.pageYOffset - hOffset;
+                    window.scrollTo({ top: Math.max(0, targetY), behavior: 'smooth' });
+                  }, 300);
+                }
+              } catch (err) { }
+            }
+          } else {
+            lastScrolledHash = "";
+          }
+        } else {
+          lastScrolledHash = "";
+        }
+      }
+      window.addEventListener("hashchange", checkHashScroll);
+      window.addEventListener("popstate", checkHashScroll);
+
+      function initCounters() {
+        console.log("initCounters: Starting check...");
+        const numElements = Array.from(document.querySelectorAll('.font-bold'));
+        console.log("initCounters: Found .font-bold elements:", numElements.length);
+        if (numElements.length === 0) return;
+
+        const stats = [
+          {
+            labelText: "Experience",
+            el: numElements.find(function (el) {
+              const match = el.textContent.includes('8+') && el.textContent.includes('Yrs');
+              console.log("Checking element for Experience:", el.textContent, "Match:", match);
+              return match;
+            }),
+            target: 8,
+            suffix: "+ ",
+            spanText: "Yrs"
+          },
+          {
+            labelText: "Clients Met",
+            el: numElements.find(function (el) {
+              const match = el.textContent.includes('1K') || el.textContent.includes('1000');
+              console.log("Checking element for Clients:", el.textContent, "Match:", match);
+              return match;
+            }),
+            target: 1000,
+            suffix: "+",
+            formatK: true
+          },
+          {
+            labelText: "Success Rate",
+            el: numElements.find(function (el) {
+              const match = el.textContent.includes('97') && el.textContent.includes('%');
+              console.log("Checking element for Success Rate:", el.textContent, "Match:", match);
+              return match;
+            }),
+            target: 97,
+            suffix: "%"
+          }
+        ];
+
+        stats.forEach(function (stat) {
+          const numEl = stat.el;
+          if (!numEl) {
+            console.log("initCounters: Could not find element for:", stat.labelText);
+            return;
+          }
+          if (numEl.hasAttribute('data-counter-initialized')) {
+            console.log("initCounters: Element already initialized for:", stat.labelText);
+            return;
+          }
+          console.log("initCounters: Initializing element for:", stat.labelText);
+          numEl.setAttribute('data-counter-initialized', 'true');
+
+          // Set initial state to 0 to avoid flashing the final value
+          if (stat.spanText) {
+            numEl.innerHTML = '0' + stat.suffix + '<span class="text-accent text-lg">' + stat.spanText + '</span>';
+          } else {
+            numEl.textContent = '0' + stat.suffix;
+          }
+
+          if (typeof IntersectionObserver !== 'undefined') {
+            console.log("initCounters: IntersectionObserver is supported, setting up observer for:", stat.labelText);
+            const observer = new IntersectionObserver(function (entries) {
+              entries.forEach(function (entry) {
+                console.log("Observer callback for:", stat.labelText, "isIntersecting:", entry.isIntersecting);
+                if (entry.isIntersecting) {
+                  animateNumber(numEl, stat);
+                  observer.unobserve(numEl);
+                }
+              });
+            }, { threshold: 0 });
+            observer.observe(numEl);
+          } else {
+            console.log("initCounters: IntersectionObserver NOT supported, animating directly for:", stat.labelText);
+            animateNumber(numEl, stat);
+          }
+        });
+      }
+
+      function animateNumber(element, stat) {
+        console.log("animateNumber: Starting animation for:", stat.labelText);
+        const end = stat.target;
+        const duration = 2000; // 2 seconds animation duration
+        const startTime = performance.now();
+
+        function update(currentTime) {
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeProgress = progress * (2 - progress); // Ease Out Quad
+          const currentValue = Math.floor(easeProgress * end);
+
+          let displayValue = currentValue;
+          if (stat.formatK && currentValue >= 1000) {
+            displayValue = "1K";
+          }
+
+          if (stat.spanText) {
+            element.innerHTML = displayValue + stat.suffix + '<span class="text-accent text-lg">' + stat.spanText + '</span>';
+          } else {
+            element.textContent = displayValue + stat.suffix;
+          }
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            console.log("animateNumber: Finished animation for:", stat.labelText);
+            if (stat.spanText) {
+              element.innerHTML = end + stat.suffix + '<span class="text-accent text-lg">' + stat.spanText + '</span>';
+            } else {
+              element.textContent = stat.formatK ? '1K+' : end + stat.suffix;
+            }
+          }
+        }
+
+        requestAnimationFrame(update);
+      }
+
+      const observer = new MutationObserver(function () {
+        console.log("MutationObserver: DOM changed, checking hash and counters...");
+        checkHashScroll();
+        initCounters();
+        const allLinks = document.querySelectorAll('a');
+        allLinks.forEach(function (link) {
+          if (!link.hasAttribute('data-scroll-fixed')) {
+            link.setAttribute('data-scroll-fixed', 'true');
+            const href = link.getAttribute("href");
+            if (href === "/" || href === "/#home" || href === "#home" || link.className.includes("logo") || (link.textContent && link.textContent.toLowerCase().includes("logo"))) {
+              link.addEventListener("click", function (e) {
+                if (window.location.pathname === "/") {
+                  e.preventDefault();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                  // Clear URL hash when navigating back to home/top
+                  if (history.pushState) {
+                    history.pushState("", document.title, window.location.pathname + window.location.search);
+                  } else {
+                    window.location.hash = "";
+                  }
+                  lastScrolledHash = "";
+                }
+              });
+            }
+          }
+        });
+
+        // Meta Ads and Navbar are managed natively by SPA
+      });
+
+      // Run counters immediately on load and start observing future changes
+      initCounters();
+      observer.observe(document.body, { childList: true, subtree: true });
+    });
+  </script>
+  <div id="root"></div>
+
+  <!-- CUSTOM LIVE CHATBOT & ADMIN INJECTION -->
+  <style>
+    /* Floating Trigger Button */
+    #live-chat-trigger {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--color-accent, #f45901) 0%, var(--color-accent-secondary, #00c6ff) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 8px 32px rgba(244, 89, 1, 0.3);
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    #live-chat-trigger:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 12px 40px rgba(244, 89, 1, 0.45);
+    }
+
+    #live-chat-trigger svg {
+      transition: transform 0.3s ease;
+    }
+
+    #live-chat-trigger.chat-open svg {
+      transform: rotate(90deg);
+    }
+
+    /* Chat Window Panel */
+    #live-chat-panel {
+      position: fixed;
+      bottom: 96px;
+      right: 24px;
+      width: 380px;
+      height: 520px;
+      max-height: calc(100vh - 120px);
+      max-width: calc(100vw - 48px);
+      background: rgba(11, 15, 25, 0.9);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 24px;
+      display: flex;
+      flex-direction: column;
+      z-index: 9999;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      pointer-events: none;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      overflow: hidden;
+    }
+
+    #live-chat-panel.chat-visible {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      pointer-events: auto;
+    }
+
+    .chat-header {
+      padding: 16px 20px;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+    }
+
+    .chat-avatar-container {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #1a1a1a;
+      border: 1.5px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .chat-avatar {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .online-status {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10b981;
+      border: 2px solid rgba(11, 15, 25, 1);
+    }
+
+    .chat-header-info h3 {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 700;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .chat-header-info span {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.5);
+      font-weight: 500;
+      font-family: sans-serif;
+    }
+
+    .chat-close-btn {
+      position: absolute;
+      right: 20px;
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.4);
+      font-size: 24px;
+      cursor: pointer;
+      padding: 0;
+      line-height: 1;
+      transition: color 0.2s ease;
+    }
+
+    .chat-close-btn:hover {
+      color: white;
+    }
+
+    .chat-body {
+      flex-grow: 1;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(255, 255, 255, 0.1) transparent;
+    }
+
+    .chat-body::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .chat-body::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+
+    .chat-message {
+      max-width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      animation: message-fade-in 0.25s ease-out;
+      font-family: sans-serif;
+    }
+
+    @keyframes message-fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(5px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .chat-message.customer {
+      align-self: flex-end;
+    }
+
+    .chat-message.admin {
+      align-self: flex-start;
+    }
+
+    .chat-bubble {
+      padding: 12px 16px;
+      border-radius: 18px;
+      font-size: 14px;
+      line-height: 1.4;
+      word-break: break-word;
+    }
+
+    .chat-message.customer .chat-bubble {
+      background: linear-gradient(135deg, rgba(244, 89, 1, 0.2) 0%, rgba(244, 89, 1, 0.05) 100%);
+      border: 1px solid rgba(244, 89, 1, 0.25);
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+
+    .chat-message.admin .chat-bubble {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: rgba(255, 255, 255, 0.9);
+      border-bottom-left-radius: 4px;
+    }
+
+    .chat-message span.chat-time {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.35);
+      align-self: flex-end;
+    }
+
+    .chat-message.admin span.chat-time {
+      align-self: flex-start;
+    }
+
+    .chat-footer {
+      padding: 16px;
+      background: rgba(255, 255, 255, 0.01);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    #chat-form {
+      display: flex;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 6px 6px 6px 14px;
+      align-items: center;
+      transition: border-color 0.2s ease;
+    }
+
+    #chat-form:focus-within {
+      border-color: var(--color-accent, #f45901);
+    }
+
+    #chat-input {
+      flex-grow: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 14px;
+      padding: 6px 0;
+    }
+
+    #chat-input::placeholder {
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    #chat-send-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--color-accent, #f45901);
+      color: white;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    #chat-send-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Onboarding form inside chat */
+    .chat-onboarding {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 10px 5px;
+      font-family: sans-serif;
+    }
+
+    .chat-onboarding p {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .onboarding-input-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .onboarding-input-group label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.4);
+      letter-spacing: 0.05em;
+    }
+
+    .onboarding-input-group input {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 10px 12px;
+      color: white;
+      font-size: 13px;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    .onboarding-input-group input:focus {
+      border-color: var(--color-accent, #f45901);
+    }
+
+    .onboarding-submit-btn {
+      background: var(--color-accent, #f45901);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+      margin-top: 6px;
+    }
+
+    .onboarding-submit-btn:hover {
+      opacity: 0.9;
+    }
+
+    /* Custom Live Chat Admin View Layout */
+    .admin-livechat-container {
+      display: flex;
+      height: calc(100vh - 280px);
+      min-height: 520px;
+      background: rgba(11, 15, 25, 0.4);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      overflow: hidden;
+      font-family: sans-serif;
+      color: white;
+      margin-top: 24px;
+    }
+
+    .admin-livechat-list-pane {
+      width: 320px;
+      background: rgba(255, 255, 255, 0.01);
+      border-right: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .admin-livechat-pane-header {
+      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .admin-livechat-pane-header h2 {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .admin-livechat-pane-header p {
+      margin: 4px 0 0 0;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.4);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .admin-livechat-list {
+      flex-grow: 1;
+      overflow-y: auto;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .admin-livechat-item {
+      padding: 14px 16px;
+      border-radius: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border: 1px solid transparent;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .admin-livechat-item:hover {
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .admin-livechat-item.active {
+      background: rgba(244, 89, 1, 0.1);
+      border-color: rgba(244, 89, 1, 0.2);
+    }
+
+    .admin-livechat-item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .admin-livechat-item-name {
+      font-weight: 700;
+      font-size: 14px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 170px;
+    }
+
+    .admin-livechat-item-time {
+      font-size: 10px;
+      color: rgba(255, 255, 255, 0.35);
+    }
+
+    .admin-livechat-item-preview {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.5);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .admin-livechat-item-badge {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-accent, #f45901);
+      box-shadow: 0 0 10px var(--color-accent, #f45901);
+    }
+
+    .admin-livechat-item-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2px;
+    }
+
+    .admin-livechat-chat-pane {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.15);
+    }
+
+    .admin-livechat-empty-state {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255, 255, 255, 0.3);
+      gap: 12px;
+    }
+
+    .admin-livechat-chat-header {
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.01);
+    }
+
+    .admin-livechat-chat-header-user h3 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .admin-livechat-chat-header-user p {
+      margin: 2px 0 0 0;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    .admin-livechat-delete-btn {
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      color: rgb(248, 113, 113);
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .admin-livechat-delete-btn:hover {
+      background: rgba(239, 68, 68, 0.2);
+    }
+
+    .admin-livechat-messages {
+      flex-grow: 1;
+      padding: 24px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .admin-livechat-reply-pane {
+      padding: 20px 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .admin-livechat-reply-box {
+      display: flex;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 8px;
+    }
+
+    .admin-livechat-reply-textarea {
+      flex-grow: 1;
+      background: none;
+      border: none;
+      outline: none;
+      color: white;
+      font-size: 14px;
+      resize: none;
+      height: 48px;
+      font-family: inherit;
+      padding: 6px;
+    }
+
+    .admin-livechat-reply-textarea::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .admin-livechat-send-btn {
+      align-self: flex-end;
+      padding: 12px 24px;
+      border-radius: 10px;
+      background: var(--color-accent, #f45901);
+      color: white;
+      border: none;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .admin-livechat-send-btn:hover {
+      opacity: 0.9;
+    }
+
+    .admin-livechat-templates {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .admin-livechat-template-chip {
+      padding: 6px 12px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 11px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .admin-livechat-template-chip:hover {
+      background: rgba(244, 89, 1, 0.08);
+      border-color: rgba(244, 89, 1, 0.15);
+      color: white;
+    }
+
+    /* ====================================================
+         PRICING CTA BUTTONS - DARK & LIGHT MODE PERFECTION
+         No Text Overlap, Distinct Contrast, Beautiful Colors
+         ==================================================== */
+    .pricing-cta-btn {
+      width: 100% !important;
+      min-height: 52px !important;
+      padding: 13px 20px !important;
+      border-radius: 16px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 10px !important;
+      text-align: center !important;
+      font-size: 14px !important;
+      line-height: 1.3 !important;
+      text-decoration: none !important;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1) !important;
+      position: relative !important;
+      z-index: 10 !important;
+      cursor: pointer !important;
+      box-sizing: border-box !important;
+    }
+
+    .pricing-cta-btn svg {
+      flex-shrink: 0 !important;
+      width: 20px !important;
+      height: 20px !important;
+    }
+
+    .pricing-cta-btn .btn-text {
+      white-space: normal !important;
+      word-break: normal !important;
+      text-align: center !important;
+      display: inline-block !important;
+    }
+
+    /* Dark Mode: Secondary (Standard Cards) */
+    .pricing-btn-secondary {
+      background: rgba(61, 180, 189, 0.12) !important;
+      border: 1.5px solid rgba(61, 180, 189, 0.5) !important;
+      color: #3db4bd !important;
+      font-weight: 800 !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25) !important;
+    }
+
+    .pricing-btn-secondary:hover {
+      background: #3db4bd !important;
+      color: #ffffff !important;
+      border-color: #3db4bd !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 8px 25px rgba(61, 180, 189, 0.45) !important;
+    }
+
+    /* Dark Mode: Primary (Best Value / Most Popular Card) */
+    .pricing-btn-primary {
+      background: linear-gradient(135deg, #3db4bd 0%, #00c6ff 100%) !important;
+      border: none !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      box-shadow: 0 8px 25px rgba(61, 180, 189, 0.4) !important;
+    }
+
+    .pricing-btn-primary:hover {
+      background: linear-gradient(135deg, #00c6ff 0%, #3db4bd 100%) !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 12px 32px rgba(61, 180, 189, 0.55) !important;
+    }
+
+    /* Light Mode: Pricing CTA Buttons */
+    body.light-mode .pricing-btn-secondary {
+      background: #f8fafc !important;
+      border: 2px solid #0891b2 !important;
+      color: #0891b2 !important;
+      font-weight: 800 !important;
+      box-shadow: 0 4px 12px rgba(8, 145, 178, 0.1) !important;
+    }
+
+    body.light-mode .pricing-btn-secondary:hover {
+      background: #0891b2 !important;
+      color: #ffffff !important;
+      border-color: #0891b2 !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 8px 22px rgba(8, 145, 178, 0.3) !important;
+    }
+
+    body.light-mode .pricing-btn-primary {
+      background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%) !important;
+      border: none !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      box-shadow: 0 8px 24px rgba(8, 145, 178, 0.35) !important;
+    }
+
+    body.light-mode .pricing-btn-primary:hover {
+      background: linear-gradient(135deg, #0e7490 0%, #0891b2 100%) !important;
+      color: #ffffff !important;
+      transform: translateY(-2px) scale(1.02) !important;
+      box-shadow: 0 12px 30px rgba(8, 145, 178, 0.45) !important;
+    }
+
+    /* Light Mode: FAQ Section Overhaul */
+    body.light-mode #faq {
+      background-color: #f8f9fa !important;
+      border-color: rgba(0, 0, 0, 0.08) !important;
+    }
+
+    body.light-mode #faq h2 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #faq p {
+      color: #475569 !important;
+    }
+
+    body.light-mode .faq-item {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
+    }
+
+    body.light-mode .faq-item:hover {
+      border-color: #0891b2 !important;
+      box-shadow: 0 10px 30px rgba(8, 145, 178, 0.12) !important;
+    }
+
+    body.light-mode .faq-question {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .faq-item:hover .faq-question {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .faq-body {
+      border-color: #f1f5f9 !important;
+    }
+
+    body.light-mode .faq-answer {
+      color: #334155 !important;
+    }
+
+    body.light-mode .faq-icon-wrapper {
+      background-color: #f1f5f9 !important;
+      border-color: #e2e8f0 !important;
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #faq div[class*="rounded-3xl"] {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    body.light-mode #faq div[class*="rounded-3xl"] h4 {
+      color: #0f172a !important;
+    }
+
+    /* ===================================================
+         1. CYBER NET / GRID BACKGROUND PATTERNS
+         =================================================== */
+    .cyber-grid-pattern {
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.07) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 60%, transparent 100%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 50%, #000 60%, transparent 100%);
+      pointer-events: none;
+    }
+
+    .perspective-grid-net {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 140px;
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.09) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.09) 1px, transparent 1px);
+      background-size: 32px 32px;
+      transform: perspective(350px) rotateX(55deg);
+      transform-origin: top center;
+      mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    body.light-mode .cyber-grid-pattern {
+      background-image:
+        linear-gradient(to right, rgba(8, 145, 178, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(8, 145, 178, 0.05) 1px, transparent 1px);
+    }
+
+    body.light-mode .perspective-grid-net {
+      background-image:
+        linear-gradient(to right, rgba(8, 145, 178, 0.07) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(8, 145, 178, 0.07) 1px, transparent 1px);
+    }
+
+    /* ===================================================
+         2. SCROLLSPY NAVIGATION INDICATOR (Active Underline)
+         =================================================== */
+    .nav-item-link {
+      position: relative;
+      transition: color 0.25s ease;
+    }
+
+    .nav-item-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      width: 0%;
+      height: 2.5px;
+      background: #3db4bd;
+      border-radius: 9999px;
+      transform: translateX(-50%);
+      transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      opacity: 0;
+      box-shadow: 0 0 10px rgba(61, 180, 189, 0.8);
+    }
+
+    .nav-item-link:hover::after,
+    .nav-item-link.active::after {
+      width: 100%;
+      opacity: 1;
+    }
+
+    .nav-item-link.active {
+      color: #3db4bd !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode .nav-item-link.active {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .nav-item-link::after {
+      background: #0891b2 !important;
+      box-shadow: 0 0 8px rgba(8, 145, 178, 0.6) !important;
+    }
+
+    /* ===================================================
+         3. CONTINUOUS TESTIMONIALS SLIDER TRACK
+         =================================================== */
+    @keyframes slideTestimonials {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .testimonials-slider-track {
+      display: flex;
+      width: max-content;
+      animation: slideTestimonials 32s linear infinite;
+    }
+
+    .testimonials-slider-container:hover .testimonials-slider-track {
+      animation-play-state: paused;
+    }
+
+    /* ===================================================
+         4. CURRENCY TOGGLE BUTTON IN LIGHT MODE
+         =================================================== */
+    body.light-mode #currency-toggle-wrapper {
+      background-color: #ffffff !important;
+      border: 2px solid #0891b2 !important;
+      box-shadow: 0 4px 18px rgba(8, 145, 178, 0.18) !important;
+    }
+
+    body.light-mode #currency-slider-pill {
+      background: linear-gradient(135deg, #0891b2, #06b6d4) !important;
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.4) !important;
+    }
+
+    body.light-mode #toggle-bdt-btn,
+    body.light-mode #toggle-usd-btn {
+      color: #334155 !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode #toggle-bdt-btn.text-white,
+    body.light-mode #toggle-usd-btn.text-white {
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    body.light-mode #currency-toggle-wrapper+span {
+      color: #0891b2 !important;
+      font-weight: 700 !important;
+    }
+
+    /* ===================================================
+         5. FOOTER STYLING & LIGHT MODE SUPPORT
+         =================================================== */
+    #footer {
+      position: relative !important;
+    }
+
+    body.light-mode #footer {
+      background-color: #f8fafc !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    body.light-mode #footer h4 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #footer p,
+    body.light-mode #footer a,
+    body.light-mode #footer span {
+      color: #475569 !important;
+    }
+
+    body.light-mode #footer a:hover {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode #footer .border-t {
+      border-color: #e2e8f0 !important;
+    }
+
+    /* ===================================================
+         6. HERO SECTION MATCHING WALID REFERENCE
+         =================================================== */
+    .hero-card-watermark {
+      position: absolute;
+      top: 10%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 80px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 0.95;
+      transform: scaleY(1.35);
+      opacity: 0.9;
+      z-index: 5;
+      text-shadow: 0 0 25px rgba(220, 38, 38, 0.4);
+    }
+
+    .hero-orbit-ring {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .hero-orbit-ring-outer {
+      width: 520px;
+      height: 520px;
+      border: 1px dashed rgba(61, 180, 189, 0.35);
+      margin-top: -260px;
+      margin-left: -260px;
+      border: 1.5px dashed rgba(61, 180, 189, 0.4);
+      animation: spinCircleClockwise 45s linear infinite;
+    }
+
+    .hero-orbit-ring-inner {
+      width: 440px;
+      height: 440px;
+      border: 1px solid rgba(0, 198, 255, 0.2);
+      margin-top: -220px;
+      margin-left: -220px;
+      border: 1.5px solid rgba(0, 198, 255, 0.25);
+      animation: spinCircleCounter 35s linear infinite;
+    }
+
+    .hero-corner-grid {
+      position: absolute;
+      width: 420px;
+      height: 280px;
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+      transform: perspective(300px) rotateX(45deg);
+      pointer-events: none;
+    }
+
+    .hero-corner-grid-tl {
+      top: -30px;
+      left: -30px;
+      mask-image: radial-gradient(ellipse at 20% 20%, #000 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 20% 20%, #000 40%, transparent 85%);
+    }
+
+    .hero-corner-grid-br {
+      bottom: -30px;
+      right: -30px;
+      mask-image: radial-gradient(ellipse at 80% 80%, #000 40%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse at 80% 80%, #000 40%, transparent 85%);
+    }
+
+    /* Light mode for new Hero Card */
+    body.light-mode #home {
+      background-color: #f8fafc !important;
+    }
+
+    body.light-mode #home h1 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #home p {
+      color: #475569 !important;
+    }
+
+    body.light-mode .hero-card-watermark {
+      color: rgba(8, 145, 178, 0.2) !important;
+      text-shadow: none !important;
+    }
+
+    body.light-mode .hero-orbit-ring-outer {
+      border-color: rgba(8, 145, 178, 0.3) !important;
+    }
+
+    body.light-mode .hero-orbit-ring-inner {
+      border-color: rgba(8, 145, 178, 0.2) !important;
+    }
+
+    body.light-mode #home .bg-\[\#0c111e\] {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08) !important;
+    }
+
+    body.light-mode #home .bg-black\/60 {
+      background-color: rgba(255, 255, 255, 0.88) !important;
+      border-color: #cbd5e1 !important;
+    }
+
+    body.light-mode #home .bg-black\/60 .text-white\/95 {
+      color: #0f172a !important;
+    }
+
+    /* ===================================================
+         AUTHORITATIVE PRICING, BADGES, BUTTONS & ABOUT STYLES
+         =================================================== */
+
+    /* 1. PRICING CARDS - STRICT MIDDLE ALIGNMENT & TOP BADGE */
+    .pricing-card-box {
+      position: relative !important;
+      overflow: visible !important;
+      text-align: center !important;
+    }
+
+    .pricing-badge-wrapper {
+      position: absolute !important;
+      top: -16px !important;
+      left: 0 !important;
+      right: 0 !important;
+      width: 100% !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+      margin: 0 auto !important;
+      text-align: center !important;
+      z-index: 40 !important;
+      pointer-events: none !important;
+    }
+
+    .pricing-badge-pill {
+      display: inline-flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+      padding: 7px 22px !important;
+      border-radius: 9999px !important;
+      font-size: 11px !important;
+      font-weight: 800 !important;
+      text-transform: uppercase !important;
+      letter-spacing: 0.08em !important;
+      line-height: 1 !important;
+      white-space: nowrap !important;
+      margin: 0 auto !important;
+    }
+
+    .pricing-badge-standard {
+      background-color: #0e1422 !important;
+      color: #38bdf8 !important;
+      border: 1.5px solid rgba(61, 180, 189, 0.6) !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+    }
+
+    .pricing-badge-best {
+      background: linear-gradient(135deg, #06b6d4 0%, #3db4bd 50%, #0284c7 100%) !important;
+      color: #030712 !important;
+      font-weight: 900 !important;
+      border: none !important;
+      box-shadow: 0 4px 16px rgba(6, 182, 212, 0.45) !important;
+    }
+
+    .pricing-card-header,
+    .pricing-card-category,
+    .pricing-card-title,
+    .pricing-card-target {
+      text-align: center !important;
+      justify-content: center !important;
+      align-items: center !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    /* 2. PRICING BUTTONS - CRISP & READABLE IN DARK MODE */
+    .pricing-cta-btn {
+      width: 100% !important;
+      min-height: 52px !important;
+      padding: 13px 20px !important;
+      border-radius: 16px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 8px !important;
+      text-align: center !important;
+      font-size: 14px !important;
+      line-height: 1.3 !important;
+      text-decoration: none !important;
+      position: relative !important;
+      z-index: 10 !important;
+      cursor: pointer !important;
+      box-sizing: border-box !important;
+    }
+
+    .pricing-cta-btn svg {
+      flex-shrink: 0 !important;
+      width: 18px !important;
+      height: 18px !important;
+      margin: 0 !important;
+    }
+
+    .pricing-cta-btn .btn-text {
+      white-space: normal !important;
+      text-align: center !important;
+      margin: 0 !important;
+    }
+
+    .pricing-btn-secondary {
+      background: rgba(61, 180, 189, 0.15) !important;
+      border: 2px solid #3db4bd !important;
+      color: #38bdf8 !important;
+      font-weight: 800 !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .pricing-btn-secondary:hover {
+      background: #3db4bd !important;
+      color: #030712 !important;
+      border-color: #3db4bd !important;
+      box-shadow: 0 6px 20px rgba(61, 180, 189, 0.5) !important;
+    }
+
+    .pricing-btn-primary {
+      background: linear-gradient(135deg, #3db4bd 0%, #00c6ff 100%) !important;
+      border: none !important;
+      color: #030712 !important;
+      font-weight: 900 !important;
+      box-shadow: 0 6px 20px rgba(61, 180, 189, 0.4) !important;
+    }
+
+    .pricing-btn-primary:hover {
+      background: linear-gradient(135deg, #00c6ff 0%, #3db4bd 100%) !important;
+      box-shadow: 0 8px 25px rgba(61, 180, 189, 0.55) !important;
+    }
+
+    /* 3. LIGHT MODE OVERRIDES - HIGH CONTRAST, ZERO OVERLAP, 100% READABLE */
+    body.light-mode .pricing-card-box {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06) !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent {
+      border: 2.5px solid #0891b2 !important;
+      box-shadow: 0 16px 40px rgba(8, 145, 178, 0.22) !important;
+    }
+
+    body.light-mode .pricing-card-title {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .pricing-card-category {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .pricing-card-target {
+      color: #475569 !important;
+    }
+
+    body.light-mode .pricing-val {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .pricing-secondary {
+      color: #0891b2 !important;
+    }
+
+    body.light-mode .pricing-cycle {
+      color: #64748b !important;
+    }
+
+    body.light-mode .pricing-card-box div[class*="rounded-2xl"]:has(> .pricing-val) {
+      background-color: #f8fafc !important;
+      border: 1px solid #e2e8f0 !important;
+    }
+
+    body.light-mode .pricing-card-box.border-2.border-accent div[class*="rounded-2xl"]:has(> .pricing-val) {
+      background-color: rgba(8, 145, 178, 0.08) !important;
+      border: 1px solid rgba(8, 145, 178, 0.25) !important;
+    }
+
+    /* Badges in Light Mode - 100% Opaque Solid Fill, Perfectly Centered */
+    body.light-mode .pricing-badge-standard {
+      background-color: #ffffff !important;
+      color: #0891b2 !important;
+      border: 2px solid #0891b2 !important;
+      box-shadow: 0 4px 12px rgba(8, 145, 178, 0.18) !important;
+      font-weight: 800 !important;
+    }
+
+    body.light-mode .pricing-badge-best {
+      background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%) !important;
+      color: #ffffff !important;
+      border: none !important;
+      box-shadow: 0 4px 16px rgba(8, 145, 178, 0.4) !important;
+      font-weight: 900 !important;
+    }
+
+    /* Currency Toggle in Light Mode */
+    body.light-mode #currency-toggle-wrapper {
+      background-color: #f8fafc !important;
+      border: 2.5px solid #0891b2 !important;
+      box-shadow: 0 4px 18px rgba(8, 145, 178, 0.2) !important;
+    }
+
+    body.light-mode #currency-slider-pill {
+      background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%) !important;
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.45) !important;
+    }
+
+    body.light-mode #toggle-bdt-btn,
+    body.light-mode #toggle-usd-btn {
+      color: #0f172a !important;
+      font-weight: 800 !important;
+      opacity: 1 !important;
+    }
+
+    body.light-mode #toggle-bdt-btn.text-white,
+    body.light-mode #toggle-usd-btn.text-white {
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35) !important;
+    }
+
+    body.light-mode #currency-toggle-wrapper+span {
+      color: #0891b2 !important;
+      font-weight: 800 !important;
+    }
+
+    /* PRICING BUTTONS IN LIGHT MODE - Solid Cyan & Gradient, 100% Readable White Text */
+    body.light-mode .pricing-btn-secondary,
+    body.light-mode a.pricing-btn-secondary {
+      background: #0891b2 !important;
+      background-color: #0891b2 !important;
+      color: #ffffff !important;
+      border: 2px solid #0891b2 !important;
+      font-weight: 800 !important;
+      box-shadow: 0 4px 14px rgba(8, 145, 178, 0.25) !important;
+    }
+
+    body.light-mode .pricing-btn-secondary .btn-text,
+    body.light-mode .pricing-btn-secondary svg,
+    body.light-mode a.pricing-btn-secondary .btn-text,
+    body.light-mode a.pricing-btn-secondary svg {
+      color: #ffffff !important;
+      fill: currentColor !important;
+    }
+
+    body.light-mode .pricing-btn-secondary:hover,
+    body.light-mode a.pricing-btn-secondary:hover {
+      background: #0e7490 !important;
+      background-color: #0e7490 !important;
+      border-color: #0e7490 !important;
+      color: #ffffff !important;
+      box-shadow: 0 8px 24px rgba(8, 145, 178, 0.4) !important;
+      transform: translateY(-2px) scale(1.02) !important;
+    }
+
+    body.light-mode .pricing-btn-primary,
+    body.light-mode a.pricing-btn-primary,
+    body.light-mode .pricing-card-box.border-2.border-accent .pricing-cta-btn {
+      background: linear-gradient(135deg, #0891b2 0%, #0284c7 100%) !important;
+      border: none !important;
+      color: #ffffff !important;
+      font-weight: 900 !important;
+      box-shadow: 0 6px 22px rgba(8, 145, 178, 0.4) !important;
+    }
+
+    body.light-mode .pricing-btn-primary .btn-text,
+    body.light-mode .pricing-btn-primary svg,
+    body.light-mode a.pricing-btn-primary .btn-text,
+    body.light-mode a.pricing-btn-primary svg {
+      color: #ffffff !important;
+      fill: currentColor !important;
+    }
+
+    body.light-mode .pricing-btn-primary:hover,
+    body.light-mode a.pricing-btn-primary:hover,
+    body.light-mode .pricing-card-box.border-2.border-accent .pricing-cta-btn:hover {
+      background: linear-gradient(135deg, #0e7490 0%, #0369a1 100%) !important;
+      color: #ffffff !important;
+      box-shadow: 0 10px 28px rgba(8, 145, 178, 0.55) !important;
+      transform: translateY(-2px) scale(1.02) !important;
+    }
+
+    /* Deliverables in Light Mode */
+    body.light-mode .custom-feature-item .feature-text {
+      color: #334155 !important;
+      font-weight: 600 !important;
+    }
+
+    body.light-mode .custom-feature-item:hover {
+      background-color: #f1f5f9 !important;
+    }
+
+    body.light-mode .custom-feature-item .checkbox-square {
+      border-color: #0891b2 !important;
+    }
+
+    body.light-mode .custom-feature-item .checkbox-square.bg-accent {
+      background-color: #0891b2 !important;
+    }
+
+    /* 4. ABOUT SECTION IN LIGHT MODE */
+    body.light-mode #about {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+    }
+
+    body.light-mode #about h2 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #about p,
+    body.light-mode #about-display-paragraph {
+      color: #334155 !important;
+    }
+
+    body.light-mode .about-skill-pill {
+      background: rgba(8, 145, 178, 0.08) !important;
+      border-color: rgba(8, 145, 178, 0.35) !important;
+      color: #0891b2 !important;
+      font-weight: 700 !important;
+    }
+
+    body.light-mode .about-skill-pill:hover {
+      background: rgba(8, 145, 178, 0.18) !important;
+      border-color: #0891b2 !important;
+      color: #0e7490 !important;
+    }
+
+    body.light-mode .about-video-card {
+      border-color: #cbd5e1 !important;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+      background-color: #0f172a !important;
+    }
+
+    body.light-mode #core-competencies-card {
+      background-color: #ffffff !important;
+      border-color: #e2e8f0 !important;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05) !important;
+    }
+
+    body.light-mode #core-competencies-card h3 {
+      color: #0f172a !important;
+    }
+
+    body.light-mode #core-competencies-card .text-gray-200 {
+      color: #334155 !important;
+    }
+
+
+    /* 5. HERO DOUBLE ROTATING DOTTED CIRCLES & SUBTLE FLOATING IMAGE */
+    @keyframes heroSubtleFloat {
+
+      0%,
+      100% {
+        transform: translateY(0px) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(0.8deg);
+      }
+    }
+
+    .hero-image-floating-wrapper {
+      animation: heroSubtleFloat 4s ease-in-out infinite !important;
+      will-change: transform;
+    }
+
+    .hero-rotating-circle-outer {
+      position: absolute !important;
+      width: 460px !important;
+      height: 460px !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -230px !important;
+      margin-left: -230px !important;
+      border-radius: 50% !important;
+      border: none !important;
+      pointer-events: none !important;
+      user-select: none !important;
+      z-index: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      animation: spinCircleClockwise 20s linear infinite !important;
+    }
+
+    .hero-rotating-circle-inner {
+      position: absolute !important;
+      width: 380px !important;
+      height: 380px !important;
+      top: 50% !important;
+      left: 50% !important;
+      margin-top: -190px !important;
+      margin-left: -190px !important;
+      border-radius: 50% !important;
+      border: none !important;
+      pointer-events: none !important;
+      user-select: none !important;
+      z-index: 0 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      animation: spinCircleCounter 26s linear infinite !important;
+    }
+
+    @media (max-width: 640px) {
+      .hero-rotating-circle-outer {
+        width: 330px !important;
+        height: 330px !important;
+        margin-top: -165px !important;
+        margin-left: -165px !important;
+      }
+
+      .hero-rotating-circle-inner {
+        width: 270px !important;
+        height: 270px !important;
+        margin-top: -135px !important;
+        margin-left: -135px !important;
+      }
+    }
+
+
+    /* Footer Portrait Sizing (Noticeably Large & Prominent per user request) */
+    #footer img[src*="footer-portrait"] {
+      height: 440px !important;
+      max-height: 460px !important;
+      width: auto !important;
+      max-width: 100% !important;
+      object-fit: contain !important;
+      object-position: bottom !important;
+      margin-bottom: -48px !important;
+    }
+    @media (max-width: 1280px) {
+      #footer img[src*="footer-portrait"] {
+        height: 400px !important;
+        max-height: 420px !important;
+      }
+    }
+    @media (max-width: 1024px) {
+      #footer img[src*="footer-portrait"] {
+        height: 360px !important;
+        max-height: 380px !important;
+        margin-bottom: -36px !important;
+      }
+    }
+    @media (max-width: 640px) {
+      #footer img[src*="footer-portrait"] {
+        height: 280px !important;
+        max-height: 300px !important;
+        margin-bottom: -24px !important;
+      }
+    }
+
+    /* Hero Headline Giant Typography */
+    .hero-headline-giant {
+      font-size: clamp(48px, 9vw, 114px) !important;
+      line-height: 0.98 !important;
+      letter-spacing: -0.03em !important;
+      font-weight: 950 !important;
+    }
+
+    .hero-headline-giant span {
+      display: block !important;
+    }
+
+    .hero-headline-giant .hero-kicker-line {
+      font-size: clamp(38px, 7vw, 90px) !important;
+      color: #ffffff !important;
+      margin-bottom: 2px !important;
+    }
+
+    .hero-headline-giant .hero-name-line {
+      font-size: clamp(48px, 9.5vw, 118px) !important;
+      color: #3db4bd !important;
+      line-height: 0.96 !important;
+    }
+
+    body.light-mode .hero-headline-giant .hero-kicker-line {
+      color: #0f172a !important;
+    }
+
+    body.light-mode .hero-headline-giant .hero-name-line {
+      color: #0891b2 !important;
+    }
+
+
+    /* Section Net Backdrop - Subtle Cyber Perspective Grid at Bottom of Every Section */
+    .section-net-backdrop {
+      position: absolute !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      height: 160px !important;
+      background-image:
+        linear-gradient(to right, rgba(61, 180, 189, 0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(61, 180, 189, 0.12) 1px, transparent 1px) !important;
+      background-size: 36px 36px !important;
+      transform: perspective(300px) rotateX(55deg) !important;
+      transform-origin: bottom center !important;
+      mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 15%, transparent 100%) !important;
+      -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.85) 15%, transparent 100%) !important;
+      pointer-events: none !important;
+      z-index: 1 !important;
+      opacity: 0.65 !important;
+    }
+
+    body.light-mode .section-net-backdrop {
+      background-image:
+        linear-gradient(to right, rgba(8, 145, 178, 0.08) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(8, 145, 178, 0.08) 1px, transparent 1px) !important;
+      opacity: 0.8 !important;
+    }
+  </style>
+
+  <!-- Floating Chat Trigger -->
+  <div id="live-chat-trigger" class="chat-closed">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+    </svg>
+  </div>
+
+  <!-- Live Chat Panel -->
+  <div id="live-chat-panel">
+    <div class="chat-header">
+      <div class="chat-avatar-container">
+        <img src="/assets/profile.png" alt="Al-Amin Khan" class="chat-avatar"
+          onerror="this.src='https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y'">
+        <div class="online-status"></div>
+      </div>
+      <div class="chat-header-info">
+        <h3>Al-Amin Khan</h3>
+        <span>Online Digital assistant</span>
+      </div>
+      <button class="chat-close-btn" id="live-chat-close">&times;</button>
+    </div>
+    <div class="chat-body" id="chat-messages-container"></div>
+    <div class="chat-footer" id="chat-footer-area"></div>
+  </div>
+
+  <!-- Firebase Integration module -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { initializeFirestore, collection, addDoc, getDocs, doc, setDoc, deleteDoc, onSnapshot, query, orderBy, limit } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+    // Firebase Config matching existing index-wTLK3pDc.js definitions
+    const firebaseConfig = {
+      apiKey: "AIzaSyAAiTa9069Nu8Jhj3oK2fzfA15-zKnVUpc",
+      authDomain: "gen-lang-client-0431762799.firebaseapp.com",
+      projectId: "gen-lang-client-0431762799",
+      storageBucket: "gen-lang-client-0431762799.firebasestorage.app",
+      messagingSenderId: "348561710489",
+      appId: "1:348561710489:web:f7cd9994a947a9d025c708"
+    };
+
+    let app = null;
+    let db = null;
+
+    try {
+      app = initializeApp(firebaseConfig);
+      db = initializeFirestore(app, {
+        databaseId: "ai-studio-84d8405f-714a-4fd2-a8aa-287773ce0a4b"
+      });
+    } catch (err) {
+      console.error("Firebase or Firestore failed to initialize:", err);
+    }
+
+    // ----------------------------------------------------
+    // 1. Local Storage Interceptor (Sync Contact Form Submissions)
+    // ----------------------------------------------------
+    let isSyncingSubmissions = false;
+    const originalSetItem = window.localStorage.setItem;
+
+    window.localStorage.setItem = function (key, value) {
+      originalSetItem.apply(this, arguments);
+
+      if (key === 'db_contactSubmissions' && !isSyncingSubmissions) {
+        try {
+          const list = JSON.parse(value) || [];
+          syncSubmissionsToFirestore(list);
+        } catch (e) {
+          console.error("Local interceptor parse error:", e);
+        }
+      }
+    };
+
+    async function syncSubmissionsToFirestore(localList) {
+      if (!db) return;
+      try {
+        isSyncingSubmissions = true;
+        const querySnapshot = await getDocs(collection(db, "contactSubmissions"));
+        const firestoreIds = [];
+        querySnapshot.forEach(doc => {
+          firestoreIds.push(doc.id);
+        });
+
+        // 1. Add missing documents to Firestore
+        for (const item of localList) {
+          if (item && item.id) {
+            if (!firestoreIds.includes(item.id)) {
+              await setDoc(doc(db, "contactSubmissions", item.id), {
+                name: item.name || "Anonymous",
+                email: item.email || "",
+                subject: item.subject || "",
+                message: item.message || "",
+                createdAt: item.createdAt || new Date().toISOString()
+              });
+            }
+          }
+        }
+
+        // 2. Delete removed documents from Firestore
+        const localIds = localList.map(item => item.id);
+        for (const fsId of firestoreIds) {
+          if (!localIds.includes(fsId)) {
+            await deleteDoc(doc(db, "contactSubmissions", fsId));
+          }
+        }
+      } catch (e) {
+        console.error("Sync submissions to Firestore failed:", e);
+      } finally {
+        isSyncingSubmissions = false;
+      }
+    }
+
+    // ----------------------------------------------------
+    // 2. Admin Panel Realtime Sync (Contact Submissions)
+    // ----------------------------------------------------
+    function setupAdminSubmissionsSync() {
+      if (!db) return;
+      try {
+        onSnapshot(collection(db, "contactSubmissions"),
+          (snapshot) => {
+            const list = [];
+            snapshot.forEach(d => {
+              list.push({ id: d.id, ...d.data() });
+            });
+            list.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+            isSyncingSubmissions = true;
+            localStorage.setItem("db_contactSubmissions", JSON.stringify(list));
+            isSyncingSubmissions = false;
+          },
+          (error) => {
+            console.error("Admin submissions background sync error:", error);
+          }
+        );
+      } catch (e) {
+        console.error("setupAdminSubmissionsSync failed:", e);
+      }
+    }
+
+    if (window.location.hash.includes("/admin") || window.location.href.includes("admin")) {
+      setupAdminSubmissionsSync();
+    }
+
+    // ----------------------------------------------------
+    // 3. Customer Floating Chatbot Controller
+    // ----------------------------------------------------
+    const trigger = document.getElementById("live-chat-trigger");
+    const panel = document.getElementById("live-chat-panel");
+    const closeBtn = document.getElementById("live-chat-close");
+    const msgContainer = document.getElementById("chat-messages-container");
+    const footerArea = document.getElementById("chat-footer-area");
+
+    function checkChatbotVisibility() {
+      if (window.location.hash.includes("/admin") || window.location.pathname.includes("/admin") || window.location.href.includes("admin")) {
+        trigger.style.display = "none";
+        panel.classList.remove("chat-visible");
+        trigger.classList.remove("chat-open");
+      } else {
+        trigger.style.display = "flex";
+      }
+    }
+    window.addEventListener("hashchange", checkChatbotVisibility);
+    checkChatbotVisibility();
+
+    trigger.addEventListener("click", () => {
+      const isVisible = panel.classList.toggle("chat-visible");
+      trigger.classList.toggle("chat-open", isVisible);
+      if (isVisible) {
+        initializeChatSession();
+      }
+    });
+
+    closeBtn.addEventListener("click", () => {
+      panel.classList.remove("chat-visible");
+      trigger.classList.remove("chat-open");
+    });
+
+    let activeSessionId = localStorage.getItem("chat_session_id") || "";
+    let customerName = localStorage.getItem("chat_customer_name") || "";
+    let customerEmail = localStorage.getItem("chat_customer_email") || "";
+
+    function initializeChatSession() {
+      if (!activeSessionId) {
+        renderOnboardingForm();
+      } else {
+        renderChatInterface();
+        fetchChatMessagesFromServer(activeSessionId);
+      }
+    }
+
+    function renderOnboardingForm() {
+      msgContainer.innerHTML = `
+          <div class="chat-onboarding">
+            <p><strong>Hi! I'm Al-Amin's digital assistant.</strong> Please introduce yourself to start a conversation!</p>
+            <div class="onboarding-input-group">
+              <label>Your Name</label>
+              <input type="text" id="ob-name" placeholder="Name" required>
+            </div>
+            <div class="onboarding-input-group">
+              <label>Email Address</label>
+              <input type="email" id="ob-email" placeholder="Email" required>
+            </div>
+            <button class="onboarding-submit-btn" id="ob-submit-btn">Start Conversation</button>
+          </div>
+        `;
+      footerArea.innerHTML = "";
+
+      document.getElementById("ob-submit-btn").addEventListener("click", async () => {
+        const name = document.getElementById("ob-name").value.trim();
+        const email = document.getElementById("ob-email").value.trim();
+
+        if (!name || !email) {
+          alert("Please fill in all fields.");
+          return;
+        }
+
+        const sId = "session_" + Math.random().toString(36).substr(2, 9);
+        activeSessionId = sId;
+        customerName = name;
+        customerEmail = email;
+
+        localStorage.setItem("chat_session_id", sId);
+        localStorage.setItem("chat_customer_name", name);
+        localStorage.setItem("chat_customer_email", email);
+
+        // Notify server
+        try {
+          await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              action: 'customer_message',
+              sessionId: sId,
+              customerName: name,
+              customerEmail: email,
+              message: "Hello! I started a conversation."
+            })
+          });
+        } catch (e) {
+          console.error("New chat notify error:", e);
+        }
+
+        initializeChatSession();
+      });
+    }
+
+    function renderChatInterface() {
+      msgContainer.innerHTML = `<div style="text-align: center; font-size: 11px; color: rgba(255,255,255,0.3); margin-bottom: 10px;">Loading chat...</div>`;
+      footerArea.innerHTML = `
+          <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Type a message..." autocomplete="off" required>
+            <button type="submit" id="chat-send-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        `;
+
+      const form = document.getElementById("chat-form");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const input = document.getElementById("chat-input");
+        const text = input.value.trim();
+        if (!text) return;
+
+        input.value = "";
+        appendMessageBubble(text, 'customer', new Date().toISOString());
+
+        try {
+          const res = await fetch('/api/chat', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              action: 'customer_message',
+              sessionId: activeSessionId,
+              customerName: customerName || 'Visitor',
+              customerEmail: customerEmail || '',
+              message: text
+            })
+          });
+          if (res.ok) {
+            const data = await res.json();
+            if (Array.isArray(data)) {
+              localStorage.setItem("db_chatSessions", JSON.stringify(data));
+            }
+          }
+        } catch (err) {
+          console.error("Chat send error:", err);
+        }
+      });
+    }
+
+    function appendMessageBubble(text, sender, timestamp) {
+      const timeStr = timestamp ? new Date(timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "";
+      const msgEl = document.createElement("div");
+      msgEl.className = `chat-message ${sender}`;
+      msgEl.innerHTML = `
+          <div class="chat-bubble">${escapeHtml(text)}</div>
+          <span class="chat-time">${timeStr}</span>
+        `;
+      msgContainer.appendChild(msgEl);
+      msgContainer.scrollTop = msgContainer.scrollHeight;
+    }
+
+    async function fetchChatMessagesFromServer(sId) {
+      if (!sId) return;
+      try {
+        const res = await fetch('/api/chat?t=' + Date.now());
+        if (res.ok) {
+          const sessions = await res.json();
+          if (Array.isArray(sessions)) {
+            localStorage.setItem("db_chatSessions", JSON.stringify(sessions));
+            const session = sessions.find(s => s.id === sId);
+            renderSessionMessages(session);
+          }
+        }
+      } catch (e) {
+        const sessions = JSON.parse(localStorage.getItem("db_chatSessions") || "[]");
+        const session = sessions.find(s => s.id === sId);
+        renderSessionMessages(session);
+      }
+    }
+
+    function renderSessionMessages(session) {
+      msgContainer.innerHTML = "";
+
+      // Welcome message
+      const welcomeMsg = document.createElement("div");
+      welcomeMsg.className = "chat-message admin";
+      welcomeMsg.innerHTML = `
+          <div class="chat-bubble">Hi! I'm Al-Amin Khan's assistant. How can I help you with tracking, GA4, CAPI or lead generation setup?</div>
+        `;
+      msgContainer.appendChild(welcomeMsg);
+
+      if (session && session.messages) {
+        session.messages.forEach(msg => {
+          appendMessageBubble(msg.text, msg.sender, msg.timestamp);
+        });
+      }
+      msgContainer.scrollTop = msgContainer.scrollHeight;
+    }
+
+    // Realtime polling from server every 2 seconds
+    setInterval(() => {
+      if (activeSessionId && panel && panel.classList.contains("chat-visible")) {
+        fetchChatMessagesFromServer(activeSessionId);
+      }
+    }, 2000);
+    function escapeHtml(text) {
+      return text
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    // ----------------------------------------------------
+    // 4. Admin Custom Tabs Injection & Controller
+    // ----------------------------------------------------
+    let activeAdminSessionId = "";
+    let currentActiveCustomTab = "";
+
+    // Correct selectors matching the compiled React admin panel
+    const SIDEBAR_SELECTOR = "aside.w-64.bg-bg-card";
+    const MAIN_PANEL_SELECTOR = "main.flex-1";
+
+    function injectAdminTabs() {
+      const sidebar = document.querySelector(SIDEBAR_SELECTOR);
+      if (!sidebar) return;
+      if (document.getElementById("admin-tab-live-chat")) return;
+
+      const navContainer = sidebar.querySelector("nav") || sidebar.querySelector("div");
+      if (!navContainer) return;
+
+      // Separator
+      const sep = document.createElement("div");
+      sep.style.cssText = "border-top: 1px solid rgba(255,255,255,0.08); margin: 12px 0; padding-top: 4px;";
+      sep.innerHTML = `<div style="font-size:9px; text-transform:uppercase; letter-spacing:0.15em; color:rgba(255,255,255,0.25); font-weight:800; padding: 0 16px; margin-bottom:4px;">Custom Modules</div>`;
+
+      // 1. Live Chat Tab
+      const chatTab = document.createElement("button");
+      chatTab.id = "admin-tab-live-chat";
+      chatTab.type = "button";
+      chatTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-text-muted hover:bg-white/5 font-bold";
+      chatTab.innerHTML = `
+          <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+          <span>Live Chat</span>
+          <div id="admin-chat-unread-badge" style="display:none; width:8px; height:8px; border-radius:50%; background:#f45901; box-shadow: 0 0 10px #f45901; margin-left:auto;"></div>
+        `;
+      chatTab.addEventListener("click", () => activateAdminCustomTab("live_chat"));
+
+      // 2. Contact Inquiries Tab
+      const inquiriesTab = document.createElement("button");
+      inquiriesTab.id = "admin-tab-contact-inquiries";
+      inquiriesTab.type = "button";
+      inquiriesTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-text-muted hover:bg-white/5 font-bold";
+      inquiriesTab.innerHTML = `
+          <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Contact Inquiries</span>
+        `;
+      inquiriesTab.addEventListener("click", () => activateAdminCustomTab("contact_inquiries"));
+
+      // 3. Clear Cache Tab
+      const clearCacheTab = document.createElement("button");
+      clearCacheTab.id = "admin-tab-clear-cache";
+      clearCacheTab.type = "button";
+      clearCacheTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-400 hover:bg-red-400/10 font-bold";
+      clearCacheTab.innerHTML = `
+          <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+          <span>Clear Cache</span>
+        `;
+      clearCacheTab.addEventListener("click", () => {
+        if (confirm("Are you sure you want to clear the site cache? This will reload the page with fresh data.")) {
+          localStorage.clear();
+          sessionStorage.clear();
+          window.location.reload(true);
+        }
+      });
+
+      // Deactivate custom view when clicking existing React tabs
+      const existingBtns = navContainer.querySelectorAll("button");
+      existingBtns.forEach(t => {
+        t.addEventListener("click", () => {
+          if (t.id !== "admin-tab-live-chat" && t.id !== "admin-tab-contact-inquiries" && t.id !== "admin-tab-clear-cache") {
+            deactivateAdminCustomTabs();
+          }
+        });
+      });
+
+      navContainer.appendChild(sep);
+      navContainer.appendChild(chatTab);
+      navContainer.appendChild(inquiriesTab);
+      navContainer.appendChild(clearCacheTab);
+    }
+
+    function activateAdminCustomTab(tabId) {
+      currentActiveCustomTab = tabId;
+
+      // Reset all custom tab styles
+      const chatTab = document.getElementById("admin-tab-live-chat");
+      const inquiriesTab = document.getElementById("admin-tab-contact-inquiries");
+      if (chatTab) chatTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-text-muted hover:bg-white/5 font-bold";
+      if (inquiriesTab) inquiriesTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-text-muted hover:bg-white/5 font-bold";
+
+      // Highlight active tab
+      const activeBtn = document.getElementById(tabId === "live_chat" ? "admin-tab-live-chat" : "admin-tab-contact-inquiries");
+      if (activeBtn) {
+        activeBtn.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-accent/10 text-white font-bold";
+      }
+
+      // Deactivate React's built-in nav buttons
+      const sidebar = document.querySelector(SIDEBAR_SELECTOR);
+      if (sidebar) {
+        sidebar.querySelectorAll("nav button").forEach(btn => {
+          if (!btn.id.startsWith("admin-tab-")) {
+            btn.className = btn.className.replace(/bg-accent.*?text-white\s*font-bold/g, "text-text-muted hover:bg-white/5");
+          }
+        });
+      }
+
+      // Hide the React main panel, show our custom panel
+      const mainPanel = document.querySelector(MAIN_PANEL_SELECTOR);
+      if (mainPanel) {
+        let customPanel = document.getElementById("admin-custom-viewport-panel");
+        if (!customPanel) {
+          customPanel = document.createElement("div");
+          customPanel.id = "admin-custom-viewport-panel";
+          customPanel.className = "flex-1 p-10 overflow-y-auto max-h-screen";
+          customPanel.style.display = "block";
+          mainPanel.parentNode.appendChild(customPanel);
+        } else {
+          customPanel.style.display = "block";
+        }
+
+        mainPanel.style.display = "none";
+
+        if (tabId === "live_chat") {
+          renderAdminChatManagerLayout();
+        } else if (tabId === "contact_inquiries") {
+          renderAdminInquiriesLayout();
+        }
+      }
+    }
+
+    function deactivateAdminCustomTabs() {
+      currentActiveCustomTab = "";
+      const chatTab = document.getElementById("admin-tab-live-chat");
+      const inquiriesTab = document.getElementById("admin-tab-contact-inquiries");
+      if (chatTab) chatTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-text-muted hover:bg-white/5 font-bold";
+      if (inquiriesTab) inquiriesTab.className = "w-full flex items-center gap-3 px-4 py-3 rounded-xl text-text-muted hover:bg-white/5 font-bold";
+
+      const mainPanel = document.querySelector(MAIN_PANEL_SELECTOR);
+      const customPanel = document.getElementById("admin-custom-viewport-panel");
+
+      if (mainPanel) mainPanel.style.display = "block";
+      if (customPanel) customPanel.style.display = "none";
+    }
+
+    // ----------------------------------------------------
+    // 4.2 Live Chat Manager (localStorage-based)
+    // ----------------------------------------------------
+    function getChatSessions() {
+      try {
+        return JSON.parse(localStorage.getItem("db_chatSessions") || "[]");
+      } catch (e) { return []; }
+    }
+    function saveChatSessions(sessions) {
+      localStorage.setItem("db_chatSessions", JSON.stringify(sessions));
+    }
+
+    function renderAdminChatManagerLayout() {
+      const container = document.getElementById("admin-custom-viewport-panel");
+      if (!container) return;
+
+      container.innerHTML = `
+          <div class="mb-8">
+            <h1 class="text-3xl font-black text-white">Live Conversations</h1>
+            <p class="text-gray-400 text-sm mt-1">Manage visitor chat messages. Reply to customers in real-time from this module.</p>
+          </div>
+          <div class="admin-livechat-container">
+            <div class="admin-livechat-list-pane">
+              <div class="admin-livechat-pane-header">
+                <h2>Active Inquiries</h2>
+                <p>Visitor Chats</p>
+              </div>
+              <div class="admin-livechat-list" id="admin-chat-threads-list">
+                <div style="text-align:center; padding:40px 20px; font-size:13px; color:rgba(255,255,255,0.3);">Loading chat threads...</div>
+              </div>
+            </div>
+            <div class="admin-livechat-chat-pane" id="admin-chat-viewport">
+              <div class="admin-livechat-empty-state">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                <span>Select a conversation to reply</span>
+              </div>
+            </div>
+          </div>
+        `;
+
+      renderAdminChatThreads();
+    }
+
+    function renderAdminChatThreads() {
+      const listContainer = document.getElementById("admin-chat-threads-list");
+      if (!listContainer) return;
+
+      const sessions = getChatSessions();
+
+      if (sessions.length === 0) {
+        listContainer.innerHTML = `<div style="text-align:center; padding:40px 20px; font-size:13px; color:rgba(255,255,255,0.3);">No active chat sessions.<br><span style="font-size:11px; margin-top:8px; display:inline-block;">When visitors use the chat widget on your site, their messages will appear here.</span></div>`;
+        return;
+      }
+
+      listContainer.innerHTML = "";
+      sessions.forEach(chat => {
+        const item = document.createElement("div");
+        item.className = `admin-livechat-item ${chat.id === activeAdminSessionId ? "active" : ""}`;
+
+        const timeStr = chat.updatedAt ? new Date(chat.updatedAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "";
+
+        item.innerHTML = `
+            <div class="admin-livechat-item-header">
+              <span class="admin-livechat-item-name">${escapeHtml(chat.customerName || "Anonymous Visitor")}</span>
+              <span class="admin-livechat-item-time">${timeStr}</span>
+            </div>
+            <div class="admin-livechat-item-bottom">
+              <span class="admin-livechat-item-preview">${escapeHtml(chat.lastMessage || "")}</span>
+              ${chat.unreadByAdmin ? '<div class="admin-livechat-item-badge"></div>' : ''}
+            </div>
+          `;
+
+        item.addEventListener("click", () => {
+          activeAdminSessionId = chat.id;
+          document.querySelectorAll(".admin-livechat-item").forEach(el => el.classList.remove("active"));
+          item.classList.add("active");
+          openAdminChatThread(chat);
+        });
+
+        listContainer.appendChild(item);
+      });
+    }
+
+    function openAdminChatThread(chat) {
+      const viewport = document.getElementById("admin-chat-viewport");
+      if (!viewport) return;
+
+      // Mark as read
+      const sessions = getChatSessions();
+      const sessionIdx = sessions.findIndex(s => s.id === chat.id);
+      if (sessionIdx !== -1) {
+        sessions[sessionIdx].unreadByAdmin = false;
+        saveChatSessions(sessions);
+      }
+
+      viewport.innerHTML = `
+          <div class="admin-livechat-chat-header">
+            <div class="admin-livechat-chat-header-user">
+              <h3>${escapeHtml(chat.customerName || "Anonymous Visitor")}</h3>
+              <p>${escapeHtml(chat.customerEmail || "No email")} • Session: ${chat.id}</p>
+            </div>
+            <button class="admin-livechat-delete-btn" id="admin-chat-delete">Delete Thread</button>
+          </div>
+          <div class="admin-livechat-messages" id="admin-messages-list"></div>
+          <div class="admin-livechat-reply-pane">
+            <div class="admin-livechat-templates">
+              <span class="admin-livechat-template-chip" data-text="Hi! How can I help you today?">Greeting</span>
+              <span class="admin-livechat-template-chip" data-text="Yes, I specialize in server-side GA4 / GTM configurations and custom Conversion API (CAPI) setups.">GTM Setup</span>
+              <span class="admin-livechat-template-chip" data-text="Let's schedule a brief Zoom discovery call. What is your time zone?">Zoom Call</span>
+              <span class="admin-livechat-template-chip" data-text="Thanks for reaching out! I will review your inquiry and email you back soon.">Email Back</span>
+            </div>
+            <form id="admin-reply-form" class="admin-livechat-reply-box">
+              <textarea class="admin-livechat-reply-textarea" id="admin-reply-input" placeholder="Type a message... Press Enter to send" required></textarea>
+              <button type="submit" class="admin-livechat-send-btn">Send Reply</button>
+            </form>
+          </div>
+        `;
+
+      // Load messages from localStorage
+      const msgsList = document.getElementById("admin-messages-list");
+      const messages = chat.messages || [];
+
+      msgsList.innerHTML = "";
+      if (messages.length === 0) {
+        msgsList.innerHTML = `<div style="text-align:center; padding:40px; font-size:13px; color:rgba(255,255,255,0.2);">No messages in this thread yet.</div>`;
+      } else {
+        messages.forEach(msg => {
+          const timeStr = msg.timestamp ? new Date(msg.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : "";
+          const msgEl = document.createElement("div");
+          msgEl.className = `chat-message ${msg.sender}`;
+          msgEl.innerHTML = `
+              <div class="chat-bubble">${escapeHtml(msg.text)}</div>
+              <span class="chat-time">${timeStr}</span>
+            `;
+          msgsList.appendChild(msgEl);
+        });
+        msgsList.scrollTop = msgsList.scrollHeight;
+      }
+
+      // Template chips
+      document.querySelectorAll(".admin-livechat-template-chip").forEach(chip => {
+        chip.addEventListener("click", () => {
+          const input = document.getElementById("admin-reply-input");
+          input.value = chip.getAttribute("data-text");
+          input.focus();
+        });
+      });
+
+      // Delete thread
+      document.getElementById("admin-chat-delete").addEventListener("click", () => {
+        if (confirm("Delete this conversation permanently?")) {
+          let allSessions = getChatSessions();
+          allSessions = allSessions.filter(s => s.id !== chat.id);
+          saveChatSessions(allSessions);
+          activeAdminSessionId = "";
+          renderAdminChatManagerLayout();
+        }
+      });
+
+      // Send reply
+      const replyForm = document.getElementById("admin-reply-form");
+      replyForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const input = document.getElementById("admin-reply-input");
+        const text = input.value.trim();
+        if (!text) return;
+
+        input.value = "";
+
+        const allSessions = getChatSessions();
+        const idx = allSessions.findIndex(s => s.id === chat.id);
+        if (idx !== -1) {
+          if (!allSessions[idx].messages) allSessions[idx].messages = [];
+          allSessions[idx].messages.push({
+            text: text,
+            sender: "admin",
+            timestamp: new Date().toISOString()
+          });
+          allSessions[idx].lastMessage = text;
+          allSessions[idx].updatedAt = new Date().toISOString();
+          allSessions[idx].unreadByAdmin = false;
+          saveChatSessions(allSessions);
+
+          // Re-render messages
+          openAdminChatThread(allSessions[idx]);
+        }
+      });
+
+      // Enter to send
+      const replyInput = document.getElementById("admin-reply-input");
+      replyInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+          e.preventDefault();
+          replyForm.dispatchEvent(new Event("submit"));
+        }
+      });
+    }
+
+    // ----------------------------------------------------
+    // 4.1 Contact Inquiries Controller (localStorage-based)
+    // ----------------------------------------------------
+    function renderAdminInquiriesLayout() {
+      const container = document.getElementById("admin-custom-viewport-panel");
+      if (!container) return;
+
+      container.innerHTML = `
+          <div class="mb-8">
+            <h1 class="text-3xl font-black text-white">Contact Form Inquiries</h1>
+            <p class="text-gray-400 text-sm mt-1">All submissions from your website contact form, stored locally and synced to db.json.</p>
+          </div>
+          <div class="admin-livechat-container" style="flex-direction: column; height: auto; min-height: unset; padding: 24px; background: rgba(11, 15, 25, 0.4);">
+            <div style="overflow-x: auto; width: 100%;">
+              <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 14px;">
+                <thead>
+                  <tr style="border-bottom: 2px solid rgba(255,255,255,0.08); color: rgba(255,255,255,0.5); font-weight: 700;">
+                    <th style="padding: 12px 16px;">Date</th>
+                    <th style="padding: 12px 16px;">Visitor</th>
+                    <th style="padding: 12px 16px;">Subject</th>
+                    <th style="padding: 12px 16px;">Message</th>
+                    <th style="padding: 12px 16px; text-align: right;">Actions</th>
+                  </tr>
+                </thead>
+                <tbody id="admin-inquiries-table-body">
+                  <tr>
+                    <td colspan="5" style="text-align: center; padding: 32px; color: rgba(255,255,255,0.3);">Loading inquiries...</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        `;
+
+      loadAdminInquiriesFromLocalStorage();
+    }
+
+    function loadAdminInquiriesFromLocalStorage() {
+      const tbody = document.getElementById("admin-inquiries-table-body");
+      if (!tbody) return;
+
+      let submissions = [];
+      try {
+        const raw = localStorage.getItem("db_contactSubmissions");
+        submissions = raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        submissions = [];
+      }
+
+      if (!submissions || submissions.length === 0) {
+        tbody.innerHTML = `
+            <tr>
+              <td colspan="5" style="text-align: center; padding: 32px; color: rgba(255,255,255,0.3);">No form submissions found yet.</td>
+            </tr>
+          `;
+        return;
+      }
+
+      // Sort newest first
+      submissions.sort((a, b) => new Date(b.createdAt || 0) - new Date(a.createdAt || 0));
+
+      tbody.innerHTML = "";
+      submissions.forEach((data, idx) => {
+        const dateStr = data.createdAt ? new Date(data.createdAt).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : "N/A";
+
+        const tr = document.createElement("tr");
+        tr.style.borderBottom = "1px solid rgba(255,255,255,0.05)";
+        tr.innerHTML = `
+            <td style="padding: 16px; color: rgba(255,255,255,0.7); font-size: 13px; white-space: nowrap;">${dateStr}</td>
+            <td style="padding: 16px;">
+              <div style="font-weight: 700; color: white;">${escapeHtml(data.name || '')}</div>
+              <div style="font-size: 12px; color: rgba(255,255,255,0.4);">${escapeHtml(data.email || '')}</div>
+            </td>
+            <td style="padding: 16px; color: rgba(255,255,255,0.9); font-weight: 600;">${escapeHtml(data.subject || 'No Subject')}</td>
+            <td style="padding: 16px; color: rgba(255,255,255,0.6); max-width: 300px; word-break: break-word;">${escapeHtml(data.message || '')}</td>
+            <td style="padding: 16px; text-align: right; white-space: nowrap;">
+              <button class="inquiry-reply-btn" style="padding: 6px 12px; border-radius: 6px; background: rgba(244, 89, 1, 0.1); border: 1px solid rgba(244, 89, 1, 0.2); color: white; font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.2s ease; margin-right: 8px;">Reply</button>
+              <button class="inquiry-delete-btn" style="padding: 6px 12px; border-radius: 6px; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.2); color: rgb(248, 113, 113); font-size: 11px; font-weight: 700; cursor: pointer; transition: all 0.2s ease;">Delete</button>
+            </td>
+          `;
+
+        tr.querySelector(".inquiry-reply-btn").addEventListener("click", () => {
+          window.open(`mailto:${data.email}?subject=Re: ${encodeURIComponent(data.subject || '')}`);
+        });
+
+        tr.querySelector(".inquiry-delete-btn").addEventListener("click", () => {
+          if (confirm(`Are you sure you want to delete the submission from ${data.name}?`)) {
+            let all = JSON.parse(localStorage.getItem("db_contactSubmissions") || "[]");
+            all.splice(idx, 1);
+            localStorage.setItem("db_contactSubmissions", JSON.stringify(all));
+            // Sync to db.json
+            if (typeof syncDatabaseToServer === "function") syncDatabaseToServer();
+            loadAdminInquiriesFromLocalStorage();
+          }
+        });
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    const checkAdminSidebarInterval = setInterval(() => {
+      checkChatbotVisibility();
+      if (window.location.hash.includes("/admin") || window.location.href.includes("admin")) {
+        injectAdminTabs();
+      } else {
+        deactivateAdminCustomTabs();
+      }
+    }, 1000);
+
+    // ----------------------------------------------------
+    // 5. Admin Upload Button Injection
+    // ----------------------------------------------------
+    function injectAdminUploadButtons() {
+      if (!window.location.hash.includes("/admin") && !window.location.href.includes("admin")) return;
+
+      const inputs = document.querySelectorAll('input[type="text"], textarea');
+      inputs.forEach(input => {
+        if (input.hasAttribute('data-upload-injected')) return;
+
+        const parent = input.parentElement;
+        const label = parent ? parent.querySelector('label') : null;
+        const labelText = label ? label.textContent.toLowerCase() : "";
+        const placeholder = input.placeholder ? input.placeholder.toLowerCase() : "";
+        const id = input.id ? input.id.toLowerCase() : "";
+        const name = input.name ? input.name.toLowerCase() : "";
+
+        const isFileField = /image|thumbnail|photo|logo|video|url|bg|avatar|icon|file/i.test(labelText + ' ' + placeholder + ' ' + id + ' ' + name);
+
+        if (isFileField) {
+          input.setAttribute('data-upload-injected', 'true');
+
+          const btnContainer = document.createElement('div');
+          btnContainer.className = "mt-1.5 flex items-center justify-end";
+
+          const uploadBtn = document.createElement('button');
+          uploadBtn.type = "button";
+          uploadBtn.className = "px-3 py-1 bg-white/5 border border-white/10 hover:border-[#f45901]/40 hover:bg-[#f45901]/10 text-white text-xs font-bold rounded-lg transition-all flex items-center gap-1.5 cursor-pointer";
+          uploadBtn.innerHTML = `
+              <svg class="w-3.5 h-3.5 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+              <span>Upload File</span>
+            `;
+
+          uploadBtn.addEventListener("click", () => {
+            const fileInput = document.createElement('input');
+            fileInput.type = "file";
+            fileInput.accept = "image/*,video/*,application/pdf";
+
+            fileInput.onchange = async () => {
+              const file = fileInput.files[0];
+              if (!file) return;
+
+              uploadBtn.disabled = true;
+              uploadBtn.querySelector('span').textContent = 'Uploading...';
+
+              // Try local upload first
+              let uploadSuccess = false;
+              try {
+                const response = await fetch('/api/upload', {
+                  method: 'POST',
+                  headers: {
+                    'X-File-Name': file.name,
+                    'Content-Type': file.type
+                  },
+                  body: file
+                });
+
+                if (response.ok) {
+                  const result = await response.json();
+
+                  const nativeSetter = Object.getOwnPropertyDescriptor(
+                    input.tagName === 'TEXTAREA' ? window.HTMLTextAreaElement.prototype : window.HTMLInputElement.prototype,
+                    "value"
+                  ).set;
+                  nativeSetter.call(input, result.url);
+                  input.dispatchEvent(new Event('input', { bubbles: true }));
+
+                  uploadBtn.querySelector('span').textContent = 'Uploaded!';
+                  uploadSuccess = true;
+                }
+              } catch (err) {
+                console.warn("Local upload failed, falling back to Firebase...", err);
+              }
+
+              if (!uploadSuccess) {
+                if (!db) {
+                  alert("Upload failed: Offline / Database Connection unavailable");
+                  uploadBtn.querySelector('span').textContent = 'Upload File';
+                  uploadBtn.disabled = false;
+                  return;
+                }
+                // Fallback to Firebase Storage
+                try {
+                  const { getStorage, ref, uploadBytes, getDownloadURL } = await import("https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js");
+                  const storage = getStorage(app);
+                  const storageRef = ref(storage, 'uploads/' + Date.now() + '_' + file.name);
+
+                  await uploadBytes(storageRef, file);
+                  const url = await getDownloadURL(storageRef);
+
+                  const nativeSetter = Object.getOwnPropertyDescriptor(
+                    input.tagName === 'TEXTAREA' ? window.HTMLTextAreaElement.prototype : window.HTMLInputElement.prototype,
+                    "value"
+                  ).set;
+                  nativeSetter.call(input, url);
+                  input.dispatchEvent(new Event('input', { bubbles: true }));
+
+                  uploadBtn.querySelector('span').textContent = 'Uploaded!';
+                  uploadSuccess = true;
+                } catch (firebaseErr) {
+                  console.error("Firebase upload failed:", firebaseErr);
+                  alert("Upload failed: " + firebaseErr.message);
+                }
+              }
+
+              setTimeout(() => {
+                uploadBtn.querySelector('span').textContent = 'Upload File';
+                uploadBtn.disabled = false;
+              }, 2000);
+            };
+
+            fileInput.click();
+          });
+
+          btnContainer.appendChild(uploadBtn);
+          input.parentNode.insertBefore(btnContainer, input.nextSibling);
+        }
+      });
+    }
+
+    // Scan every 1 second for new input fields
+    setInterval(injectAdminUploadButtons, 1000);
+
+  </script>
+</body>
+
+</html>

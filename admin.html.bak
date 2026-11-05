@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Control Center | Al-Amin Khan Portfolio</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            accent: 'var(--color-accent, #f45901)',
+            'accent-secondary': 'var(--color-accent-secondary, #00c6ff)',
+            'bg-dark': '#0b0f19',
+            'bg-card': '#121824',
+            'border-subtle': 'rgba(255, 255, 255, 0.08)'
+          },
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --color-accent: #f45901;
+      --color-accent-secondary: #00c6ff;
+    }
+    body {
+      background-color: #0b0f19;
+      color: #e5e7eb;
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0b0f19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 99px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--color-accent);
+    }
+    .tab-btn.active {
+      background-color: rgba(244, 89, 1, 0.12);
+      border-color: var(--color-accent);
+      color: #ffffff;
+      font-weight: 700;
+    }
+    .input-field {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      padding: 0.65rem 1rem;
+      font-size: 0.875rem;
+      color: #ffffff;
+      outline: none;
+      transition: all 0.2s;
+    }
+    .input-field:focus {
+      border-color: var(--color-accent);
+      background-color: rgba(255, 255, 255, 0.07);
+      box-shadow: 0 0 0 2px rgba(244, 89, 1, 0.2);
+    }
+    .label-text {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #9ca3af;
+      margin-bottom: 0.4rem;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-[#0b0f19] text-gray-200">
+
+  <!-- TOP STICKY APP BAR -->
+  <header class="sticky top-0 z-50 bg-[#0b0f19]/90 backdrop-blur-md border-b border-white/10 px-6 py-3.5 flex items-center justify-between">
+    <div class="flex items-center gap-4">
+      <a href="/" target="_blank" class="flex items-center gap-2 group">
+        <img src="/assets/logo.png" alt="Logo" class="h-8 w-auto object-contain" id="top-logo-preview" />
+        <span class="font-black text-white text-base md:text-lg tracking-tight">Admin Control Center</span>
+      </a>
+      <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        Live Local Sync
+      </span>
+    </div>
+
+    <div class="flex items-center gap-3">
+      <a href="/" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-bold text-gray-300 hover:text-white transition-all">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        <span>View Live Site</span>
+      </a>
+
+      <button id="save-all-btn" type="button" class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-accent hover:opacity-90 text-white text-xs md:text-sm font-bold shadow-lg shadow-accent/25 transition-all hover:scale-[1.02] active:scale-[0.98]">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M8 7H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-3m-1 4l-3 3m0 0l-3-3m3 3V4"/></svg>
+        <span>Save All Changes</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN BODY LAYOUT (SIDEBAR + CONTENT) -->
+  <div class="flex-grow flex flex-col md:flex-row overflow-hidden">
+    
+    <!-- SIDEBAR NAVIGATION -->
+    <aside class="w-full md:w-64 bg-[#121824]/90 border-r border-white/5 p-4 flex flex-row md:flex-col gap-1.5 overflow-x-auto md:overflow-y-auto shrink-0">
+      
+      <div class="hidden md:block px-3 py-2 text-[11px] font-black uppercase tracking-wider text-gray-400">Navigation & Sections</div>
+      
+      <button type="button" data-tab="tab-dashboard" class="tab-btn active flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>📊</span> <span>Dashboard</span>
+      </button>
+
+      <button type="button" data-tab="tab-hero" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>⚡</span> <span>Hero & Bio</span>
+      </button>
+
+      <button type="button" data-tab="tab-about" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>👤</span> <span>About & Skills</span>
+      </button>
+
+      <button type="button" data-tab="tab-resume" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>💼</span> <span>Experience & Resume</span>
+      </button>
+
+      <button type="button" data-tab="tab-services" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>🛠️</span> <span>Services (9 Cards)</span>
+      </button>
+
+      <button type="button" data-tab="tab-projects" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>🚀</span> <span>Featured Projects</span>
+      </button>
+
+      <button type="button" data-tab="tab-pricing" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>💰</span> <span>Pricing & Packages</span>
+      </button>
+
+      <button type="button" data-tab="tab-metaads" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>📈</span> <span>Meta Ads Studies</span>
+      </button>
+
+      <button type="button" data-tab="tab-products" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>📦</span> <span>Digital Store</span>
+      </button>
+
+      <button type="button" data-tab="tab-testimonials" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>⭐</span> <span>Testimonials</span>
+      </button>
+
+      <button type="button" data-tab="tab-blog" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>📰</span> <span>Blog Articles</span>
+      </button>
+
+      <button type="button" data-tab="tab-contact" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>📬</span> <span>Contact & Inquiries</span>
+      </button>
+
+      <div class="hidden md:block my-2 border-t border-white/5"></div>
+      <div class="hidden md:block px-3 py-1 text-[11px] font-black uppercase tracking-wider text-gray-400">Pages & Settings</div>
+
+      <button type="button" data-tab="tab-pages" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>📄</span> <span>Policy Pages</span>
+      </button>
+
+      <button type="button" data-tab="tab-branding" class="tab-btn flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs md:text-sm text-gray-300 hover:text-white hover:bg-white/5 transition-all border border-transparent whitespace-nowrap">
+        <span>🔍</span> <span>SEO & Branding</span>
+      </button>
+
+    </aside>
+
+    <!-- CONTENT VIEWPORT -->
+    <main class="flex-grow p-6 md:p-10 overflow-y-auto max-h-[calc(100vh-65px)]">
+      
+      <!-- TOAST NOTIFICATION -->
+      <div id="toast" class="fixed bottom-6 right-6 z-50 hidden items-center gap-3 px-5 py-3.5 rounded-2xl bg-emerald-500 text-white font-bold text-sm shadow-2xl transition-all">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+        <span id="toast-msg">Changes saved successfully!</span>
+      </div>
+
+      <!-- TAB 1: DASHBOARD -->
+      <section id="tab-dashboard" class="tab-content space-y-8">
+        <div>
+          <h1 class="text-2xl md:text-3xl font-black text-white">Website Overview & Control Center</h1>
+          <p class="text-sm text-gray-400 mt-1">Manage all homepage sections, legal pages, prices, and media from one central dashboard.</p>
+        </div>
+
+        <!-- Metric Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-[#121824] p-5 rounded-2xl border border-white/5">
+            <span class="text-xs uppercase font-bold text-gray-400">Active Services</span>
+            <div id="metric-services-count" class="text-3xl font-black text-accent mt-1">9</div>
+          </div>
+          <div class="bg-[#121824] p-5 rounded-2xl border border-white/5">
+            <span class="text-xs uppercase font-bold text-gray-400">Projects</span>
+            <div id="metric-projects-count" class="text-3xl font-black text-cyan-400 mt-1">4</div>
+          </div>
+          <div class="bg-[#121824] p-5 rounded-2xl border border-white/5">
+            <span class="text-xs uppercase font-bold text-gray-400">Digital Products</span>
+            <div id="metric-products-count" class="text-3xl font-black text-white mt-1">6</div>
+          </div>
+          <div class="bg-[#121824] p-5 rounded-2xl border border-white/5">
+            <span class="text-xs uppercase font-bold text-gray-400">Client Inquiries</span>
+            <div id="metric-inquiries-count" class="text-3xl font-black text-emerald-400 mt-1">0</div>
+          </div>
+        </div>
+
+        <!-- Quick Actions Grid -->
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-4">
+          <h2 class="text-lg font-bold text-white">Quick Shortcuts</h2>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <button onclick="switchTab('tab-pricing')" class="p-4 rounded-2xl bg-white/5 hover:bg-accent/10 border border-white/5 hover:border-accent/40 text-left transition-all">
+              <span class="text-xl block mb-1">💰</span>
+              <span class="font-bold text-white text-sm block">Edit Pricing Packages</span>
+              <span class="text-xs text-gray-400">Update BDT and USD amounts, deliverables</span>
+            </button>
+            <button onclick="switchTab('tab-projects')" class="p-4 rounded-2xl bg-white/5 hover:bg-accent/10 border border-white/5 hover:border-accent/40 text-left transition-all">
+              <span class="text-xl block mb-1">🚀</span>
+              <span class="font-bold text-white text-sm block">Add / Edit Projects</span>
+              <span class="text-xs text-gray-400">Upload screenshots and project links</span>
+            </button>
+            <button onclick="switchTab('tab-contact')" class="p-4 rounded-2xl bg-white/5 hover:bg-accent/10 border border-white/5 hover:border-accent/40 text-left transition-all">
+              <span class="text-xl block mb-1">📬</span>
+              <span class="font-bold text-white text-sm block">Check Inquiries</span>
+              <span class="text-xs text-gray-400">View incoming leads from the contact form</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: HERO & BIO -->
+      <section id="tab-hero" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">Hero Section & Intro</h1>
+          <p class="text-sm text-gray-400 mt-1">Configure your main introduction, availability status, headlines, CV, and counter numbers.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label class="label-text">Availability Badge Text</label>
+              <input type="text" id="hero-availability" class="input-field" placeholder="Available for projects" />
+            </div>
+            <div>
+              <label class="label-text">Brand Tagline</label>
+              <input type="text" id="hero-tagline" class="input-field" placeholder="A Brand Developer crafting premium digital experiences." />
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label class="label-text">Hero Main Heading Line 1</label>
+              <input type="text" id="hero-heading-1" class="input-field" placeholder="Crafting Digital Growth" />
+            </div>
+            <div>
+              <label class="label-text">Hero Highlighted Name (Strictly 1 Line)</label>
+              <input type="text" id="hero-heading-2" class="input-field" placeholder="Al-Amin Khan" />
+            </div>
+          </div>
+
+          <div>
+            <label class="label-text">Hero Subtitle Paragraph</label>
+            <textarea id="hero-subtitle" rows="3" class="input-field"></textarea>
+          </div>
+
+          <!-- Hero Image & CV Upload -->
+          <div class="grid sm:grid-cols-2 gap-6 pt-4 border-t border-white/5">
+            <div>
+              <label class="label-text">Profile Picture URL</label>
+              <div class="flex gap-2">
+                <input type="text" id="hero-image" class="input-field" placeholder="/assets/profile.png" />
+                <button type="button" onclick="triggerUpload('hero-image')" class="px-4 py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold shrink-0 transition-all">Upload</button>
+              </div>
+              <img id="hero-image-preview" src="/assets/profile.png" class="mt-2 h-20 w-20 object-cover rounded-xl border border-white/10" />
+            </div>
+
+            <div>
+              <label class="label-text">CV PDF Document URL</label>
+              <div class="flex gap-2">
+                <input type="text" id="hero-cv" class="input-field" placeholder="/assets/Al-Amin_Khan_CV.pdf" />
+                <button type="button" onclick="triggerUpload('hero-cv')" class="px-4 py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold shrink-0 transition-all">Upload</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 3: ABOUT & SKILLS -->
+      <section id="tab-about" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">About Me & Skills</h1>
+          <p class="text-sm text-gray-400 mt-1">Manage core biography and interactive skill percentage bars.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <div class="flex items-center justify-between">
+            <h2 class="text-base font-bold text-white">Core Skills & Competencies</h2>
+            <button type="button" onclick="addSkill()" class="px-3.5 py-1.5 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Skill</button>
+          </div>
+          <div id="skills-list" class="space-y-3"></div>
+        </div>
+      </section>
+
+      <!-- TAB 4: RESUME & EXPERIENCE -->
+      <section id="tab-resume" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">Experience & Career Timeline</h1>
+          <p class="text-sm text-gray-400 mt-1">Update career positions, companies, roles, and journey roadmap diagram.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <div>
+            <label class="label-text">Journey Roadmap Graphic Image URL</label>
+            <div class="flex gap-2">
+              <input type="text" id="resume-image-url" class="input-field" placeholder="/assets/journey.png" />
+              <button type="button" onclick="triggerUpload('resume-image-url')" class="px-4 py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold shrink-0 transition-all">Upload</button>
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between pt-4 border-t border-white/5">
+            <h2 class="text-base font-bold text-white">Career Progression History</h2>
+            <button type="button" onclick="addResumeItem()" class="px-3.5 py-1.5 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Position</button>
+          </div>
+
+          <div id="resume-list" class="space-y-4"></div>
+        </div>
+      </section>
+
+      <!-- TAB 5: SERVICES -->
+      <section id="tab-services" class="tab-content hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-black text-white">Services Management</h1>
+            <p class="text-sm text-gray-400 mt-1">Edit the 9 core marketing, tracking, and consulting services.</p>
+          </div>
+          <button type="button" onclick="addServiceItem()" class="px-4 py-2 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Service</button>
+        </div>
+
+        <div id="services-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </section>
+
+      <!-- TAB 6: PROJECTS -->
+      <section id="tab-projects" class="tab-content hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-black text-white">Featured Projects</h1>
+            <p class="text-sm text-gray-400 mt-1">Update national project case studies, client initiatives, and tags.</p>
+          </div>
+          <button type="button" onclick="addProjectItem()" class="px-4 py-2 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Project</button>
+        </div>
+
+        <div id="projects-list" class="grid sm:grid-cols-2 gap-6"></div>
+      </section>
+
+      <!-- TAB 7: PRICING & PACKAGES -->
+      <section id="tab-pricing" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">Pricing Packages (Dual-Currency)</h1>
+          <p class="text-sm text-gray-400 mt-1">Manage Basic, Intermediate (Best Value), and Premium plans with BDT and USD amounts and deliverables.</p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6" id="pricing-editor-container">
+          <!-- Populated by JS -->
+        </div>
+      </section>
+
+      <!-- TAB 8: META ADS STUDIES -->
+      <section id="tab-metaads" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">Meta Ads Case Studies</h1>
+          <p class="text-sm text-gray-400 mt-1">Edit performance metrics and image charts for your 3 live client campaigns.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <p class="text-xs text-gray-400">Charts are located in <code class="text-accent">/assets/meta-ads-1.png</code>, <code class="text-accent">/assets/meta-ads-2.png</code>, and <code class="text-accent">/assets/meta-ads-3.png</code>.</p>
+          <div class="grid sm:grid-cols-3 gap-4">
+            <div class="p-4 bg-white/5 rounded-2xl border border-white/5 text-center">
+              <span class="text-xs font-bold text-accent uppercase block mb-1">Study 1</span>
+              <img src="/assets/meta-ads-1.png" class="h-24 w-full object-contain mx-auto rounded-xl bg-black/30 p-1 mb-3" />
+              <button type="button" onclick="triggerUploadFileDirect('meta-ads-1.png')" class="w-full py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold">Replace Chart 1</button>
+            </div>
+            <div class="p-4 bg-white/5 rounded-2xl border border-white/5 text-center">
+              <span class="text-xs font-bold text-accent uppercase block mb-1">Study 2</span>
+              <img src="/assets/meta-ads-2.png" class="h-24 w-full object-contain mx-auto rounded-xl bg-black/30 p-1 mb-3" />
+              <button type="button" onclick="triggerUploadFileDirect('meta-ads-2.png')" class="w-full py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold">Replace Chart 2</button>
+            </div>
+            <div class="p-4 bg-white/5 rounded-2xl border border-white/5 text-center">
+              <span class="text-xs font-bold text-accent uppercase block mb-1">Study 3</span>
+              <img src="/assets/meta-ads-3.png" class="h-24 w-full object-contain mx-auto rounded-xl bg-black/30 p-1 mb-3" />
+              <button type="button" onclick="triggerUploadFileDirect('meta-ads-3.png')" class="w-full py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold">Replace Chart 3</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 9: DIGITAL STORE -->
+      <section id="tab-products" class="tab-content hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-black text-white">Digital Store Products</h1>
+            <p class="text-sm text-gray-400 mt-1">Manage frameworks, GTM templates, blueprints, and buy links.</p>
+          </div>
+          <button type="button" onclick="addProductItem()" class="px-4 py-2 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Product</button>
+        </div>
+
+        <div id="products-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </section>
+
+      <!-- TAB 10: TESTIMONIALS -->
+      <section id="tab-testimonials" class="tab-content hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-black text-white">Client Testimonials</h1>
+            <p class="text-sm text-gray-400 mt-1">Manage verified quotes, client roles, and avatars.</p>
+          </div>
+          <button type="button" onclick="addTestimonialItem()" class="px-4 py-2 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Testimonial</button>
+        </div>
+
+        <div id="testimonials-list" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </section>
+
+      <!-- TAB 11: BLOG ARTICLES -->
+      <section id="tab-blog" class="tab-content hidden space-y-6">
+        <div class="flex items-center justify-between">
+          <div>
+            <h1 class="text-2xl font-black text-white">Blog Articles & Case Studies</h1>
+            <p class="text-sm text-gray-400 mt-1">Publish and edit industry tracking articles and insights.</p>
+          </div>
+          <button type="button" onclick="addBlogPostItem()" class="px-4 py-2 bg-accent hover:opacity-90 text-white rounded-xl text-xs font-bold">+ Add Article</button>
+        </div>
+
+        <div id="blog-list" class="space-y-6"></div>
+      </section>
+
+      <!-- TAB 12: CONTACT & INQUIRIES -->
+      <section id="tab-contact" class="tab-content hidden space-y-8">
+        <div>
+          <h1 class="text-2xl font-black text-white">Contact Info & Client Inquiries</h1>
+          <p class="text-sm text-gray-400 mt-1">Update official contact channels and review submissions from visitors.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <h2 class="text-base font-bold text-white">Contact Channels</h2>
+          <div class="grid sm:grid-cols-3 gap-6">
+            <div>
+              <label class="label-text">Office Address</label>
+              <input type="text" id="contact-address" class="input-field" />
+            </div>
+            <div>
+              <label class="label-text">Contact Email</label>
+              <input type="email" id="contact-email" class="input-field" />
+            </div>
+            <div>
+              <label class="label-text">Phone / WhatsApp</label>
+              <input type="text" id="contact-phone" class="input-field" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Inquiries Table -->
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-base font-bold text-white">Received Form Messages</h2>
+            <button type="button" onclick="clearInquiries()" class="px-3 py-1 bg-red-500/10 hover:bg-red-500/20 text-red-400 rounded-lg text-xs font-bold transition-colors">Clear All</button>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs md:text-sm">
+              <thead class="border-b border-white/10 text-gray-400 uppercase text-[10px] tracking-wider">
+                <tr>
+                  <th class="py-3 px-4">Date</th>
+                  <th class="py-3 px-4">Name</th>
+                  <th class="py-3 px-4">Email</th>
+                  <th class="py-3 px-4">Subject</th>
+                  <th class="py-3 px-4">Message</th>
+                  <th class="py-3 px-4 text-right">Action</th>
+                </tr>
+              </thead>
+              <tbody id="inquiries-tbody" class="divide-y divide-white/5 text-gray-300">
+                <tr>
+                  <td colspan="6" class="py-6 text-center text-gray-500">No submissions yet.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 13: POLICY PAGES -->
+      <section id="tab-pages" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">Policy Pages Content</h1>
+          <p class="text-sm text-gray-400 mt-1">Edit Terms of Service, Privacy Policy, and Refund Policy texts.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <div>
+            <div class="flex justify-between items-center mb-1">
+              <label class="label-text">Terms of Service Content</label>
+              <a href="/terms-of-service.html" target="_blank" class="text-xs text-accent hover:underline">View Page</a>
+            </div>
+            <textarea id="policy-terms" rows="6" class="input-field"></textarea>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-1">
+              <label class="label-text">Privacy Policy Content</label>
+              <a href="/privacy-policy.html" target="_blank" class="text-xs text-accent hover:underline">View Page</a>
+            </div>
+            <textarea id="policy-privacy" rows="6" class="input-field"></textarea>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-center mb-1">
+              <label class="label-text">Refund Policy Content</label>
+              <a href="/refund-policy.html" target="_blank" class="text-xs text-accent hover:underline">View Page</a>
+            </div>
+            <textarea id="policy-refund" rows="6" class="input-field"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 14: SEO & BRANDING -->
+      <section id="tab-branding" class="tab-content hidden space-y-6">
+        <div>
+          <h1 class="text-2xl font-black text-white">SEO & Global Branding</h1>
+          <p class="text-sm text-gray-400 mt-1">Customize website logos, favicon, primary/secondary colors, and SEO meta tags.</p>
+        </div>
+
+        <div class="bg-[#121824] p-6 rounded-3xl border border-white/5 space-y-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label class="label-text">Site Logo URL</label>
+              <div class="flex gap-2">
+                <input type="text" id="brand-logo" class="input-field" placeholder="/assets/logo.png" />
+                <button type="button" onclick="triggerUpload('brand-logo')" class="px-4 py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold shrink-0 transition-all">Upload</button>
+              </div>
+            </div>
+            <div>
+              <label class="label-text">Favicon URL</label>
+              <div class="flex gap-2">
+                <input type="text" id="brand-favicon" class="input-field" placeholder="/assets/favicon.png" />
+                <button type="button" onclick="triggerUpload('brand-favicon')" class="px-4 py-2 bg-white/10 hover:bg-accent text-white rounded-xl text-xs font-bold shrink-0 transition-all">Upload</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div>
+              <label class="label-text">Primary Accent Color</label>
+              <div class="flex items-center gap-3">
+                <input type="color" id="brand-color-primary" class="w-10 h-10 rounded-xl bg-transparent border-0 cursor-pointer" />
+                <input type="text" id="brand-color-primary-hex" class="input-field font-mono" placeholder="#f45901" />
+              </div>
+            </div>
+            <div>
+              <label class="label-text">Secondary Accent Color</label>
+              <div class="flex items-center gap-3">
+                <input type="color" id="brand-color-secondary" class="w-10 h-10 rounded-xl bg-transparent border-0 cursor-pointer" />
+                <input type="text" id="brand-color-secondary-hex" class="input-field font-mono" placeholder="#00c6ff" />
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-white/5 space-y-4">
+            <h2 class="text-base font-bold text-white">Google Rich Results & SEO</h2>
+            <div>
+              <label class="label-text">Meta Title</label>
+              <input type="text" id="seo-title" class="input-field" />
+            </div>
+            <div>
+              <label class="label-text">Meta Description</label>
+              <textarea id="seo-desc" rows="2" class="input-field"></textarea>
+            </div>
+            <div>
+              <label class="label-text">Focus Keywords</label>
+              <input type="text" id="seo-keywords" class="input-field" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- HIDDEN UNIVERSAL FILE INPUT -->
+  <input type="file" id="universal-file-input" class="hidden" />
+
+  <!-- ADMIN SCRIPT ENGINE -->
+  <script>
+    let db = {};
+    let currentUploadTargetInputId = null;
+
+    // Toast Alert Helper
+    function showToast(msg, isError = false) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-msg');
+      toastMsg.textContent = msg;
+      toast.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 px-5 py-3.5 rounded-2xl text-white font-bold text-sm shadow-2xl transition-all ' + 
+        (isError ? 'bg-red-500' : 'bg-emerald-500');
+      toast.style.display = 'flex';
+      setTimeout(() => {
+        toast.style.display = 'none';
+      }, 3500);
+    }
+
+    // Tab Navigation
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+
+      const targetSection = document.getElementById(tabId);
+      if (targetSection) targetSection.classList.remove('hidden');
+
+      const targetBtn = document.querySelector(`.tab-btn[data-tab="${tabId}"]`);
+      if (targetBtn) targetBtn.classList.add('active');
+    }
+
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        switchTab(tabId);
+      });
+    });
+
+    // File Upload Trigger
+    function triggerUpload(targetInputId) {
+      currentUploadTargetInputId = targetInputId;
+      document.getElementById('universal-file-input').click();
+    }
+
+    function triggerUploadFileDirect(destinationFileName) {
+      const input = document.getElementById('universal-file-input');
+      input.onchange = async () => {
+        if (!input.files || !input.files[0]) return;
+        const file = input.files[0];
+        try {
+          const res = await fetch('/api/upload', {
+            method: 'POST',
+            headers: {
+              'X-File-Name': destinationFileName,
+              'Content-Type': file.type
+            },
+            body: file
+          });
+          if (res.ok) {
+            showToast('✅ Chart replaced successfully! Refresh to see changes.');
+            setTimeout(() => location.reload(), 1000);
+          }
+        } catch (err) {
+          showToast('❌ Upload failed: ' + err.message, true);
+        }
+      };
+      input.click();
+    }
+
+    document.getElementById('universal-file-input').addEventListener('change', async function() {
+      if (!this.files || !this.files[0] || !currentUploadTargetInputId) return;
+      const file = this.files[0];
+      try {
+        const res = await fetch('/api/upload', {
+          method: 'POST',
+          headers: {
+            'X-File-Name': file.name,
+            'Content-Type': file.type
+          },
+          body: file
+        });
+        if (res.ok) {
+          const data = await res.json();
+          const targetInput = document.getElementById(currentUploadTargetInputId);
+          if (targetInput) {
+            targetInput.value = data.url;
+            targetInput.dispatchEvent(new Event('input'));
+          }
+          showToast('✅ File uploaded successfully: ' + data.url);
+        } else {
+          showToast('❌ Upload failed on server', true);
+        }
+      } catch (err) {
+        showToast('❌ Upload failed: ' + err.message, true);
+      }
+    });
+
+    // Color Pickers sync
+    const colorPrim = document.getElementById('brand-color-primary');
+    const colorPrimHex = document.getElementById('brand-color-primary-hex');
+    if (colorPrim && colorPrimHex) {
+      colorPrim.addEventListener('input', (e) => colorPrimHex.value = e.target.value);
+      colorPrimHex.addEventListener('input', (e) => colorPrim.value = e.target.value);
+    }
+    const colorSec = document.getElementById('brand-color-secondary');
+    const colorSecHex = document.getElementById('brand-color-secondary-hex');
+    if (colorSec && colorSecHex) {
+      colorSec.addEventListener('input', (e) => colorSecHex.value = e.target.value);
+      colorSecHex.addEventListener('input', (e) => colorSec.value = e.target.value);
+    }
+
+    // Load Data
+    async function loadDatabase() {
+      try {
+        const res = await fetch('/assets/db.json?t=' + Date.now());
+        if (res.ok) {
+          db = await res.json();
+          populateAdminForms();
+        }
+      } catch (e) {
+        showToast('Failed to load db.json', true);
+      }
+    }
+
+    function populateAdminForms() {
+      const g = db.siteConfigGlobal || {};
+      const seo = db.siteConfigSeo || {};
+
+      // Dashboard counts
+      document.getElementById('metric-services-count').textContent = (db.services || []).length;
+      document.getElementById('metric-projects-count').textContent = (db.projects || []).length;
+      document.getElementById('metric-products-count').textContent = (db.products || []).length;
+      document.getElementById('metric-inquiries-count').textContent = (db.contactSubmissions || []).length;
+
+      // Hero
+      document.getElementById('hero-availability').value = g.heroAvailability || '';
+      document.getElementById('hero-tagline').value = g.brandTagline || '';
+      document.getElementById('hero-heading-1').value = "Crafting Digital Growth";
+      document.getElementById('hero-heading-2').value = "Al-Amin Khan";
+      document.getElementById('hero-subtitle').value = "Certified Digital Marketing Specialist & Assistant Manager (Training) specializing in Meta Ads, Google Ads, GA4 / Server-Side Tracking (GTM / CAPI), and High-Conversion B2B Sales funnels.";
+      document.getElementById('hero-image').value = g.heroImage || '/assets/profile.png';
+      document.getElementById('hero-cv').value = g.cvUrl || '/assets/Al-Amin_Khan_CV.pdf';
+
+      // Resume Image
+      document.getElementById('resume-image-url').value = g.resumeImage || '/assets/journey.png';
+
+      // Branding & SEO
+      document.getElementById('brand-logo').value = g.siteLogo || '/assets/logo.png';
+      document.getElementById('brand-favicon').value = g.favicon || '/assets/favicon.png';
+      if (g.primaryColor) {
+        document.documentElement.style.setProperty('--color-accent', g.primaryColor);
+      }
+      if (g.secondaryColor) {
+        document.documentElement.style.setProperty('--color-accent-secondary', g.secondaryColor);
+      }
+      document.getElementById('brand-color-primary').value = g.primaryColor || '#3db4bd';
+      document.getElementById('brand-color-primary-hex').value = g.primaryColor || '#3db4bd';
+      document.getElementById('brand-color-secondary').value = g.secondaryColor || '#00c6ff';
+      document.getElementById('brand-color-secondary-hex').value = g.secondaryColor || '#00c6ff';
+      document.getElementById('seo-title').value = seo.metaTitle || g.siteTitle || '';
+      document.getElementById('seo-desc').value = seo.metaDescription || '';
+      document.getElementById('seo-keywords').value = seo.focusKeywords || '';
+
+      // Contact
+      document.getElementById('contact-address').value = g.officeAddress || '';
+      document.getElementById('contact-email').value = g.contactEmail || '';
+      document.getElementById('contact-phone').value = g.officePhone || '';
+
+      // Policies
+      document.getElementById('policy-terms').value = g.termsOfService || '';
+      document.getElementById('policy-privacy').value = g.privacyPolicy || '';
+      document.getElementById('policy-refund').value = g.refundPolicy || '';
+
+      renderSkills();
+      renderResume();
+      renderServices();
+      renderProjects();
+      renderPricingEditor();
+      renderProducts();
+      renderTestimonials();
+      renderBlog();
+      renderInquiries();
+    }
+
+    // 1. SKILLS
+    function renderSkills() {
+      const container = document.getElementById('skills-list');
+      container.innerHTML = (db.skills || []).map((s, idx) => `
+        <div class="flex items-center gap-4 p-3 bg-white/5 rounded-xl border border-white/5">
+          <input type="text" value="${s.name}" onchange="db.skills[${idx}].name = this.value" class="input-field flex-grow" placeholder="Skill Name" />
+          <div class="flex items-center gap-2 w-36">
+            <input type="number" min="1" max="100" value="${s.level}" onchange="db.skills[${idx}].level = parseInt(this.value)" class="input-field w-20 text-center" />
+            <span class="text-xs font-bold text-gray-400">%</span>
+          </div>
+          <button type="button" onclick="deleteSkill(${idx})" class="p-2 text-red-400 hover:text-red-300">✕</button>
+        </div>
+      `).join('');
+    }
+    function addSkill() {
+      if (!db.skills) db.skills = [];
+      db.skills.push({ name: "New Skill", level: 90 });
+      renderSkills();
+    }
+    function deleteSkill(idx) {
+      db.skills.splice(idx, 1);
+      renderSkills();
+    }
+
+    // 2. RESUME
+    function renderResume() {
+      const container = document.getElementById('resume-list');
+      container.innerHTML = (db.resume || []).map((r, idx) => `
+        <div class="p-4 bg-white/5 rounded-2xl border border-white/5 space-y-3">
+          <div class="flex justify-between items-center">
+            <input type="text" value="${r.year}" onchange="db.resume[${idx}].year = this.value" class="input-field w-48 font-bold text-accent" placeholder="e.g. 2024 - Present" />
+            <button type="button" onclick="deleteResumeItem(${idx})" class="text-xs text-red-400 hover:text-red-300 font-bold">Remove Position</button>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input type="text" value="${r.role}" onchange="db.resume[${idx}].role = this.value" class="input-field" placeholder="Role / Job Title" />
+            <input type="text" value="${r.company}" onchange="db.resume[${idx}].company = this.value" class="input-field" placeholder="Company Name" />
+          </div>
+          <textarea rows="2" onchange="db.resume[${idx}].desc = this.value" class="input-field" placeholder="Job Responsibilities & Impact">${r.desc}</textarea>
+        </div>
+      `).join('');
+    }
+    function addResumeItem() {
+      if (!db.resume) db.resume = [];
+      db.resume.unshift({ year: "2026 - Present", role: "Growth Specialist", company: "Company Name", desc: "Key achievements and responsibilities." });
+      renderResume();
+    }
+    function deleteResumeItem(idx) {
+      db.resume.splice(idx, 1);
+      renderResume();
+    }
+
+    // 3. SERVICES
+    function renderServices() {
+      const container = document.getElementById('services-list');
+      container.innerHTML = (db.services || []).map((s, idx) => `
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 flex flex-col justify-between space-y-3">
+          <div>
+            <div class="flex justify-between items-center mb-2">
+              <input type="text" value="${s.displayId || '01'}" onchange="db.services[${idx}].displayId = this.value" class="input-field w-16 text-center font-black text-accent text-xs" />
+              <button type="button" onclick="deleteServiceItem(${idx})" class="text-xs text-red-400 hover:text-red-300">✕</button>
+            </div>
+            <input type="text" value="${s.title}" onchange="db.services[${idx}].title = this.value" class="input-field font-bold text-white mb-2" placeholder="Service Title" />
+            <textarea rows="3" onchange="db.services[${idx}].description = this.value" class="input-field text-xs text-gray-300" placeholder="Description">${s.description}</textarea>
+          </div>
+        </div>
+      `).join('');
+    }
+    function addServiceItem() {
+      if (!db.services) db.services = [];
+      const nextId = (db.services.length + 1).toString().padStart(2, '0');
+      db.services.push({ id: "service-" + Date.now(), displayId: nextId, title: "New Service", description: "Comprehensive solution details." });
+      renderServices();
+    }
+    function deleteServiceItem(idx) {
+      db.services.splice(idx, 1);
+      renderServices();
+    }
+
+    // 4. PROJECTS
+    function renderProjects() {
+      const container = document.getElementById('projects-list');
+      container.innerHTML = (db.projects || []).map((p, idx) => `
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 space-y-3">
+          <div class="flex justify-between items-center">
+            <input type="text" value="${p.title}" onchange="db.projects[${idx}].title = this.value" class="input-field font-bold text-white" placeholder="Project Title" />
+            <button type="button" onclick="deleteProjectItem(${idx})" class="text-xs text-red-400 hover:text-red-300 font-bold ml-2">Delete</button>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input type="text" value="${p.category}" onchange="db.projects[${idx}].category = this.value" class="input-field text-xs" placeholder="Category" />
+            <input type="text" value="${(p.tags || []).join(', ')}" onchange="db.projects[${idx}].tags = this.value.split(',').map(t => t.trim())" class="input-field text-xs" placeholder="Tags (comma separated)" />
+          </div>
+          <div>
+            <label class="label-text">Project Image URL</label>
+            <div class="flex gap-2">
+              <input type="text" id="project-img-${idx}" value="${p.image}" onchange="db.projects[${idx}].image = this.value" class="input-field text-xs" />
+              <button type="button" onclick="triggerUpload('project-img-${idx}')" class="px-3 py-1 bg-white/10 hover:bg-accent text-white rounded-lg text-xs font-bold shrink-0">Upload</button>
+            </div>
+          </div>
+          <textarea rows="2" onchange="db.projects[${idx}].content = this.value" class="input-field text-xs" placeholder="Project summary">${p.content}</textarea>
+        </div>
+      `).join('');
+    }
+    function addProjectItem() {
+      if (!db.projects) db.projects = [];
+      db.projects.push({ id: "proj-" + Date.now(), title: "New Project", category: "Marketing", image: "/assets/meta-ads.png", content: "Key results and deliverables.", tags: ["Growth", "Ads"] });
+      renderProjects();
+    }
+    function deleteProjectItem(idx) {
+      db.projects.splice(idx, 1);
+      renderProjects();
+    }
+
+    // 5. PRICING & PACKAGES
+    function renderPricingEditor() {
+      const container = document.getElementById('pricing-editor-container');
+      const plans = db.pricingPlans || [];
+      container.innerHTML = plans.map((plan, idx) => `
+        <div class="p-6 bg-[#121824] rounded-3xl border border-white/5 space-y-4">
+          <span class="text-xs font-black text-accent uppercase tracking-widest block">Package 0${idx+1}</span>
+          <div>
+            <label class="label-text">Package Title</label>
+            <input type="text" value="${plan.name}" onchange="db.pricingPlans[${idx}].name = this.value" class="input-field font-bold text-white" />
+          </div>
+          ${plan.badge !== undefined ? `
+            <div>
+              <label class="label-text">Badge Tag (e.g. Best Value)</label>
+              <input type="text" value="${plan.badge || ''}" onchange="db.pricingPlans[${idx}].badge = this.value" class="input-field text-accent font-bold" />
+            </div>
+          ` : ''}
+          <div>
+            <label class="label-text">Target Audience Description</label>
+            <textarea rows="2" onchange="db.pricingPlans[${idx}].target = this.value" class="input-field text-xs">${plan.target || ''}</textarea>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="label-text">BDT Price Range</label>
+              <input type="text" value="${plan.priceBdt || ''}" onchange="db.pricingPlans[${idx}].priceBdt = this.value" class="input-field font-bold" placeholder="10,000 - 12,000 BDT" />
+            </div>
+            <div>
+              <label class="label-text">USD / USDT Price</label>
+              <input type="text" value="${plan.priceUsd || ''}" onchange="db.pricingPlans[${idx}].priceUsd = this.value" class="input-field font-bold" placeholder="100 - 120 USDT" />
+            </div>
+          </div>
+          <div>
+            <label class="label-text">Deliverables (One per line)</label>
+            <textarea rows="6" onchange="db.pricingPlans[${idx}].features = this.value.split('\\n').filter(l => l.trim())" class="input-field text-xs font-mono">${(plan.features || []).join('\n')}</textarea>
+          </div>
+          <div>
+            <label class="label-text">WhatsApp Button Link</label>
+            <input type="text" value="${plan.buttonUrl || ''}" onchange="db.pricingPlans[${idx}].buttonUrl = this.value" class="input-field text-xs" />
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // 6. DIGITAL PRODUCTS
+    function renderProducts() {
+      const container = document.getElementById('products-list');
+      container.innerHTML = (db.products || []).map((p, idx) => `
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 space-y-3">
+          <div class="flex justify-between items-center">
+            <input type="text" value="${p.title}" onchange="db.products[${idx}].title = this.value" class="input-field font-bold text-white text-sm" placeholder="Product Title" />
+            <button type="button" onclick="deleteProductItem(${idx})" class="text-xs text-red-400 hover:text-red-300 ml-2">✕</button>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div>
+              <label class="label-text">Price Tag</label>
+              <input type="text" value="${p.price}" onchange="db.products[${idx}].price = this.value" class="input-field font-bold text-accent text-sm" placeholder="$49.00" />
+            </div>
+            <div>
+              <label class="label-text">Thumbnail URL</label>
+              <div class="flex gap-1">
+                <input type="text" id="prod-img-${idx}" value="${p.thumbnail}" onchange="db.products[${idx}].thumbnail = this.value" class="input-field text-xs" />
+                <button type="button" onclick="triggerUpload('prod-img-${idx}')" class="px-2 py-1 bg-white/10 hover:bg-accent text-white rounded text-[10px] font-bold">Up</button>
+              </div>
+            </div>
+          </div>
+          <textarea rows="2" onchange="db.products[${idx}].description = this.value" class="input-field text-xs" placeholder="Description">${p.description}</textarea>
+        </div>
+      `).join('');
+    }
+    function addProductItem() {
+      if (!db.products) db.products = [];
+      db.products.push({ id: "prod-" + Date.now(), title: "New Framework", price: "$29.00", thumbnail: "/assets/meta-ads.png", description: "High-value blueprint." });
+      renderProducts();
+    }
+    function deleteProductItem(idx) {
+      db.products.splice(idx, 1);
+      renderProducts();
+    }
+
+    // 7. TESTIMONIALS
+    function renderTestimonials() {
+      const container = document.getElementById('testimonials-list');
+      container.innerHTML = (db.testimonials || []).map((t, idx) => `
+        <div class="p-5 bg-white/5 rounded-2xl border border-white/5 space-y-3">
+          <div class="flex justify-between items-center">
+            <input type="text" value="${t.name}" onchange="db.testimonials[${idx}].name = this.value" class="input-field font-bold text-white text-sm" placeholder="Client Name" />
+            <button type="button" onclick="deleteTestimonialItem(${idx})" class="text-xs text-red-400 hover:text-red-300">✕</button>
+          </div>
+          <input type="text" value="${t.role}" onchange="db.testimonials[${idx}].role = this.value" class="input-field text-xs text-gray-400" placeholder="Role, Company" />
+          <div>
+            <label class="label-text">Avatar URL</label>
+            <div class="flex gap-2">
+              <input type="text" id="avatar-${idx}" value="${t.avatar}" onchange="db.testimonials[${idx}].avatar = this.value" class="input-field text-xs" />
+              <button type="button" onclick="triggerUpload('avatar-${idx}')" class="px-3 py-1 bg-white/10 hover:bg-accent text-white rounded-lg text-xs font-bold">Upload</button>
+            </div>
+          </div>
+          <textarea rows="3" onchange="db.testimonials[${idx}].content = this.value" class="input-field text-xs italic" placeholder="Quote">${t.content}</textarea>
+        </div>
+      `).join('');
+    }
+    function addTestimonialItem() {
+      if (!db.testimonials) db.testimonials = [];
+      db.testimonials.push({ id: "test-" + Date.now(), name: "Client Name", role: "Founder, Brand", content: "Outstanding results and tracking accuracy.", avatar: "https://ui-avatars.com/api/?name=Client&background=random" });
+      renderTestimonials();
+    }
+    function deleteTestimonialItem(idx) {
+      db.testimonials.splice(idx, 1);
+      renderTestimonials();
+    }
+
+    // 8. BLOG
+    function renderBlog() {
+      const container = document.getElementById('blog-list');
+      container.innerHTML = (db.blogPosts || []).map((b, idx) => `
+        <div class="p-6 bg-white/5 rounded-2xl border border-white/5 space-y-3">
+          <div class="flex justify-between items-center">
+            <input type="text" value="${b.title}" onchange="db.blogPosts[${idx}].title = this.value" class="input-field font-bold text-white text-base" placeholder="Article Title" />
+            <button type="button" onclick="deleteBlogPostItem(${idx})" class="text-xs text-red-400 hover:text-red-300 font-bold ml-2">Delete</button>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-3">
+            <input type="text" value="${b.date}" onchange="db.blogPosts[${idx}].date = this.value" class="input-field text-xs" placeholder="Publish Date" />
+            <input type="text" value="${(b.tags || []).join(', ')}" onchange="db.blogPosts[${idx}].tags = this.value.split(',').map(t => t.trim())" class="input-field text-xs" placeholder="Tags (comma-separated)" />
+          </div>
+          <textarea rows="2" onchange="db.blogPosts[${idx}].excerpt = this.value" class="input-field text-xs" placeholder="Summary excerpt">${b.excerpt}</textarea>
+        </div>
+      `).join('');
+    }
+    function addBlogPostItem() {
+      if (!db.blogPosts) db.blogPosts = [];
+      db.blogPosts.unshift({ id: "post-" + Date.now(), title: "New Case Study", date: "Nov 2026", excerpt: "Actionable summary.", tags: ["Marketing", "Tracking"] });
+      renderBlog();
+    }
+    function deleteBlogPostItem(idx) {
+      db.blogPosts.splice(idx, 1);
+      renderBlog();
+    }
+
+    // 9. INQUIRIES
+    function renderInquiries() {
+      const tbody = document.getElementById('inquiries-tbody');
+      let inquiries = [];
+      try {
+        inquiries = JSON.parse(localStorage.getItem('db_contactSubmissions') || '[]');
+      } catch (e) {}
+      if (!inquiries.length && db.contactSubmissions) {
+        inquiries = db.contactSubmissions;
+      }
+
+      document.getElementById('metric-inquiries-count').textContent = inquiries.length;
+
+      if (!inquiries || inquiries.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="py-8 text-center text-gray-500">No contact inquiries received yet.</td></tr>`;
+        return;
+      }
+
+      tbody.innerHTML = inquiries.map((item, idx) => `
+        <tr class="hover:bg-white/5 transition-colors">
+          <td class="py-3 px-4 text-gray-400 text-xs">${item.createdAt ? new Date(item.createdAt).toLocaleDateString() : 'Recent'}</td>
+          <td class="py-3 px-4 font-bold text-white">${item.name || '-'}</td>
+          <td class="py-3 px-4 text-accent"><a href="mailto:${item.email}">${item.email || '-'}</a></td>
+          <td class="py-3 px-4 text-gray-300">${item.subject || '-'}</td>
+          <td class="py-3 px-4 text-gray-300 max-w-xs truncate" title="${item.message}">${item.message || '-'}</td>
+          <td class="py-3 px-4 text-right">
+            <button type="button" onclick="deleteInquiry(${idx})" class="text-xs text-red-400 hover:text-red-300 font-bold">Delete</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+    function deleteInquiry(idx) {
+      let inquiries = JSON.parse(localStorage.getItem('db_contactSubmissions') || '[]');
+      inquiries.splice(idx, 1);
+      localStorage.setItem('db_contactSubmissions', JSON.stringify(inquiries));
+      if (db.contactSubmissions) db.contactSubmissions = inquiries;
+      renderInquiries();
+      showToast('Inquiry removed');
+    }
+    function clearInquiries() {
+      if (!confirm('Are you sure you want to clear all inquiries?')) return;
+      localStorage.setItem('db_contactSubmissions', '[]');
+      if (db.contactSubmissions) db.contactSubmissions = [];
+      renderInquiries();
+      showToast('All inquiries cleared');
+    }
+
+    // 10. SAVE ALL CHANGES
+    async function saveAllChanges() {
+      const saveBtn = document.getElementById('save-all-btn');
+      saveBtn.disabled = true;
+      saveBtn.querySelector('span').textContent = 'Saving...';
+
+      try {
+        if (!db.siteConfigGlobal) db.siteConfigGlobal = {};
+        if (!db.siteConfigSeo) db.siteConfigSeo = {};
+
+        const g = db.siteConfigGlobal;
+        const seo = db.siteConfigSeo;
+
+        // Collect fields
+        g.heroAvailability = document.getElementById('hero-availability').value;
+        g.brandTagline = document.getElementById('hero-tagline').value;
+        g.heroImage = document.getElementById('hero-image').value;
+        g.cvUrl = document.getElementById('hero-cv').value;
+        g.resumeImage = document.getElementById('resume-image-url').value;
+
+        g.siteLogo = document.getElementById('brand-logo').value;
+        g.favicon = document.getElementById('brand-favicon').value;
+        g.primaryColor = document.getElementById('brand-color-primary-hex').value;
+        g.secondaryColor = document.getElementById('brand-color-secondary-hex').value;
+
+        seo.metaTitle = document.getElementById('seo-title').value;
+        seo.metaDescription = document.getElementById('seo-desc').value;
+        seo.focusKeywords = document.getElementById('seo-keywords').value;
+
+        g.officeAddress = document.getElementById('contact-address').value;
+        g.contactEmail = document.getElementById('contact-email').value;
+        g.officePhone = document.getElementById('contact-phone').value;
+
+        g.termsOfService = document.getElementById('policy-terms').value;
+        g.privacyPolicy = document.getElementById('policy-privacy').value;
+        g.refundPolicy = document.getElementById('policy-refund').value;
+
+        // Persist to server assets/db.json
+        const res = await fetch('/api/save', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(db, null, 2)
+        });
+
+        if (res.ok) {
+          // Update localStorage
+          localStorage.setItem('site_config_global', JSON.stringify(g));
+          localStorage.setItem('site_config_seo', JSON.stringify(seo));
+          localStorage.setItem('db_projects', JSON.stringify(db.projects));
+          localStorage.setItem('db_blogPosts', JSON.stringify(db.blogPosts));
+          localStorage.setItem('db_services', JSON.stringify(db.services));
+          localStorage.setItem('db_skills', JSON.stringify(db.skills));
+          localStorage.setItem('db_testimonials', JSON.stringify(db.testimonials));
+          localStorage.setItem('db_resume', JSON.stringify(db.resume));
+          localStorage.setItem('db_pricingPlans', JSON.stringify(db.pricingPlans));
+          localStorage.setItem('db_products', JSON.stringify(db.products));
+
+          showToast('✅ All changes published to website successfully!');
+        } else {
+          showToast('❌ Server error saving database', true);
+        }
+      } catch (err) {
+        showToast('❌ Save error: ' + err.message, true);
+      } finally {
+        saveBtn.disabled = false;
+        saveBtn.querySelector('span').textContent = 'Save All Changes';
+      }
+    }
+
+    document.getElementById('save-all-btn').addEventListener('click', saveAllChanges);
+
+    // Keyboard shortcut Ctrl+S
+    window.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 's') {
+        e.preventDefault();
+        saveAllChanges();
+      }
+    });
+
+    // Boot
+    loadDatabase();
+  </script>
+</body>
+</html>
+
