@@ -479,8 +479,9 @@
                 <div class="hero-orbit-ring hero-orbit-ring-outer pointer-events-none"></div>
                 <div class="hero-orbit-ring hero-orbit-ring-inner pointer-events-none"></div>
 
-                <!-- Main Showcase Card matching reference design -->
-                <div class="hero-card-walid reveal-on-scroll relative z-10 w-full max-w-[340px] sm:max-w-[380px] h-[490px] sm:h-[530px] rounded-[32px] overflow-hidden bg-[#0c111e] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.8)] card-hover-interactive group">
+                <!-- Main Showcase Card with smooth sway wrapper -->
+                <div class="reveal-on-scroll relative z-10 w-full max-w-[340px] sm:max-w-[380px]">
+                  <div class="hero-card-walid w-full h-[490px] sm:h-[530px] rounded-[32px] overflow-hidden bg-[#0c111e] border border-white/10 shadow-[0_25px_60px_rgba(0,0,0,0.8)] group">
                   <!-- Crimson Radial Glow Backdrop -->
                   <div class="hero-card-walid-glow absolute inset-0 bg-[radial-gradient(ellipse_at_50%_45%,rgba(200,25,35,0.55)_0%,rgba(12,17,30,0.95)_70%)] pointer-events-none"></div>
 
@@ -501,7 +502,8 @@
                     <div class="text-xs sm:text-sm font-semibold text-white/95">
                       ${(db.siteConfigGlobal && db.siteConfigGlobal.heroAvailability) || 'Available for projects'}
                     </div>
-                  </div>
+                </div>
+              </div>
                 </div>
               </div>
 
